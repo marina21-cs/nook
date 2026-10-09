@@ -80,18 +80,27 @@ The baseline contains an offline POI-import/cache API, but no area downloader, G
 
 ### Screenshots
 
-<table>
-<tr>
-<th>Review before saving</th>
-<th>Recall dated evidence</th>
-</tr>
-<tr>
-<td><a href="deliverables/nook-integration/capture-desktop.png"><img src="deliverables/nook-integration/capture-desktop.png" alt="Nook review screen showing the synthetic House keys memory before confirmation" width="440"></a></td>
-<td><a href="deliverables/nook-integration/recall-desktop.png"><img src="deliverables/nook-integration/recall-desktop.png" alt="Nook recall screen showing a dated Demo wallet record, not a live location" width="440"></a></td>
-</tr>
-</table>
+<p align="center">
+<a href="deliverables/nook-integration/recall-mobile-dark.png"><img src="deliverables/nook-integration/recall-mobile-dark.png" alt="Mobile Nook recall: Demo wallet, last recorded on the nightstand tray, with a date and not-a-live-location notice" width="320"></a>
+</p>
 
-Click a preview for full size. [All six screenshots](deliverables/nook-integration/README.md) · [Hashes and provenance](docs/SCREENSHOT_PROVENANCE.json). Captures use invented records and a credited public CC0 photo.
+**Dated recall, with its source and limits visible.** Click any image for full size.
+
+<details>
+<summary><strong>Review a memory before saving — desktop</strong></summary>
+
+<a href="deliverables/nook-integration/capture-desktop.png"><img src="deliverables/nook-integration/capture-desktop.png" alt="Review a synthetic House keys memory and explicitly confirm its item and place before saving" width="880"></a>
+
+</details>
+
+<details>
+<summary><strong>Saved memories — mobile</strong></summary>
+
+<a href="deliverables/nook-integration/saved-mobile.png"><img src="deliverables/nook-integration/saved-mobile.png" alt="Saved mobile view of the synthetic House keys memory with its timestamp and photo evidence" width="320"></a>
+
+</details>
+
+[All six screenshots](deliverables/nook-integration/README.md) · [Hashes and provenance](docs/SCREENSHOT_PROVENANCE.json). Captures use invented records and a credited public CC0 photo.
 
 | Submission material | Link or status |
 | --- | --- |
