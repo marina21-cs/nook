@@ -27,9 +27,50 @@ class LocalVoice:
         self.last_metrics: dict[str, Any] = {}
 
     def provisioned(self) -> bool:
-        return (self.root / "runtime/bin/python").is_file() and (
-            self.root / "artifacts/manifest.json"
-        ).is_file()
+        # Cheap readiness only: the worker verifies full hashes before model loading.
+        if (
+            self.root.is_symlink()
+            or (self.root / "runtime").is_symlink()
+            or (self.root / "runtime/.nook-setup-incomplete").exists()
+            or not (self.root / "runtime/bin/python").is_file()
+        ):
+            return False
+        root = self.root / "artifacts"
+        required = {
+            "kokoro/config.json",
+            "kokoro/kokoro-v1_0.pth",
+            "kokoro/af_heart.pt",
+            "whisper/model.safetensors",
+            "whisper/config.json",
+            "whisper/preprocessor_config.json",
+            "whisper/tokenizer.json",
+            "whisper/tokenizer_config.json",
+            "whisper/generation_config.json",
+        }
+        try:
+            if root.is_symlink() or (root / "manifest.json").is_symlink():
+                return False
+            files = json.loads((root / "manifest.json").read_text())["files"]
+            if not isinstance(files, list) or not required <= {e["path"] for e in files}:
+                return False
+            seen = set()
+            for entry in files:
+                name = entry["path"]
+                path = root / name
+                if (
+                    name in seen
+                    or not path.resolve().is_relative_to(root.resolve())
+                    or any(p.is_symlink() for p in (path, *path.parents) if p != root.parent)
+                    or type(entry["bytes"]) is not int
+                    or entry["bytes"] <= 0
+                    or not path.is_file()
+                    or path.stat().st_size != entry["bytes"]
+                ):
+                    return False
+                seen.add(name)
+            return True
+        except (OSError, ValueError, KeyError, TypeError):
+            return False
 
     async def close(self) -> None:
         process, self.process = self.process, None

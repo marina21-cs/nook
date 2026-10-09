@@ -219,3 +219,40 @@ def test_cancellation_during_spawn_still_reaps_owned_worker(tmp_path, monkeypatc
         assert adapter.process is None and not adapter.busy.locked()
 
     asyncio.run(run())
+
+
+def test_readiness_requires_complete_artifacts_and_finished_install(tmp_path):
+    """Tiny fake artifact files test readiness only, never real provider acceptance."""
+    root = tmp_path / "artifacts"
+    (tmp_path / "runtime/bin").mkdir(parents=True)
+    (tmp_path / "runtime/bin/python").write_bytes(b"fake interpreter")
+    root.mkdir()
+    names = [
+        "kokoro/config.json",
+        "kokoro/kokoro-v1_0.pth",
+        "kokoro/af_heart.pt",
+        "whisper/model.safetensors",
+        "whisper/config.json",
+        "whisper/preprocessor_config.json",
+        "whisper/tokenizer.json",
+        "whisper/tokenizer_config.json",
+        "whisper/generation_config.json",
+    ]
+    files = [{"path": name, "bytes": 1} for name in names]
+    (root / "manifest.json").write_text(json.dumps({"files": files}))
+    adapter = LocalVoice(tmp_path)
+    assert not adapter.provisioned()
+    for name in names:
+        path = root / name
+        path.parent.mkdir(exist_ok=True)
+        path.write_bytes(b"x")
+    assert adapter.provisioned()
+    marker = tmp_path / "runtime/.nook-setup-incomplete"
+    marker.write_text("incomplete")
+    assert not adapter.provisioned()
+    marker.unlink()
+    (root / names[0]).write_bytes(b"wrong size")
+    assert not adapter.provisioned()
+    (root / names[0]).unlink()
+    (root / names[0]).symlink_to(root / names[1])
+    assert not adapter.provisioned()

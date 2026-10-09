@@ -37,7 +37,7 @@ async function snapshot(page){return page.evaluate(async()=>{const s=await(await
  },input.toString('base64'));
  const page=await context.newPage();page.setDefaultTimeout(35000);page.on('pageerror',e=>result.page_errors.push(e.message));
  page.on('request',r=>{if(r.url().endsWith('/api/speech/transcribe'))result.stt_requests++;if(r.url().endsWith('/api/speech/turns'))result.tts_requests++;});
- await page.goto(base);await page.locator('#onboard-next').click();await page.locator('#onboarding').waitFor({state:'hidden'});await page.waitForFunction(()=>!document.querySelector('#record').disabled);result.browser_speech_ready=true;
+ await page.goto(base);await page.locator('#onboard-next').click();await page.locator('#setup-skip').click();await page.locator('#onboarding').waitFor({state:'hidden'});await page.waitForFunction(()=>!document.querySelector('#record').disabled);result.browser_speech_ready=true;
  result.seed=await page.evaluate(async()=>{const session=await(await fetch('/api/session')).json();const status=await(await fetch('/api/status')).json();const r=await fetch('/api/items',{method:'POST',headers:{'Content-Type':'application/json','X-CSRF-Token':session.csrf_token},body:JSON.stringify({confirmed:true,write_epoch:status.write_epoch,idempotency_key:crypto.randomUUID(),personal_name:'blue keys',location:'Desk drawer'})});if(!r.ok)throw Error('Fixture seed failed');return await r.json();});
  // Reload so the application obtains the cookie/CSRF pair issued for its own session.
  await page.reload();await page.waitForFunction(()=>!document.querySelector('#record').disabled);const before=await snapshot(page);result.before=before;

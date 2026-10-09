@@ -483,6 +483,8 @@ class ItemRepository:
                         "Collection changed. Review it before deleting all data.",
                         current_generation=generation,
                     )
+                if self.db.on_changed is not None:
+                    self.db.on_changed()
                 count = conn.execute("SELECT count(*) FROM items").fetchone()[0]
                 # The epoch rejects all earlier unretained writes without copying tombstones.
             # Build a fresh empty schema, fsync and atomically replace the old database.

@@ -1,3 +1,5 @@
+> Historical baseline document. Its counts, UI steps and provisioning instructions do not describe the expanded release. See [current release and reproduction notes](EXPANDED_RELEASE.md).
+
 ## Voice qualification update
 
 Voice remains unprovisioned: no complete weight manifest or actual STT/TTS acceptance. `speech.spoken_text` exposes the exact brief narration when audio renders; full timestamps remain in the structured record and text response. The one-test `APP_VOICE_TEST_GUARD_54=1` policy is explicitly authorized for the supervised smoke only; default remains 52°C and no sensor/OS setting changes. The smoke has not started because the retained swap guard stopped provisioning. See `../VOICE_IMPLEMENTATION_REPORT.md`.

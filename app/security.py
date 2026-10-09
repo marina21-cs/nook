@@ -128,6 +128,9 @@ class BoundaryMiddleware:
                 cookie = morsel.value if morsel else ""
                 if not self.sessions.valid(cookie):
                     raise AppError(401, "session_required", "Open a local session first.")
+                scope.setdefault("state", {})["session_owner"] = self.sessions.sign(
+                    "chat-owner:" + cookie
+                )
                 if method not in ("GET", "HEAD", "OPTIONS") and not hmac.compare_digest(
                     headers.get("x-csrf-token", "").encode("latin1"),
                     self.sessions.csrf(cookie).encode("ascii"),

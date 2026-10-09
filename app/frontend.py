@@ -10,6 +10,8 @@ ASSETS = {
     "/assets/styles.css": "styles.css",
     "/assets/app.js": "app.js",
     "/assets/experience.js": "experience.js",
+    "/assets/places.js": "places.js",
+    "/assets/memory-prompt.js": "memory-prompt.js",
     "/assets/media.js": "media.js",
     "/assets/recorder.js": "recorder.js",
 }

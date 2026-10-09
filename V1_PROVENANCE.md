@@ -1,3 +1,5 @@
+> Historical baseline document. Its counts, UI steps and provisioning instructions do not describe the expanded release. See [current release and reproduction notes](docs/EXPANDED_RELEASE.md).
+
 # Nook — hackathon v1 dependency and model provenance
 
 No packages, models or browsers were downloaded for this release. Runtime and weights are excluded from the source ZIP.

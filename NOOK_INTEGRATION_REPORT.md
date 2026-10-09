@@ -1,3 +1,5 @@
+> Historical baseline document. Its counts, UI steps and provisioning instructions do not describe the expanded release. See [current release and reproduction notes](docs/EXPANDED_RELEASE.md).
+
 > Historical baseline report. The README and publication provenance state current publication status; this report does not qualify the expanded working candidate.
 
 # Nook final UI integration

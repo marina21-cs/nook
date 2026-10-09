@@ -8,8 +8,8 @@
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <section id="onboarding" class="onboarding reference-intro" aria-labelledby="onboard-title" hidden>
-<h1 id="onboard-title" class="sr-only" tabindex="-1">Nook. A little less searching.</h1>
-<p class="sr-only">Save an item and its place, then ask for its last recorded location. Nothing is saved until you review it.</p>
+<div id="intro-opening" class="intro-opening"><h1 id="onboard-title" class="sr-only" tabindex="-1">Nook. A little less searching.</h1>
+<p class="sr-only">Save an item and its place, then ask for its last recorded location. Send an item, its place and an optional photo to save a memory.</p>
 <div class="intro-canvas" aria-hidden="true">
 <svg id="intro-star" class="intro-star" viewBox="0 0 390 550" preserveAspectRatio="none"><path fill="#f6d88f" d="M95 0C116 188 152 254 365 275C155 297 114 365 95 550C75 365 32 297-175 275C32 254 75 188 95 0Z"/><path d="M95 0V550" fill="none" stroke="#d0a971" stroke-width=".65"/></svg>
 <div class="intro-words"><span>Goal-setting</span><span>Dedication</span><span>Workflow</span><span>Efficiency</span><span>Concentration</span><span>Discipline</span><span>Balance</span><span>Productivity</span><span>Time-management</span><span>Performance</span><span>Nook.</span></div></div>
@@ -32,7 +32,28 @@ unicode: "ea61"
 >
   <path d="M9 6l6 6l-6 6" />
 </svg>
-</button>
+</button></div>
+<div id="setup" class="setup" hidden>
+ <header class="setup-header"><span class="wordmark">nook<span class="brand-dot">.</span></span><button id="setup-skip" type="button" class="text-button">Skip setup</button></header>
+ <div class="setup-progress" aria-label="Setup progress"><span></span><span></span><span></span></div>
+ <form id="setup-form" class="setup-body">
+  <section id="setup-profile" aria-labelledby="setup-title">
+   <div id="setup-character" class="setup-character" aria-hidden="true"></div>
+   <p class="page-label">01 / Make yourself at home</p><h2 id="setup-title" tabindex="-1">A little space<br>that's yours.</h2><p class="setup-copy">I'm Nook. I'll help you remember the little things, so you can get on with your day.</p>
+   <label for="profile-name">What should I call you? <span class="muted">(optional)</span></label><input id="profile-name" name="given-name" autocomplete="given-name" maxlength="40" placeholder="Your first name" aria-describedby="profile-hint"><p id="profile-hint" class="hint">Your profile stays in this browser. Your memories are saved on this computer.</p>
+  </section>
+  <section id="setup-introduction" aria-labelledby="setup-intro-title" hidden>
+   <p class="page-label">02 / A little less searching</p><h2 id="setup-intro-title" tabindex="-1">Leave a clue.<br>Find it later.</h2><p class="setup-copy">A quick message now can save a search later.</p>
+   <ol class="setup-features"><li><span>1</span><div><h3>Tell me what to remember</h3><p>“My keys are in the kitchen drawer.” Add a photo if it helps, then Send to save.</p></div></li><li><span>2</span><div><h3>Ask when you need it</h3><p>“Where are my keys?” I'll bring back the place you saved, with its date and photo.</p></div></li><li><span>3</span><div><h3>Keep it up to date</h3><p>Move something? Update its place in Saved. You can edit or delete a memory there too.</p></div></li></ol>
+   <p class="hint setup-footnote">Nook remembers your last record. It doesn't track items as they move.</p>
+  </section>
+  <section id="setup-ready" aria-labelledby="setup-ready-title" hidden>
+   <div class="ready-art" aria-hidden="true"><span>All set.</span><svg viewBox="0 0 100 100"><path d="M50 0Q55 44 100 50Q55 56 50 100Q45 56 0 50Q45 44 50 0Z" fill="currentColor"/></svg></div>
+   <p class="page-label">03 / Ready for your first memory</p><h2 id="setup-ready-title" tabindex="-1">Your nook is ready.</h2><p class="setup-copy">Start with something you tend to misplace. Keys, a wallet, that one charger.</p><p class="hint">You choose what to save. Chat questions aren't kept.</p>
+  </section>
+  <footer class="setup-actions"><button id="setup-back" type="button" class="text-button">Back</button><button id="setup-next" type="submit" class="primary">Continue <span aria-hidden="true">→</span></button></footer>
+ </form>
+</div>
 </section>
 <div id="app-shell" class="app-shell">
  <header class="masthead"><a class="wordmark" href="#talk" aria-label="Nook chat">nook<span class="brand-dot">.</span></a><button id="open-settings" class="icon-button" type="button" aria-label="Settings and connection"><!--
@@ -111,7 +132,7 @@ unicode: "eb0b"
 </a></div></div>
     <p id="user-question" class="user-bubble" hidden></p><div id="answer" aria-live="polite"></div>
    </div>
-   <div class="composer-wrap"><form id="talk-form" class="composer"><label for="utterance" class="sr-only">Your question or reviewed transcript</label><textarea id="utterance" rows="1" maxlength="2000" required placeholder="Ask about something you saved…"></textarea><div class="composer-tools"><a class="icon-button" href="#capture" aria-label="Add a photo or memory"><!--
+   <div class="composer-wrap"><details><summary>Changes I can help with</summary><p>Review a proposed record change, then approve or cancel. Use quoted names: remember "keys" at "desk"; move "keys" to "drawer"; rename "keys" to "house keys"; categorize "keys" as "Everyday"; mark "keys" location unknown. This changes saved records only.</p></details><form id="talk-form" class="composer" novalidate><label for="utterance" class="sr-only">Your question or reviewed transcript</label><textarea id="utterance" rows="1" maxlength="2000" required placeholder="Ask about something you saved…"></textarea><div class="composer-tools"><a class="icon-button" href="#capture" aria-label="Add a photo or memory"><!--
 tags: [add, new, create, insert, more, plus-sign, increase, positive, math, cross, plus]
 category: Math
 version: "1.0"
@@ -198,114 +219,23 @@ unicode: "ea25"
   </section>
   <section id="capture" class="page" hidden aria-labelledby="capture-title">
    <div class="page-heading"><p class="page-label">A clue for later</p><h1 id="capture-title">Remember this.</h1><p>Little things deserve a place.</p></div>
-   <ol class="capture-progress" aria-label="Save progress"><li data-stage="choose" aria-current="step">Choose</li><li data-stage="details">Details</li><li data-stage="review">Review</li></ol>
-   <div id="capture-start"><div class="photo-start"><div class="photo-symbol"><!--
-tags: [camera, photo, photography, picture, video, lens, image, snapshot]
-category: Media
-version: "1.0"
-unicode: "ea54"
--->
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" />
-  <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-</svg>
-</div><h2>A photo is a good start.</h2><p>Name it. Give it a place.<br>We'll keep the details together.</p><label class="primary file-button" for="photo-file">Choose a photo <!--
-tags: [add, new, create, insert, more, plus-sign, increase, positive, math, cross, plus]
-category: Math
-version: "1.0"
-unicode: "eb0b"
--->
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M12 5l0 14" />
-  <path d="M5 12l14 0" />
-</svg>
-</label><input id="photo-file" type="file" accept="image/jpeg,image/png,image/webp"><button id="camera-start" type="button" class="secondary">Take a photo</button><span class="file-hint">JPEG, PNG or WebP · up to 10 MB</span></div><button id="manual-start" type="button" class="text-button">Or save without a photo <!--
-tags: [direction, east, next, forward, continue, proceed, go, pointer, arrow, right]
-category: Arrows
-version: "1.0"
-unicode: "ea1f"
--->
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M5 12l14 0" />
-  <path d="M13 18l6 -6" />
-  <path d="M13 6l6 6" />
-</svg>
-</button></div>
-   <div id="camera-area" hidden><video id="camera" playsinline muted aria-label="Camera preview"></video><div class="actions"><button id="take-photo" type="button" class="primary">Use this frame</button><button id="camera-stop" type="button">Close camera</button></div></div>
-   <div id="draft" hidden><span class="draft-label">Not saved yet</span><figure id="draft-figure"><img id="draft-photo" alt="Photo selected for review"><figcaption id="draft-source"></figcaption></figure><form id="capture-form"><h2>Give it a little context.</h2><div id="identity-field"><label for="identity">Save to</label><select id="identity"><option value="new">A new item</option></select></div><label for="item-name">What is it?</label><input id="item-name" maxlength="80" required placeholder="My blue house keys" autocomplete="off"><label for="item-location">Where did you leave it?</label><input id="item-location" maxlength="240" required placeholder="Hall cabinet, top drawer" autocomplete="off"><div id="current-option"><label class="check"><input id="make-current" type="checkbox" checked> Use as the last recorded place</label><p class="hint">For an older photo, turn this off to keep it as history.</p></div><div class="actions"><button id="review-memory" type="submit" class="primary">Review memory <!--
-tags: [direction, east, next, forward, continue, proceed, go, pointer, arrow, right]
-category: Arrows
-version: "1.0"
-unicode: "ea1f"
--->
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M5 12l14 0" />
-  <path d="M13 18l6 -6" />
-  <path d="M13 6l6 6" />
-</svg>
-</button><button id="discard" type="button" class="text-button">Discard</button></div></form></div>
-   <div id="review" hidden><span class="draft-label">Not saved yet</span><h2 id="review-title" tabindex="-1">One last look.</h2><div id="review-summary" class="review-summary"></div><label class="check review-confirm"><input id="confirm-save" type="checkbox"> I checked the item and its place.</label><div class="actions"><button id="save-memory" type="button" class="primary" disabled>Save memory <!--
-tags: [check, checkmark, tick, done, yes, ok, confirm, success, approve, correct, complete]
-category: System
-version: "1.0"
-unicode: "ea5e"
--->
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M5 12l5 5l10 -10" />
-</svg>
-</button><button id="back-to-details" type="button" class="text-button">Edit details</button></div><p id="save-error" class="inline-error" role="alert"></p><p class="hint">You can update or delete this from Saved at any time.</p></div>
+   <form id="remember-form" class="remember-form">
+    <div id="remember-success" class="remember-success" role="status" hidden><span class="success-check" aria-hidden="true">✓</span><div><h2>Consider it remembered.</h2><p id="remember-success-copy"></p><button id="view-saved-memory" type="button" class="text-button">View saved memory <span aria-hidden="true">→</span></button></div></div>
+    <div class="remember-intro"><span class="memory-spark" aria-hidden="true">✳</span><h2>Tell me where.<br>I'll keep the clue.</h2><p>Try “My passport is in the bedroom drawer.”</p></div>
+    <div class="remember-composer">
+     <div id="photo-attachment" class="photo-attachment" hidden><img id="draft-photo" alt="Photo attached to this memory"><div><strong>Photo attached</strong><p id="draft-source"></p></div><button id="remove-photo" type="button" class="icon-button" aria-label="Remove attached photo">×</button></div>
+     <label for="memory-prompt" class="sr-only">What should Nook remember?</label><textarea id="memory-prompt" rows="4" maxlength="240" placeholder="My keys are in the kitchen drawer…" aria-describedby="remember-hint"></textarea>
+     <div class="remember-tools"><button id="choose-photo" type="button" class="attach-button" aria-label="Attach a photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="8" cy="8" r="1.5"/><path d="m3 17 5-5 4 4 4-6 5 7"/></svg><span>Photo</span></button><input id="photo-file" class="sr-only" tabindex="-1" aria-label="Choose a photo file" type="file" accept="image/jpeg,image/png,image/webp"><button id="camera-start" type="button" class="text-button">Camera</button><button id="send-memory" type="submit" class="primary">Send <span aria-hidden="true">↑</span></button></div>
+    </div>
+    <p id="remember-hint" class="hint">Send saves your message and optional photo. You can edit it later.</p>
+    <p id="remember-error" class="inline-error" role="alert"></p>
+    <div id="memory-preview" class="memory-preview" hidden><span class="preview-label">Saving as</span><strong id="preview-name"></strong><span id="preview-location"></span><button id="edit-memory-details" type="button" class="text-button">Edit</button></div>
+    <details id="memory-details" class="memory-details"><summary>Item &amp; place details</summary><div id="identity-field" hidden><label for="identity">Save to</label><select id="identity"><option value="new">A new item</option></select></div><label for="item-name">What is it?</label><input id="item-name" maxlength="80" aria-describedby="remember-error" placeholder="My keys" autocomplete="off"><details id="photo-extras" hidden><summary>More items and photo details</summary><p class="hint">Up to five items can share this photo and place. Each keeps a separate identity. An area marks an item inside the full photo; the full photo stays with the memory.</p><div id="first-region" class="region-fields"><p>First item area (optional, percentages of photo)</p><label>Left<input class="region-x" type="number" min="0" max="99.9" step="0.1"></label><label>Top<input class="region-y" type="number" min="0" max="99.9" step="0.1"></label><label>Width<input class="region-w" type="number" min="0.1" max="100" step="0.1"></label><label>Height<input class="region-h" type="number" min="0.1" max="100" step="0.1"></label></div><div id="extra-items"></div><button id="add-photo-item" type="button" class="secondary">Add another item in this photo</button></details><div id="manual-unknown-option"><label class="check"><input id="manual-unknown" type="checkbox"> I do not know the place yet</label></div><label for="review-days">Recheck this place after (optional days)</label><input id="review-days" type="number" min="1" max="3650" step="1" placeholder="For example, 7"><p class="hint">Adds a freshness date to this record, not a scheduled notification.</p><label for="item-location">Where is it?</label><input id="item-location" maxlength="240" aria-describedby="remember-error" placeholder="Kitchen drawer" autocomplete="off"><div id="current-option" hidden><label class="check"><input id="make-current" type="checkbox" checked> Use as the last recorded place</label><p class="hint">Turn off for an older photo you only want to keep in history.</p></div></details>
+    <button id="discard" type="button" class="text-button" hidden>Discard draft</button>
+   </form>
+   <div id="camera-area" hidden><video id="camera" playsinline muted aria-label="Camera preview"></video><div class="actions"><button id="take-photo" type="button" class="primary">Attach this frame</button><button id="camera-stop" type="button">Close camera</button></div></div>
   </section>
-  <section id="saved" class="page" hidden aria-labelledby="saved-title"><div class="page-heading"><p class="page-label">Your little collection</p><h1 id="saved-title">Everything, remembered.</h1><p id="saved-count">The things you chose to keep.</p></div><form id="search-form" class="search"><label for="search" class="sr-only">Find a saved item</label><!--
+  <section id="saved" class="page" hidden aria-labelledby="saved-title"><div class="page-heading"><p class="page-label">Your little collection</p><h1 id="saved-title">Everything, remembered.</h1><p id="saved-count">The things you chose to keep.</p></div><button id="open-places" type="button" class="secondary">Nearby places, saved offline</button><form id="search-form" class="search"><label for="search" class="sr-only">Find a saved item</label><!--
 category: System
 tags: [find, magnifier, magnifying-glass, lookup, zoom, explore, query, browse, search]
 version: "1.0"
@@ -449,7 +379,7 @@ unicode: "eb55"
   <path d="M18 6l-12 12" />
   <path d="M6 6l12 12" />
 </svg>
-</button></div><div class="settings-content"><section><h3>Your memories stay here.</h3><p>Saved on this computer. Chat questions aren't kept. Nook shows the last place you recorded, not a live location.</p><p id="connection-state" class="connection-state">Connecting to your local service…</p></section><section><h3>A voice, when you need it.</h3><p id="speech-state">Checking local speech…</p><label class="check"><input id="speak-reply" type="checkbox" disabled> Include a spoken reply (English)</label><p class="hint">Record up to 10 seconds, review the words, then send. Audio replies only play when you choose.</p></section><section><label for="appearance">Appearance</label><select id="appearance"><option value="system">Match device</option><option value="light">Light</option><option value="dark">Dark</option></select><label class="check"><input id="reduce-motion" type="checkbox"> Reduce motion</label></section><button id="replay-onboarding" type="button" class="secondary">Meet Nook again <!--
+</button></div><div class="settings-content"><section><h3 id="profile-summary">Your space in Nook.</h3><button id="edit-profile" type="button" class="text-button">Edit your profile</button><h3>Your memories stay here.</h3><p>Saved on this computer. Chat questions aren't kept. Nook shows the last place you recorded, not a live location.</p><p id="connection-state" class="connection-state">Connecting to your local service…</p></section><section><h3>A voice, when you need it.</h3><p id="speech-state">Checking local speech…</p><label class="check"><input id="speak-reply" type="checkbox" disabled> Include a spoken reply (English)</label><p class="hint">Record up to 10 seconds, review the words, then send. Audio replies only play when you choose.</p></section><section><label for="appearance">Appearance</label><select id="appearance"><option value="system">Match device</option><option value="light">Light</option><option value="dark">Dark</option></select><label class="check"><input id="reduce-motion" type="checkbox"> Reduce motion</label></section><section><details><summary>Remove all local memories</summary><p>Deletes saved items, history, photos, unfinished photo drafts and any local places cache. This cannot be undone. Model files stay installed.</p><form id="delete-data-form"><label for="delete-data-phrase">Type DELETE ALL LOCAL DATA to confirm</label><input id="delete-data-phrase" autocomplete="off" required pattern="DELETE ALL LOCAL DATA"><button id="delete-data-button" type="submit" class="danger">Review permanent deletion</button><p id="delete-data-error" role="alert"></p></form></details></section><button id="replay-onboarding" type="button" class="secondary">Meet Nook again <!--
 tags: [direction, east, next, forward, continue, proceed, go, pointer, arrow, right]
 category: Arrows
 version: "1.0"
@@ -472,5 +402,6 @@ unicode: "ea1f"
 </svg>
 </button></div></dialog>
 <dialog id="confirmation" aria-labelledby="confirmation-title"><div class="sheet-handle"></div><h2 id="confirmation-title"></h2><p id="confirmation-copy"></p><div class="actions"><button id="confirm-action" type="button" class="danger"></button><button id="decline-action" type="button">Keep memory</button></div></dialog>
+<dialog id="places" aria-labelledby="places-title"><div class="sheet-handle"></div><div class="dialog-head"><h2 id="places-title">An area for offline use.</h2><button id="close-places" type="button">Close</button></div><p>Choose a small area manually. No GPS is collected. Download while connected, then search the saved places without internet. This browser cannot enforce Wi-Fi-only transfers.</p><p id="places-message" role="status" aria-live="polite"></p><div id="area-status"></div><form id="area-form"><fieldset id="area-fields"><legend>Download or replace the saved area</legend><label for="area-label">Area name</label><input id="area-label" maxlength="120" required placeholder="For example, Town center"><label for="area-lat">Center latitude (manual)</label><input id="area-lat" type="number" min="-85" max="85" step="any" required><label for="area-lon">Center longitude (manual)</label><input id="area-lon" type="number" min="-180" max="180" step="any" required><label for="area-radius">Area half-width</label><select id="area-radius"><option value="100">About 100 metres</option><option value="250" selected>About 250 metres</option><option value="500">About 500 metres</option><option value="1000">About 1 kilometre</option></select><label class="check"><input id="area-consent" type="checkbox" required> Send this selected area to the public OpenStreetMap Overpass service and replace my saved area.</label><p id="download-availability"></p><p class="hint">One request at a time, up to 1 MiB received, 250 places and 64 KiB saved metadata. The provider sees the selected area and your connection's IP address. Wait at least 30 seconds between attempts.</p><button id="download-area" class="primary" type="submit" disabled>Download selected area</button></fieldset></form><progress id="area-progress" aria-label="Area download in progress" hidden></progress><button id="cancel-area" type="button" hidden>Cancel download</button><form id="nearby-form"><h3>Find places offline</h3><p>Uses the latitude/longitude above as a manually selected point, not a verified GPS fix. Distances are approximate straight lines, not travel directions.</p><label for="nearby-category">Place type</label><select id="nearby-category"><option value="supermarket">Supermarket</option><option value="grocery">Grocery</option><option value="convenience">Convenience</option><option value="hardware">Hardware</option><option value="clothes">Clothes</option><option value="shoes">Shoes</option><option value="bicycle">Bicycle</option><option value="electronics">Electronics</option><option value="pharmacy">Pharmacy</option><option value="clinic">Clinic</option><option value="hospital">Hospital</option><option value="cafe">Cafe</option><option value="restaurant">Restaurant</option><option value="fuel">Fuel</option><option value="bank">Bank</option><option value="atm">Atm</option><option value="drinking_water">Drinking water</option><option value="toilets">Toilets</option></select><label class="check"><input id="point-confirm" type="checkbox" required> Use this selected point for this lookup only.</label><button type="submit" class="primary">Search saved places</button></form><div id="nearby-results" aria-live="polite"></div><details><summary>Remove saved area</summary><label class="check"><input id="clear-area-confirm" type="checkbox"> Remove the downloaded/imported places, keeping my personal memories.</label><button id="clear-area" type="button" class="danger">Remove saved area</button></details></dialog>
 <noscript><p class="notice">Enable JavaScript to connect to your local memories.</p></noscript>
 </body></html>

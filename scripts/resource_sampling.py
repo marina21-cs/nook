@@ -63,6 +63,7 @@ def sample(prev=None, pids=()):
     if not any(k.startswith("nvme") and k.endswith("/Composite") for k in temps):
         raise RuntimeError("Previously monitored NVMe sensor unavailable")
     ticks, rss, hwm, sockets, processes = 0, 0, 0, [], []
+    socket_observation_errors = []
     for pid in pids:
         try:
             fields = Path(f"/proc/{pid}/stat").read_text().rsplit(")", 1)[1].split()
@@ -76,13 +77,20 @@ def sample(prev=None, pids=()):
             ticks += int(fields[11]) + int(fields[12])
             rss += r
             hwm += h
-            for fd in Path(f"/proc/{pid}/fd").iterdir():
-                try:
-                    target = os.readlink(fd)
-                    if target.startswith("socket:"):
-                        sockets.append(dict(pid=pid, fd=fd.name, target=target))
-                except FileNotFoundError:
-                    pass
+            # Socket enumeration is supplementary evidence, not a resource gate.
+            # /proc can deny fd access during process exit even while stat/status
+            # remain readable. Preserve this gap explicitly; never report it as
+            # zero sockets or as OS-wide network isolation.
+            try:
+                for fd in Path(f"/proc/{pid}/fd").iterdir():
+                    try:
+                        target = os.readlink(fd)
+                        if target.startswith("socket:"):
+                            sockets.append(dict(pid=pid, fd=fd.name, target=target))
+                    except FileNotFoundError:
+                        pass
+            except PermissionError:
+                socket_observation_errors.append(dict(pid=pid, reason="fd_access_denied"))
             processes.append(dict(pid=pid, rss_bytes=r, hwm_bytes=h, threads=int(st["Threads"])))
         except (FileNotFoundError, ProcessLookupError):
             pass
@@ -90,6 +98,7 @@ def sample(prev=None, pids=()):
         utc=utc(),
         monotonic=now,
         temperatures_c=temps,
+        raw_sensors=sensors,
         fans_rpm=fans,
         available_bytes=mem["MemAvailable"],
         total_bytes=mem["MemTotal"],
@@ -98,6 +107,7 @@ def sample(prev=None, pids=()):
         tree_hwm_bytes=hwm,
         processes=processes,
         socket_fds=sockets,
+        socket_observation_errors=socket_observation_errors,
         _cpu=cpu,
         _swap=[vm["pswpin"], vm["pswpout"]],
         _ticks=ticks,

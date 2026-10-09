@@ -1,3 +1,5 @@
+> Historical baseline document. Its counts, UI steps and provisioning instructions do not describe the expanded release. See [current release and reproduction notes](EXPANDED_RELEASE.md).
+
 ## Final Nook UI integration — 9 October 2026, 19:36 UTC
 
 The user approved the finalized UI and explicitly authorized backend wiring. The former UI handoff hold is released by that instruction; no specially named handoff file is required. The authoritative coral opening, mascot, chat and mobile design are preserved. **335 backend tests and 54 browser checks pass on this Nook source**, plus Ruff/formatting, mypy and WAV/JavaScript checks. See [NOOK_INTEGRATION_REPORT.md](../NOOK_INTEGRATION_REPORT.md) for scope and evidence. Real speech was not rerun: the fresh guard blocked before launching a model at DIMM 55°C with a high-temperature alarm. No guard was relaxed. Earlier tests/results below remain historical.

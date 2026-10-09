@@ -1,0 +1,28 @@
+{
+  "source_manifest_sha256": "b4cb70217488a15f7db30e33b65d5b1a7681e1b6d54864a6bbb19ab93061f88b",
+  "source_entries": 103,
+  "targeted_backend_tests_passed": 98,
+  "browser_checks_passed": 15,
+  "models_enabled": false,
+  "complete_response_timeout_observed_ms": 10049,
+  "full_post_fix_backend_browser_rerun": false,
+  "prior_full_suite_source_manifest": "7c3ff877aca6982baf4469c1acef5b2be3930690f9a7f01857e5ce70d782d70c",
+  "prior_counts_do_not_apply_to_changed_source": true,
+  "screenshots": [
+    {
+      "path": "deliverables/nook-chat-repair/hey-mobile.png",
+      "sha256": "6e16dd4f858042e0703bf94ec707fac84b95ae1ea17162d99aac0483bee3315b",
+      "bytes": 35776
+    },
+    {
+      "path": "deliverables/nook-chat-repair/recall-mobile.png",
+      "sha256": "4fc8d22eb90202bb36403e32f2a220157d08f6b48f0995942dd45f2d128f01ad",
+      "bytes": 48105
+    }
+  ],
+  "screenshots_review": "Both visually inspected; synthetic hey/blue keys records only, laptop browser viewport, no personal data observed.",
+  "scope": "Deterministic ephemeral greeting/help/clarification and grounded recall; visible empty/error/timeout/cancel states. No general multi-turn AI or real inference acceptance.",
+  "backend_report_sha256": "6cce950dfc8735cc1409ba38e80c8a78b237b00983937b387799d96bd3034ff0",
+  "browser_receipt_sha256": "3c7a7c462891a7fd45640900d25f28aa45740dc9b0849c18f117ca2c86c85fb7",
+  "packaging_runtime_workloads_started": false
+}

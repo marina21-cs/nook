@@ -37,3 +37,13 @@ voice/artifacts/*
 !voice/artifacts/whisper/
 voice/artifacts/whisper/*
 !voice/artifacts/whisper/README.md
+
+# Expanded candidate local stores and optional provisioning inputs
+.expanded-demo-data/
+.judge-data/
+voice/packages/
+*.part
+
+# Optional local chat private runtime inputs
+.nook-chat-models/
+.chat-demo-data/

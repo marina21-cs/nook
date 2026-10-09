@@ -1,0 +1,41 @@
+{
+  "mode": "after",
+  "passed": true,
+  "checks": [
+    "Typed Send enabled with models off",
+    "Greeting receives bounded helpful reply",
+    "Unsupported language gets capability clarification",
+    "Whitespace gets visible input guidance",
+    "Empty Send gets visible input guidance",
+    "Unsaved item gives useful save guidance",
+    "Saved memory recall still works",
+    "Failed backend gives visible retryable error",
+    "Typing recovers after network failure",
+    "Hung request terminates with timeout guidance",
+    "Late response cannot replace timeout",
+    "Typing recovers after timeout",
+    "Cancel leaves visible terminal message",
+    "No page errors",
+    "No browser external requests"
+  ],
+  "observations": [
+    {
+      "query": "hey",
+      "answer": "Nook\n\nHi! I'm Nook. I can help you find your saved belongings. Try 'Where are my keys?' or use Remember to save an item."
+    },
+    {
+      "query": "unsupported natural language",
+      "answer": "Nook\n\nI can help you find saved belongings and their last recorded locations. General questions aren't supported yet. Try an item's saved name, or use Remember to save it first.\n\nOpen Remember"
+    },
+    {
+      "query": "whitespace",
+      "answer": "Nook\n\nWhat would you like to find?\n\nType a message or an item name, such as “Where are my keys?”.",
+      "changed": true
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "models": false,
+  "timeout_ms": 10049,
+  "server_stopped": true
+}

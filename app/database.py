@@ -1,6 +1,6 @@
 import sqlite3
 import threading
-from collections.abc import Iterator
+from collections.abc import Callable, Iterator
 from contextlib import contextmanager
 from pathlib import Path
 
@@ -13,6 +13,7 @@ class Database:
     def __init__(self, path: Path) -> None:
         self.path = path
         self.lock = threading.RLock()
+        self.on_changed: Callable[[], None] | None = None
 
     @contextmanager
     def connect(self, write: bool = False) -> Iterator[sqlite3.Connection]:
@@ -56,9 +57,10 @@ class Database:
     def generation(conn: sqlite3.Connection) -> int:
         return int(conn.execute("SELECT value FROM meta WHERE key='generation'").fetchone()[0])
 
-    @staticmethod
-    def changed(conn: sqlite3.Connection) -> int:
+    def changed(self, conn: sqlite3.Connection) -> int:
         conn.execute("UPDATE meta SET value=value+1 WHERE key='generation'")
+        if self.on_changed is not None:
+            self.on_changed()
         return Database.generation(conn)
 
     def compact(self) -> None:

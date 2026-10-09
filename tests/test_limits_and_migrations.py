@@ -33,13 +33,13 @@ def test_migration_is_idempotent_and_future_version_is_rejected(api):
     database = app.state.repo.db
     database.migrate()
     with database.connect() as conn:
-        assert conn.execute("PRAGMA user_version").fetchone()[0] == 3
+        assert conn.execute("PRAGMA user_version").fetchone()[0] == 4
         conn.execute("PRAGMA user_version=99")
     with pytest.raises(AppError) as error:
         database.migrate()
     assert error.value.code == "newer_database"
     with database.connect() as conn:
-        conn.execute("PRAGMA user_version=3")
+        conn.execute("PRAGMA user_version=4")
 
 
 def test_chunked_upload_limits_apply_without_content_length(api):

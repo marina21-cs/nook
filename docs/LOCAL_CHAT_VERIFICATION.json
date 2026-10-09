@@ -1,0 +1,95 @@
+{
+  "source_manifest_sha256": "a193c89c0938529adba9d08aeb54f4ce0f316a7dd81be2e280775f4e1abc46cd",
+  "source_files": 112,
+  "software": {
+    "backend_tests": 527,
+    "app_bytes_identical_to_527_snapshot": true,
+    "post_527_changes": [
+      "scripts/voice_setup.py",
+      "tests/test_voice_setup.py"
+    ],
+    "affected_provisioner_tests": 29,
+    "browser_checks": 31,
+    "send_timeout_browser_checks": 15,
+    "acquisition_tests": 17,
+    "full_528_suite": "swap-aborted; no528-pass claim"
+  },
+  "real_chat": {
+    "authoritative_run": "realchat20261010e",
+    "mocked_provider": false,
+    "synthetic_only": true,
+    "responses": [
+      {
+        "query": "Write a sentence about a fictional person named Mira holding a green kite.",
+        "http_status": 200,
+        "elapsed_ms": 5452,
+        "kind": "generated",
+        "reply_text": "Generated, unverified: Mira, a whimsical character, holds a green kite in her hand as she enjoys the warm summer breeze.",
+        "inference_used": true,
+        "reply_authority": "generated_unverified",
+        "persisted": false
+      },
+      {
+        "query": "What was her name and what color was the kite?",
+        "http_status": 200,
+        "elapsed_ms": 4370,
+        "kind": "generated",
+        "reply_text": "Generated, unverified: Mira, a whimsical character, holds a green kite in her hand as she enjoys the warm summer breeze.",
+        "inference_used": true,
+        "reply_authority": "generated_unverified",
+        "persisted": false
+      },
+      {
+        "query": "Where is my missing wallet?",
+        "http_status": 200,
+        "elapsed_ms": null,
+        "kind": "unknown",
+        "reply_text": "I don't have a saved match. Try the item's saved name or alias, or use Remember to save it first.",
+        "inference_used": false,
+        "reply_authority": "saved_records",
+        "persisted": false
+      },
+      {
+        "query": "Where are my blue keys?",
+        "http_status": 200,
+        "elapsed_ms": null,
+        "kind": "memory",
+        "reply_text": null,
+        "inference_used": false,
+        "reply_authority": "saved_records",
+        "persisted": false
+      },
+      {
+        "query": "Where are they?",
+        "http_status": 200,
+        "elapsed_ms": null,
+        "kind": "memory",
+        "reply_text": null,
+        "inference_used": false,
+        "reply_authority": "saved_records",
+        "persisted": false
+      }
+    ],
+    "same_context_verified": true,
+    "memory_unchanged": true,
+    "context_reset_verified": true,
+    "restart_persistence_verified": true,
+    "context_unavailable_after_restart": true,
+    "offline_saved_recall_verified": true,
+    "runtime_unavailable_http_status": 503,
+    "quality_limit": "Follow-up preserves Mira/green but repeats the first sentence; narrow two-call acceptance, not broad conversation quality.",
+    "complete_process_guard_passed": true,
+    "owned_services_stopped": true
+  },
+  "generated_browser_capture_verified": false,
+  "voice_fresh_install": "incomplete; stopped before successful pip check",
+  "real_current_voice_or_generated_speech": false,
+  "phone_implementation": false,
+  "source_edits_after_tests": false,
+  "source_receipt_hashes": {
+    "final_acceptance": "9eb1637f8bdf79f71af0aa4c56a4536211a53a4e31cee16b795f841f58589cf4",
+    "real_chat_result": "0c1b748c94cb5ee0b12f03b88e000243657fc851664bf1957899f760c34f68c2",
+    "capture_handoff": "c5dbaf3604e02b444071f3d46e3eef8545233109832035247d10e2349aad69b8"
+  },
+  "packaging_workloads_started": false
+}

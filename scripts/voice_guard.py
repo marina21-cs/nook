@@ -20,9 +20,10 @@ RESOURCE = runpy.run_path(str(ROOT / "scripts/resource_sampling.py"))
 
 def sample(previous=None, pids=()):
     row = RESOURCE["sample"](previous, pids)
-    row["raw_sensors"] = json.loads(
-        subprocess.check_output(["sensors", "-j"], text=True, timeout=3)
-    )
+    # Use the same sensor read: SPD5118 alarm flags clear when read.
+    # A second read could consume a sticky alarm without recording it.
+    if "raw_sensors" not in row:
+        raise RuntimeError("Raw sensor evidence missing")
     return row
 
 

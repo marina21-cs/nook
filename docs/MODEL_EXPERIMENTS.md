@@ -1,3 +1,5 @@
+> Historical experiments only. The newer optional Qwen chat integration has separate [accepted evidence](LOCAL_CHAT_VERIFICATION.json) and [setup](LOCAL_CHAT_SETUP.md).
+
 # Model experiments disclosure
 
 These are evaluated candidates, not Nook's accepted conversational engine. The published typed flow retrieves structured, confirmed records. Optional runtime speech uses Whisper tiny and Kokoro-82M.

@@ -1,3 +1,5 @@
+> Historical baseline document. Its counts, UI steps and provisioning instructions do not describe the expanded release. See [current release and reproduction notes](docs/EXPANDED_RELEASE.md).
+
 # Nook — three-minute hackathon demo
 
 Start the local typed service from `DEMO_RUNBOOK.md` before presenting. Use the included CC0 `tests/fixtures/vision/keys.jpg` and explicitly call it a test photo. Do not use a participant's personal image or request microphone/camera access during a recorded demo.

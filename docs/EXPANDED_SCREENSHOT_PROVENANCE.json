@@ -1,0 +1,23 @@
+{
+  "source_manifest_sha256": "7c3ff877aca6982baf4469c1acef5b2be3930690f9a7f01857e5ce70d782d70c",
+  "capture_suite": "31 passing current UI browser checks, models off",
+  "privacy_review": "All three images visually inspected. Invented records and public CC0 keys fixture only; no personal household images or personal data observed.",
+  "mobile_scope": "Laptop browser viewport, not native phone hardware",
+  "screenshots": [
+    {
+      "path": "deliverables/nook-ui-alignment/talk-desktop.png",
+      "sha256": "265c7a7cd81e97e6515af4ffe2d28ecf269bc70b50772d8acb4e83bc172bbe03",
+      "bytes": 55041
+    },
+    {
+      "path": "deliverables/nook-ui-alignment/capture-desktop.png",
+      "sha256": "b54b3c20f8d8e1471398f35485f1331e41e603c5249a6920bb09b5dc5b703e78",
+      "bytes": 65924
+    },
+    {
+      "path": "deliverables/nook-ui-alignment/saved-mobile.png",
+      "sha256": "b2e4c0e662e6926840a152831d31b8dfe38f50a364e41ca624e14d8343bef1b6",
+      "bytes": 76227
+    }
+  ]
+}

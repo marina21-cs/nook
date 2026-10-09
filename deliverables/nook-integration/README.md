@@ -1,3 +1,5 @@
+> Historical baseline document. Its counts, UI steps and provisioning instructions do not describe the expanded release. See [current release and reproduction notes](../../docs/EXPANDED_RELEASE.md).
+
 # Verified baseline screenshots and browser evidence
 
 These six captures belong to the verified baseline ZIP identified in `../../docs/SCREENSHOT_PROVENANCE.json`, not the expanded candidate. All records are invented. Speech/device doubles do not prove real inference. Screenshot timestamps reflect the captured environment; they do not establish a public-release deadline.

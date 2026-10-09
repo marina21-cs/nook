@@ -1,3 +1,5 @@
+> Historical baseline document. Its counts, UI steps and provisioning instructions do not describe the expanded release. See [current release and reproduction notes](docs/EXPANDED_RELEASE.md).
+
 # Nook — reproduce the hackathon v1 source release
 
 This is a source archive, not a self-contained offline installer. It excludes Python environments, browser binaries, weights, wheel caches, credentials, actual user records and unrelated project history. The original project and historical evidence/snapshots remain intact outside the archive.

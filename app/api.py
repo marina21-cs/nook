@@ -61,8 +61,14 @@ async def status(request: Request) -> dict:
         "item_count": count,
         "vision": state.vision.status(),
         "text": await state.text.status(),
+        "chat": state.chat_provider.status(),
         "cloud_dependency": False,
         "queries_persisted": False,
+        "actions": {
+            "engine": "bounded_deterministic",
+            "approval_required": True,
+            "ttl_seconds": 300,
+        },
         "turns": state.turns.status(),
         "speech": {
             "input_contract_available": True,
@@ -75,7 +81,8 @@ async def status(request: Request) -> dict:
         },
         "poi": {
             "available": True,
-            "mode": "confirmed offline cache import and cached straight-line query",
+            "mode": "confirmed area download/import and offline straight-line query",
+            "download_enabled": request.app.state.settings.poi_download_enabled,
             "network_fetch_performed": False,
             "location_queries_persisted": False,
             "coverage_complete": False,
@@ -218,6 +225,7 @@ async def delete(item_id: UUID, body: DeleteItem, request: Request) -> dict:
     pending = [stop for stop, _ in state.requests.active.values()]
     result = await asyncio.to_thread(state.repo.delete, str(item_id), body)
     if not result["replayed"]:
+        state.actions.clear()
         for stop in pending:
             stop.set()
     return result
@@ -229,6 +237,7 @@ async def delete_all(body: DeleteData, request: Request) -> dict:
     pending = [stop for stop, _ in state.requests.active.values()]
     result = await asyncio.to_thread(state.repo.delete_all, body)
     if not result["replayed"]:
+        state.actions.clear()
         for stop in pending:
             stop.set()
     return result
@@ -244,7 +253,7 @@ async def recall(body: Recall, request: Request) -> Any:
 
 @router.post("/requests/{request_id}/cancel")
 async def cancel(request_id: UUID, request: Request) -> dict:
-    return request.app.state.requests.cancel(str(request_id))
+    return request.app.state.requests.cancel(str(request_id), request.state.session_owner)
 
 
 @router.get("/photos/{photo_id}")

@@ -44,3 +44,40 @@
 @media(max-height:540px){.onboarding.reference-intro{--intro-font:clamp(24px,6.4vh,36px)}.intro-canvas{padding-top:20px}.intro-star{top:calc(20px - 275px)}.intro-cta{min-height:50px;margin-top:10px;margin-bottom:16px}}
 
 :root[data-motion=reduce] *,:root[data-motion=reduce] *::before,:root[data-motion=reduce] *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+
+/* The reference opening leads into a short, useful personal setup. */
+.intro-opening{display:flex;flex-direction:column;flex:1;min-height:0}
+.onboarding.reference-intro.setup-active{background:var(--bg);color:var(--ink)}
+.setup{height:100%;overflow-y:auto;overscroll-behavior:contain;padding:20px 24px max(24px,env(safe-area-inset-bottom));display:flex;flex-direction:column}
+.setup-header{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-shrink:0;min-height:48px;padding-top:env(safe-area-inset-top)}
+.setup-header .wordmark{font-size:30px}.setup-header button{font-size:13px;padding:10px}
+.setup-progress{display:flex;gap:6px;margin:24px 0 30px;flex-shrink:0}.setup-progress span{height:3px;flex:1;background:var(--line);border-radius:3px}.setup-progress .complete{background:var(--ink)}
+.setup-body{display:flex;flex-direction:column;flex:1;max-width:480px;width:100%;margin-inline:auto}
+.setup-body>section{flex:1}.setup-body h2{font-size:42px;line-height:1.04;letter-spacing:-.045em;margin:0 0 20px}.setup-body h2:focus{outline:none}
+.setup-copy{color:var(--muted);font-size:16px;line-height:1.5}.setup-body .page-label{font-size:12px;margin:0 0 16px}
+.setup-character{height:135px;width:150px;margin:0 auto 28px;position:relative}.setup-character:before{content:'';position:absolute;inset:18px 10px 0;background:var(--butter);border-radius:50%;transform:rotate(-14deg)}.setup-character svg{position:relative;width:125px;height:130px;transform:rotate(-8deg);margin-left:10px}
+.setup-body label{font-size:14px;margin-top:26px}.setup-body input{background:var(--surface);border-radius:16px}.setup-body #profile-hint{font-size:12px;margin-top:12px}
+.setup-actions{display:flex;align-items:center;gap:16px;margin-top:30px;padding-top:12px;flex-shrink:0}.setup-actions .primary{flex:1;min-height:54px}.setup-actions .text-button{padding:12px 8px}.setup-active button:focus-visible{outline-color:var(--focus)}
+.setup-features{list-style:none;margin:30px 0 24px;padding:0;display:flex;flex-direction:column;gap:24px}.setup-features li{display:flex;align-items:flex-start;gap:16px}.setup-features li>span{display:grid;place-items:center;background:var(--butter);color:#24251f;width:36px;height:36px;border-radius:50%;flex-shrink:0;font-size:14px}.setup-features h3{font-size:18px;letter-spacing:-.02em;margin:4px 0 8px}.setup-features p{font-size:14px;color:var(--muted);margin:0;line-height:1.55}.setup-footnote{border-top:1px solid var(--line);padding-top:18px;font-size:12px}
+.ready-art{height:190px;position:relative;display:grid;place-items:center;margin:8px 0 44px}.ready-art span{font-size:54px;letter-spacing:-.06em;z-index:1;transform:rotate(-9deg);color:#24251f}.ready-art svg{width:230px;height:230px;position:absolute;color:var(--butter);transform:rotate(12deg)}
+@media(prefers-reduced-motion:no-preference){.setup-body>section:not([hidden]){animation:setup-reveal .48s var(--ease) both}.setup-character svg{animation:setup-mascot .65s var(--ease) both}}
+@keyframes setup-reveal{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+@keyframes setup-mascot{from{opacity:0;transform:translateY(24px) rotate(-18deg)}to{opacity:1;transform:translateY(0) rotate(-8deg)}}
+@media(min-width:768px){.setup{padding-inline:48px}.setup-progress{max-width:480px;width:100%;margin-inline:auto}.setup-body h2{font-size:48px}.setup-character{margin-top:10px}}
+@media(max-height:740px){.setup-progress{margin:16px 0 24px}.setup-character{height:88px;width:110px;margin-bottom:20px}.setup-character svg{height:88px;width:90px}.setup-body h2{font-size:36px;margin-bottom:16px}.setup-actions{margin-top:16px}.ready-art{height:125px;margin-bottom:32px}.ready-art svg{height:170px;width:170px}.ready-art span{font-size:44px}.setup-features{gap:16px;margin-block:20px}.setup-features p{font-size:13px}}
+
+/* Remember is a single message with an optional attachment; Send commits it. */
+.remember-form{max-width:520px;margin:auto}.remember-intro{text-align:center;padding:4px 12px 28px}.memory-spark{display:block;font-size:50px;color:var(--coral);line-height:1;margin:0 0 18px}.remember-intro h2{font-size:30px;line-height:1.1;margin-bottom:14px}.remember-intro p{color:var(--muted);font-size:14px;margin:0}
+.remember-composer{background:var(--surface);border:1px solid var(--ink);border-radius:26px;padding:12px;box-shadow:0 3px 0 var(--ink)}
+.remember-composer textarea{background:transparent;border:0;padding:12px 8px;min-height:118px;font-size:16px}.remember-composer textarea:focus-visible{outline:2px solid var(--focus);outline-offset:0}
+.remember-tools{display:flex;gap:4px;align-items:center}.remember-tools .primary{margin-left:auto;min-height:46px;padding-inline:19px}.attach-button{display:flex;align-items:center;gap:6px;padding:10px 12px;background:transparent;border:1px solid var(--line);font-size:13px}.remember-tools>.text-button{font-size:13px;padding-inline:10px}
+#remember-hint{font-size:12px;line-height:1.5;text-align:center;margin:16px 12px 20px}.photo-attachment{display:flex;align-items:center;gap:12px;background:var(--soft);border-radius:16px;padding:8px}.photo-attachment #draft-photo{width:62px;height:68px;object-fit:cover;border-radius:10px;flex-shrink:0}.photo-attachment>div{flex:1;min-width:0}.photo-attachment strong{font-size:13px;font-weight:500}.photo-attachment p{font-size:11px;color:var(--muted);margin:6px 0 0}.photo-attachment button{font-size:24px}
+.memory-preview{display:grid;grid-template-columns:1fr auto;gap:5px;padding:16px 0;border-top:1px solid var(--line);margin-top:16px;font-size:14px}.memory-preview .preview-label{font-size:11px;color:var(--muted)}.memory-preview strong{grid-column:1;font-weight:500;overflow-wrap:anywhere}.memory-preview #preview-location{grid-column:1;color:var(--muted);overflow-wrap:anywhere;font-size:13px}.memory-preview button{grid-column:2;grid-row:1 / 4;font-size:13px;align-self:center;padding-inline:12px}
+.memory-details{border-top:1px solid var(--line);margin-top:16px;padding-top:4px}.memory-details summary{font-weight:400;font-size:13px;color:var(--muted);justify-content:space-between}.memory-details summary:after{content:'+';font-size:22px}.memory-details[open] summary:after{content:'−'}.memory-details label{margin-top:14px}.memory-details input{min-height:48px}.memory-details .hint{font-size:12px}.memory-details select{font-size:14px}#discard{font-size:13px;margin-top:14px}
+.remember-success{display:flex;gap:14px;padding:20px 16px;margin-bottom:24px;background:var(--soft);border-radius:20px}.remember-success h2{font-size:22px;margin-bottom:8px}.remember-success p{font-size:13px;color:var(--muted);overflow-wrap:anywhere;margin-bottom:4px}.success-check{display:grid;place-items:center;background:var(--ink);color:var(--bg);border-radius:50%;width:30px;height:30px;flex-shrink:0}.remember-success .text-button{font-size:13px;justify-content:start}.remember-form:has(.remember-success:not([hidden])) .remember-intro{display:none}
+@media(max-width:380px){.setup{padding-inline:20px}.setup-body h2{font-size:36px}.remember-tools{gap:2px}.attach-button{padding-inline:10px}.remember-tools>.text-button{padding-inline:8px}.remember-tools .primary{padding-inline:16px}.remember-intro{padding-bottom:22px}}
+.remember-form:has(#photo-attachment:not([hidden])) .remember-intro{display:none}
+
+/* Exact action previews remain readable on narrow screens. */
+#answer table { width:100%; table-layout:fixed; border-collapse:collapse; margin-block:1rem; }
+#answer th, #answer td { text-align:left; vertical-align:top; padding:.4rem; overflow-wrap:anywhere; border-bottom:1px solid currentColor; font-size:.85rem; }

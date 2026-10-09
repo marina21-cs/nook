@@ -1,3 +1,5 @@
+> Historical baseline document. Its counts, UI steps and provisioning instructions do not describe the expanded release. See [current release and reproduction notes](EXPANDED_RELEASE.md).
+
 # Published baseline provenance
 
 Source archive: `Nook-v1-source-20261009.zip`, 6,185,152 bytes, SHA256 `6af30497d7cae2a3ea59af7847abcf9f9636cc10fae2b0de96b44eda3d4b6f31`.

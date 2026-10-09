@@ -11,6 +11,15 @@ ROOT = Path(__file__).resolve().parents[1]
 PREFIX = "appbuilderss-v1/"
 DOCS = [
     "NOOK_INTEGRATION_REPORT.md",
+    "NOOK_JUDGE_REPRODUCIBILITY.md",
+    "voice/SETUP.md",
+    "voice/setup-manifest.json",
+    "NOOK_EXPANDED_V1_CHECKPOINT.md",
+    "NOOK_FEATURE_COVERAGE.md",
+    "NOOK_NEARBY_BACKEND.md",
+    "NOOK_TEST_POLICY_REASSESSMENT.md",
+    "NOOK_CAPTURE_HANDOFF.md",
+    "BACKEND_IMPLEMENTATION_PLAN.md",
     "V1_UI_BACKEND_CONTRACT.md",
     "docs/PRODUCT_NAME_STATUS.md",
     "docs/mobile-ui-reference/TABLER-LICENSE",
@@ -61,7 +70,7 @@ def payload():
     for directory, extensions in [
         ("app", {".py", ".sql", ".html", ".css", ".js"}),
         ("scripts", {".py", ".cjs"}),
-        ("tests", {".py"}),
+        ("tests", {".py", ".mjs"}),
         ("voice/licenses", {".txt", ".md"}),
     ]:
         paths.update(p for p in (ROOT / directory).rglob("*") if p.suffix in extensions)

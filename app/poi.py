@@ -126,13 +126,17 @@ class POICache:
         meta = conn.execute("SELECT * FROM poi_cache_meta WHERE singleton=1").fetchone()
         count = conn.execute("SELECT count(*) FROM poi_cache_entries").fetchone()[0]
         age = max(0.0, now - meta["imported_epoch"]) if meta else None
+        provenance = json.loads(meta["provenance"]) if meta and meta["provenance"] else None
         return {
+            "download_provenance": provenance,
             "generation": self.db.generation(conn),
             "record_count": count,
             "dataset_label": meta["dataset_label"] if meta else None,
-            "source": "user_confirmed_offline_import" if meta else None,
+            "source": provenance["source"]
+            if provenance
+            else ("user_confirmed_offline_import" if meta else None),
             "imported_at": meta["imported_at"] if meta else None,
-            "fetched_at": None,  # No network fetch occurred.
+            "fetched_at": provenance["fetched_at"] if provenance else None,
             "source_observed_at": meta["source_observed_at"] if meta else None,
             "source_observed_at_verified": False,
             "source_freshness": "unknown",
@@ -141,7 +145,9 @@ class POICache:
                 "url": "https://www.openstreetmap.org/copyright",
                 "license": "ODbL",
                 "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
-                "source_note": "User-supplied OSM-format records; provenance has not been verified.",
+                "source_note": "Downloaded from the public OSM Overpass source; availability and completeness unverified."
+                if provenance
+                else "User-supplied OSM-format records; provenance has not been verified.",
             },
             "import_age_seconds": age,
             "cache_freshness": "empty"
@@ -155,7 +161,7 @@ class POICache:
             "coverage_complete": False,
             "coverage_status": "incomplete" if meta else "no_cache",
             "offline": True,
-            "network_fetch_performed": False,
+            "network_fetch_performed": provenance is not None,
             "location_queries_persisted": False,
             "stock_verified": False,
             "opening_hours_verified": False,
@@ -172,7 +178,13 @@ class POICache:
         with self.db.lock, self.db.connect() as conn:
             return self._status(conn, self.clock())
 
-    def replace(self, body: CacheImport) -> dict[str, Any]:
+    def replace(
+        self,
+        body: CacheImport,
+        *,
+        provenance: dict[str, Any] | None = None,
+        cancelled: Callable[[], bool] = lambda: False,
+    ) -> dict[str, Any]:
         encoded = body.model_dump_json().encode("utf-8")
         if len(encoded) > MAX_IMPORT_BYTES:
             raise AppError(413, "poi_import_limit", "POI import exceeds the cache byte limit.")
@@ -193,11 +205,20 @@ class POICache:
         bounds = body.coverage_bounds.model_dump_json()
         with self.db.lock, self.db.connect(write=True) as conn:
             self._expected(conn, body.expected_generation)
+            if cancelled():
+                raise AppError(409, "request_cancelled", "Area download cancelled before saving.")
             self.clear(conn)
             conn.executemany("INSERT INTO poi_cache_entries VALUES (?,?,?,?,?,?,?)", rows)
             conn.execute(
-                "INSERT INTO poi_cache_meta VALUES (1,?,?,?,?,?)",
-                (body.dataset_label, imported_at, now, body.source_observed_at, bounds),
+                "INSERT INTO poi_cache_meta VALUES (1,?,?,?,?,?,?)",
+                (
+                    body.dataset_label,
+                    imported_at,
+                    now,
+                    body.source_observed_at,
+                    bounds,
+                    json.dumps(provenance) if provenance else None,
+                ),
             )
             self.db.changed(conn)
             return self._status(conn, now)

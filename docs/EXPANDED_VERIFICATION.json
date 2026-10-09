@@ -1,0 +1,58 @@
+{
+  "checkpoint_utc": "2026-10-09T21:26:47.476453+00:00",
+  "source_manifest_sha256": "7c3ff877aca6982baf4469c1acef5b2be3930690f9a7f01857e5ce70d782d70c",
+  "source_entries": 100,
+  "backend_tests_passed": 408,
+  "targeted_tests_passed": 50,
+  "targeted_suite_overlaps_backend_suite": true,
+  "browser_checks_passed": 31,
+  "vision_tests_excluded": true,
+  "browser_models_enabled": false,
+  "static_checks": {
+    "ruff": "passed",
+    "format_files": 83,
+    "mypy_app_files": 31,
+    "javascript_syntax": "passed"
+  },
+  "post_test_changes": "No application changes. Browser selector correction preceded successful rerun; later changes were documentation/evidence inventories.",
+  "poi_acceptance": {
+    "source": "https://overpass-api.de/api/interpreter",
+    "landmark": "Trafalgar Square, London",
+    "bounding_box_halfwidth_m": 100,
+    "utc": "2026-10-09T21:24:14.724432+00:00",
+    "network_attempts": 1,
+    "download_bytes": 4449,
+    "cached_records": 7,
+    "response_sha256": "d6ab16e0742b1050af16ca4e4c165f99c9997876d6b977c3f10c8911d10734c1",
+    "restart_provenance_preserved": true,
+    "offline_scope": "Python socket guard during restart and nearest lookup; not OS-wide isolation",
+    "attribution": {
+      "text": "© OpenStreetMap contributors",
+      "url": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL",
+      "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "source_note": "Downloaded from the public OSM Overpass source; availability and completeness unverified."
+    },
+    "limitations": [
+      "incomplete cache",
+      "source freshness unknown",
+      "no GPS verification",
+      "no routes",
+      "no stock or opening-hours verification"
+    ]
+  },
+  "not_verified": [
+    "fresh-machine base or voice installation",
+    "runtime tests from this exported archive",
+    "real current-UI STT/TTS",
+    "physical camera or microphone",
+    "general vision or Taglish accuracy",
+    "native phone performance"
+  ],
+  "packaging_checks": "Source/hash/link/archive checks only; no tests, models, servers, rendering or binary downloads run during packaging.",
+  "evidence_source_sha256": {
+    "deliverables/nook-ui-alignment/acceptance-status.json": "d581188a617c2a6dee79f672255f5ee63ce00f46cbc69f05dca4d5ca70cd1962",
+    "deliverables/nook-ui-alignment/browser-results.json": "be4594996f88553589c233e11aa64860b8836fd9ab0c405cf10bd47400798f7d",
+    "deliverables/nook-live-area/attempt.json": "707a27e51f53d850042d08eab404474078ebcbd95e67541b9c9e33260f7df871"
+  }
+}

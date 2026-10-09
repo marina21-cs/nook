@@ -90,7 +90,7 @@ def test_v1_database_upgrade_preserves_personal_tables(tmp_path):
     database.migrate()
     database.migrate()
     with database.connect() as connection:
-        assert connection.execute("PRAGMA user_version").fetchone()[0] == 3
+        assert connection.execute("PRAGMA user_version").fetchone()[0] == 4
         assert database.generation(connection) == 17
         assert connection.execute("SELECT count(*) FROM poi_cache_entries").fetchone()[0] == 0
 
@@ -98,7 +98,7 @@ def test_v1_database_upgrade_preserves_personal_tables(tmp_path):
 def test_status_reports_actual_gaps(api):
     client, _ = api
     status = client.get("/api/status").json()
-    assert status["schema_version"] == 3
+    assert status["schema_version"] == 4
     assert status["turns"]["audio_input_supported"] is False
     assert status["turns"]["speech_to_text_available"] is False
     assert status["turns"]["visual_conversation_supported"] is False
