@@ -26,6 +26,10 @@ Open http://127.0.0.1:8765/ on the same laptop. Stop with Ctrl+C. Use Get Starte
 
 [Reproduction details](V1_REPRODUCE.md) cover optional speech, tooling and limits. Dependencies are version/hash pinned in [requirements.lock](requirements.lock); speech versions and retained input hashes are in [voice/evidence](voice/evidence/) and [voice provenance](release/v1/voice-dependency-provenance.json). Speech needs a separate compatible runtime and matching artifacts; a fresh-machine voice installation is not proven reproducible. The app never downloads models automatically. Sensor guards are laptop-specific and fail closed on unsupported systems; do not remove them to obtain a pass.
 
+**Why does this product benefit from running AI locally?** Household memories, photos and spoken questions can be personal. With the optional local speech runtime provisioned and enabled, Whisper can transcribe a question and Kokoro can speak a response on the laptop without sending that speech to a cloud AI provider. This design can support voice interactions offline after setup and avoids requiring a cloud AI account or a per-request AI service. It does not establish a universal speed advantage, flawless recognition or a completed voice demo: the full UI speech chain and clean-machine voice installation remain unaccepted.
+
+The useful typed-memory flow already stores confirmed records and photo evidence locally and retrieves them deterministically. That privacy/offline benefit comes from ordinary local storage and application logic, **not AI**. The baseline also contains an offline POI-import/cache API; it does not download areas. In the later candidate, explicitly downloaded places are intended to remain available locally after refresh, but that area-download and offline-lookup flow has not passed runtime acceptance and is not shipped here. Initial dependency/model acquisition and an explicit future area refresh require internet access. Optional ElevenLabs narration is video postproduction, not Nook's runtime voice provider. Verification is laptop-only; a responsive browser layout does not prove native-phone execution or a 4GB-phone memory budget.
+
 ## The proof
 
 **Approximately one-minute demo video:** pending production and verified public URL.  
@@ -35,6 +39,20 @@ Open http://127.0.0.1:8765/ on the same laptop. Stop with Ctrl+C. Use Get Starte
 ![Baseline: explicit review before saving a synthetic memory](deliverables/nook-integration/capture-desktop.png)
 
 ![Baseline: dated recall, not a live location](deliverables/nook-integration/recall-desktop.png)
+
+**Feature status for the exact published source.** The application, tests and scripts are the same bytes as [baseline source commit `fca8ae7`](https://github.com/marina21-cs/nook/tree/fca8ae7d5ca22560550d000c9f01468d2b982052), originating from the ZIP identified above. This matrix is a documentation update, not a new runtime qualification. “Working” means covered by that baseline's scoped software checks.
+
+| Feature | Status | Evidence and boundary |
+| --- | --- | --- |
+| Manual/photo memory with review and explicit save confirmation | Working in baseline | Real local API/SQLite and browser checks; photo labels/places are user-reviewed, not model-established facts |
+| Typed dated recall, aliases, ambiguity and not-found handling | Working in baseline | Backend and browser checks; deterministic retrieval from confirmed records, not open-ended AI chat |
+| Record correction, history, moved/unknown, deletion and restart persistence | Working in baseline | Scoped synthetic tests against the real local service; no claim of current physical item location |
+| Baseline onboarding, settings, light/dark layout, retry/cancellation | Working in baseline | 54 software browser checks; physical device/media permissions and screen-reader acceptance unverified |
+| Offline POI import/cache API | Implemented; backend contract coverage | Synthetic import/cache tests in the baseline suite; no built-in area downloader, GPS acquisition, routing or live-place accuracy acceptance |
+| Local Whisper/Kokoro speech | Experimental; partial real evidence | Earlier synthetic backend chain succeeded; full baseline UI chain, human English/Taglish quality and clean-machine installation remain unverified |
+| NanoDet suggestions / optional Ollama normalization | Evaluated; disabled by default | Poor detector results and no established text-retrieval improvement; not accepted general visual understanding |
+| New action proposals, latest setup/profile/Send and nearby-area download | Not in published baseline; runtime unverified candidate | Later source has static checks only; a collection defect was fixed, then actual thermal alarms blocked runtime tests; no real-source area request or current browser pass |
+| Native phone execution and general visual conversation | Unimplemented or unverified | No native 4GB-phone performance, actual camera/microphone quality or open-ended visual-assistant acceptance |
 
 Historical release-owner results for the exact baseline: **335 backend tests, 54 browser checks and 335 extracted-source tests passed**. Fifteen real-vision cases were excluded. Browser speech/device boundaries were mocked; a generated camera stream exercised lifecycle behavior. These are software checks, not human speech, physical camera or real inference acceptance. Publication preparation did not rerun heavy tests or models. [Browser results](deliverables/nook-integration/browser-results.json) and [archive verification](docs/BASELINE_VERIFICATION.json) retain evidence.
 
