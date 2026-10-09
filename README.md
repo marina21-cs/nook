@@ -1,73 +1,130 @@
 # Nook
 
+Your everyday memory buddy. Save a reviewed memory and find its last-recorded place, time and photo.
+
+[Quick start](#quick-start) · [Screenshots](#screenshots) · [Why local AI?](#why-does-this-product-benefit-from-running-ai-locally) · [Tests](#run-the-checks) · [Disclosures](#the-disclosures)
+
 ## The project
 
-Nook helps you remember where you last recorded a household item. Save a reviewed memory, then ask for its last-recorded place, timestamp and supporting evidence.
+- **Remember:** save item names, places and photos after explicit review.
+- **Find:** ask typed questions, search aliases and see dated evidence.
+- **Maintain:** correct records, review history, mark locations unknown or delete memories.
+- **Keep it local:** retain confirmed memories across restarts in a responsive light/dark interface.
+- **Add voice:** optional local dictation and spoken replies with separately provisioned speech models.
 
-**Features**
+### Quick start
 
-- Save item names, places and photos after explicit review.
-- Find confirmed memories through typed questions and aliases.
-- See dated evidence, with clear missing or ambiguous results.
-- Correct records, review history, mark locations unknown and delete memories.
-- Keep memories across app restarts.
-- Use a responsive interface with light/dark appearance and reduced-motion settings.
-- Add optional local dictation and spoken replies with separately provisioned speech models.
+**Prerequisites:** Linux x86_64, Python **3.11** with `pip` and `venv`, Git, and a modern browser. These commands use Bash/zsh syntax. Tested on Manjaro Linux with CPython 3.11.15; other operating systems are not validated. Internet is needed for the initial clone/install unless files are already cached. Typed mode needs **no model, account or API key**.
 
-**Repository:** https://github.com/marina21-cs/nook  
-**Registered team and members:** pending verification.  
-**Source version:** the verified baseline at [source commit `fca8ae7`](https://github.com/marina21-cs/nook/tree/fca8ae7d5ca22560550d000c9f01468d2b982052). Later documentation updates leave application, script and test bytes unchanged. [Version evidence](docs/PUBLICATION_PROVENANCE.md) records the original ZIP and hashes.
-
-**Tested hardware:** AMD Ryzen 5 7535HS, 6 cores/12 threads, approximately 14.8 GiB usable RAM, Manjaro Linux x86_64 and CPython 3.11.15. This is a laptop-local browser app; native-phone performance has not been tested.
-
-**Setup — typed mode**
+**1. Get the source**
 
 ```sh
 git clone https://github.com/marina21-cs/nook.git
 cd nook
-python3.11 -m venv .venv
-.venv/bin/python -m pip install --require-hashes -r requirements.lock
-APP_DATA_DIR="$PWD/.demo-data" APP_PORT=8765 APP_VISION_DISABLED=1 APP_VOICE_ENABLED=0 APP_TEXT_MODEL='' .venv/bin/python -m app
 ```
 
-Open http://127.0.0.1:8765/. Choose **Get Started → Remember**, enter an item and place, review and confirm, then ask in **Chat**. Try the [synthetic examples](examples/synthetic-memories.json). Stop with Ctrl+C.
+**2. Install the pinned dependencies**
 
-This configuration needs no model, account or cloud AI key. [Reproduction instructions](V1_REPRODUCE.md) cover optional tooling and speech. Dependencies are pinned with hashes in [requirements.lock](requirements.lock). Models, environments and personal databases are excluded from the repository; the application does not download models automatically.
+```sh
+python3.11 -m venv .venv
+.venv/bin/python -m pip install --require-hashes -r requirements.lock
+.venv/bin/python -m pip check
+```
 
-**Why does this product benefit from running AI locally?**
+**3. Start Nook with a separate demo store**
 
-Household memories and spoken questions can be personal. With the optional speech runtime installed, Whisper can transcribe speech and Kokoro can speak a reply on the laptop without sending that audio to a cloud AI provider. This design supports offline voice processing after setup and avoids dependence on a per-request cloud AI service. The testing limits below apply; local execution does not guarantee better speed or accuracy.
+```sh
+APP_DATA_DIR="$PWD/.demo-data" \
+APP_PORT=8765 \
+APP_VISION_DISABLED=1 \
+APP_VOICE_ENABLED=0 \
+APP_TEXT_MODEL='' \
+.venv/bin/python -m app
+```
 
-Confirmed memories and photos also stay in local storage. That benefit comes from SQLite and application logic, separate from AI. Typed recall uses structured evidence lookup; there is no accepted general conversational model in this release.
+Open **[http://127.0.0.1:8765/](http://127.0.0.1:8765/)** on the same computer. Nook creates the demo store on first launch and reuses it on restart. **Stop:** press `Ctrl+C` in the server terminal. Keep `.demo-data` private.
+
+**4. Try an invented memory**
+
+1. Select **Get Started → Remember → Or save without a photo**.
+2. Enter **House keys** and **Hall cabinet, top drawer**.
+3. Select **Review memory**, check **I checked the item and its place**, then **Save memory**.
+4. Open **Chat**, type **Where are my house keys?**, and select **Send question**.
+5. Use **Saved → Review record** to inspect, correct or delete the memory.
+
+[More synthetic examples](examples/synthetic-memories.json) are supplied for manual entry; there is no seed/import command for this JSON. To try a photo, choose the included public fixture [`tests/fixtures/vision/keys.jpg`](tests/fixtures/vision/keys.jpg) and review its label/place yourself.
+
+<details>
+<summary><strong>Optional models and browser-test tooling</strong></summary>
+
+The quick start disables all model inference. Optional voice needs `voice/runtime/bin/python`, compatible speech dependencies and every artifact in the [pinned model manifest](voice/artifacts/manifest.json). The baseline's clean-machine voice installer and full UI speech flow remain unverified; do not treat its historical provisioning scripts as a turnkey installer. [Reproduction details](V1_REPRODUCE.md) record the requirements and laptop-specific resource guards. Models are never downloaded automatically.
+
+Browser integration tests need separately installed Node, Playwright and Chromium. Set `PLAYWRIGHT_MODULE` to the absolute path of the installed Playwright module, `CHROMIUM_EXECUTABLE` to the Chromium executable and `APP_TEST_PYTHON` to the checkout's `.venv/bin/python` before running `node scripts/nook_browser_test.cjs`. The script creates temporary synthetic records; it does not install those tools. Run it in a disposable checkout because it refreshes test evidence/screenshots.
+
+</details>
+
+### Why does this product benefit from running AI locally?
+
+Household details and spoken questions can be personal. With the optional runtime provisioned, **Whisper** can transcribe speech and **Kokoro** can speak a reply on the laptop without sending that audio to a cloud AI provider. This enables offline speech processing after setup and avoids dependence on a per-request cloud AI service, subject to the testing limits below.
+
+Confirmed memories and photos also stay local, but that benefit comes from **SQLite and application logic**, separate from AI. Typed recall is structured evidence lookup, not a general conversational model.
+
+| Works locally after setup | Needs internet |
+| --- | --- |
+| Browser UI, loopback API, confirmed memories, photos and typed recall | Initial source/dependency/model acquisition |
+| Optional speech with matching runtime and model files | GitHub and video/social hosting |
+
+The baseline contains an offline POI-import/cache API, but no area downloader, GPS or routing. A future explicit area refresh would need internet; cached-place lookup is ordinary local data access.
 
 ## The proof
 
-**Approximately one-minute demo:** pending.  
-**X/LinkedIn video URL:** pending.  
-**Screenshots:** [six inspected baseline captures](deliverables/nook-integration/README.md), using invented records and a credited public photo. [Screenshot hashes and provenance](docs/SCREENSHOT_PROVENANCE.json).
+### Screenshots
 
-![Review a memory before saving](deliverables/nook-integration/capture-desktop.png)
+<table>
+<tr>
+<th>Review before saving</th>
+<th>Recall dated evidence</th>
+</tr>
+<tr>
+<td><a href="deliverables/nook-integration/capture-desktop.png"><img src="deliverables/nook-integration/capture-desktop.png" alt="Nook review screen showing the synthetic House keys memory before confirmation" width="440"></a></td>
+<td><a href="deliverables/nook-integration/recall-desktop.png"><img src="deliverables/nook-integration/recall-desktop.png" alt="Nook recall screen showing a dated Demo wallet record, not a live location" width="440"></a></td>
+</tr>
+</table>
 
-![Recall a dated record](deliverables/nook-integration/recall-desktop.png)
+Click a preview for full size. [All six screenshots](deliverables/nook-integration/README.md) · [Hashes and provenance](docs/SCREENSHOT_PROVENANCE.json). Captures use invented records and a credited public CC0 photo.
 
-**Testing and setup limits**
+| Submission material | Link or status |
+| --- | --- |
+| Public repository | [marina21-cs/nook](https://github.com/marina21-cs/nook) |
+| Approximately one-minute demo | Pending |
+| X/LinkedIn video | Pending |
+| Registered team and members | Pending verification |
 
-The release owner recorded **335 backend tests, 54 browser checks and 335 extracted-source tests passed** for this baseline. Fifteen real-vision cases were excluded. Browser speech/device boundaries were mocked; these results establish software behavior, not physical camera/microphone quality. See [browser results](deliverables/nook-integration/browser-results.json) and [archive verification](docs/BASELINE_VERIFICATION.json). No heavy tests or model runs were performed for these documentation updates.
+### Testing and setup limits
 
-Optional speech has earlier synthetic backend evidence, but full UI speech, human English/Taglish quality and clean-machine voice installation remain unverified. It requires a separate compatible runtime and matching artifacts; laptop-specific resource guards fail closed on unsupported sensors. A later voice preflight stopped on a hardware temperature alarm. General visual recognition and native 4GB-phone performance are also unverified. A photo or saved record does not establish an item's current physical location.
+**Baseline evidence:** 335 backend tests, 54 browser checks and 335 extracted-source tests passed. [Browser results](deliverables/nook-integration/browser-results.json) · [Archive verification](docs/BASELINE_VERIFICATION.json). Fifteen real-vision cases were excluded; speech/device boundaries were mocked in the browser suite.
 
-Later actions, profile/setup changes and area downloads are outside this published version and await their own runtime acceptance. The baseline contains an offline POI-import/cache API, but no built-in area downloader, GPS or routing.
+**Tested hardware:** AMD Ryzen 5 7535HS, 6 cores/12 threads, approximately 14.8 GiB usable RAM, Manjaro Linux x86_64 and CPython 3.11.15. Application/script/test bytes match [baseline source commit `fca8ae7`](https://github.com/marina21-cs/nook/tree/fca8ae7d5ca22560550d000c9f01468d2b982052); [version provenance](docs/PUBLICATION_PROVENANCE.md) records the original ZIP. These README updates did not rerun heavy tests or models, install dependencies, or establish a fresh-machine pass.
+
+Optional speech has earlier synthetic backend evidence; full UI speech, human English/Taglish quality and clean-machine voice setup remain unverified. Laptop-specific resource guards can block model execution. General visual recognition, physical media-device behavior and native 4GB-phone performance are also unverified. Saved evidence does not prove an item's current location. Later actions, profile/setup changes and area downloads are outside this baseline and await separate acceptance.
+
+### Run the checks
+
+From the repository root, after installing the locked dependencies:
 
 ```sh
 .venv/bin/python -m pytest --ignore=tests/test_vision.py
 .venv/bin/ruff check app tests scripts
 .venv/bin/mypy app
-node scripts/frontend_audio_test.cjs
-# Requires separately installed Node, Playwright and Chromium:
-node scripts/nook_browser_test.cjs
 ```
 
-**Local versus internet:** the browser interface, loopback Python API, SQLite records, photos and typed recall run locally. Optional speech also runs locally after provisioning. Initial dependency/model acquisition requires internet or a prepared cache; GitHub and video/social hosting require internet. Any future explicit area refresh requires internet, while its intended cached lookup is ordinary local data access, not AI. No runtime cloud inference API is needed by the setup above. Scoped browser checks saw no external requests; they do not establish OS-wide network isolation.
+With Node installed:
+
+```sh
+node scripts/frontend_audio_test.cjs
+```
+
+The optional browser command is `node scripts/nook_browser_test.cjs`; provision its explicit tooling paths as described above. Software checks do not establish real model or device acceptance.
 
 ## The disclosures
 
