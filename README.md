@@ -14,7 +14,19 @@ Your everyday memory buddy. Save a reviewed memory and find its last-recorded pl
 
 ### Quick start
 
-**Prerequisites:** Linux x86_64, Python **3.11** with `pip` and `venv`, Git, and a modern browser. These commands use Bash/zsh syntax. Tested on Manjaro Linux with CPython 3.11.15; other operating systems are not validated. Internet is needed for the initial clone/install unless files are already cached. Typed mode needs **no model, account or API key**.
+**Prerequisites:** Python **3.11** with `pip` and `venv`, Git, and a modern browser on the same computer. Typed mode needs **no model, account or API key**. Initial clone/install needs internet unless files are cached. The pinned dependencies include native packages (NumPy, OpenCV and Pillow); install compatibility depends on the OS and CPU.
+
+| Your environment | Current setup status |
+| --- | --- |
+| Linux x86_64 — Bash/zsh | Reference setup below; tested on Manjaro and CPython 3.11.15. Other distributions are unverified. |
+| macOS — Bash/zsh | Shell-compatible instructions; installation and runtime **unverified**. [macOS details](#macos--bashzsh-unverified). |
+| Native Windows — PowerShell | **Blocked by the published storage code**, even with models off. [Windows details](#windows--powershell-blocked). |
+| Windows with an existing WSL Linux environment | Possible Linux-based route, but WSL installation, filesystem behavior and browser integration are unverified. |
+| Phones, tablets and other architectures | No validated native backend or inference setup. [Device limits](#phones-tablets-and-other-devices). |
+
+#### Linux — Bash/zsh
+
+These commands call the virtual environment's Python directly; shell activation is unnecessary. Keep all models disabled for the typed setup. The existing laptop environment passed the documented checks; a fresh-machine installation is still pending.
 
 **1. Get the source**
 
@@ -53,6 +65,22 @@ Open **[http://127.0.0.1:8765/](http://127.0.0.1:8765/)** on the same computer. 
 5. Use **Saved → Review record** to inspect, correct or delete the memory.
 
 [More synthetic examples](examples/synthetic-memories.json) are supplied for manual entry; there is no seed/import command for this JSON. To try a photo, choose the included public fixture [`tests/fixtures/vision/keys.jpg`](tests/fixtures/vision/keys.jpg) and review its label/place yourself.
+
+#### macOS — Bash/zsh (unverified)
+
+The clone, virtual-environment and environment-variable syntax above also applies to Bash/zsh on macOS when `python3.11` is installed. This is an exploratory path, **not a validated macOS quick start**: pinned package availability, secure file-open flags, locking and directory synchronization still need a clean install and runtime check. Use a fresh demo directory and keep voice, vision and text models disabled. No macOS-specific fix is included in this version.
+
+#### Windows — PowerShell (blocked)
+
+Native Windows cannot currently start this backend. [`app/evidence_store.py`](app/evidence_store.py) imports the [Unix-only `fcntl` module](https://docs.python.org/3.11/library/fcntl.html) during startup and uses POSIX storage operations. Changing `.venv/bin/python` to a Windows path or translating environment variables to PowerShell does not resolve that blocker. A reviewed storage implementation and Windows acceptance are needed before a runnable PowerShell recipe can be provided. Successful package installation alone would not prove Windows support.
+
+An existing WSL Linux environment may provide a future testing route; it has not been validated here and is not native Windows support. This guide does not install WSL or change system/network settings.
+
+#### Phones, tablets and other devices
+
+The server binds to **`127.0.0.1` only**. Open the browser on the computer running Nook; a phone's localhost points to the phone, not the laptop. Responsive screenshots demonstrate layout, not remote-device connectivity or native phone AI. LAN access, native mobile execution and other CPU architectures require separate implementation/acceptance.
+
+**Optional AI is a separate platform boundary.** The current Whisper/Kokoro runtime paths and resource guards target Linux x86_64 and specific Linux sensors. There is no accepted voice setup for macOS, Windows, Apple Silicon, other ARM devices or phones. Typed mode does not require those models or laptop-specific model guards, but it still requires the application's storage operations. Model-enabled vision also remains a separate validation task.
 
 <details>
 <summary><strong>Optional models and browser-test tooling</strong></summary>
