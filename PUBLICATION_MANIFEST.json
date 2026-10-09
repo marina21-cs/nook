@@ -18,8 +18,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 12344,
-      "sha256": "cdaf2f441e0432078acecbc8cb9ee7810a73b184b85d3077896bfd3ab9213de3"
+      "bytes": 9436,
+      "sha256": "1dfa23afa3e5cd02be9ea695f2cdf1d805104234b09991ad676d551fa75a1880"
     },
     {
       "path": "V1_DEMO_SCRIPT.md",
@@ -290,6 +290,11 @@
       "path": "docs/BASELINE_VERIFICATION.json",
       "bytes": 859,
       "sha256": "8c00e055adb6b8108eeb2dd0203a461f5370fda1ee4575585eb69659eba0e182"
+    },
+    {
+      "path": "docs/MODEL_EXPERIMENTS.md",
+      "bytes": 2330,
+      "sha256": "cf527be254de83be644173b96d2160088712a70fadbbfd0ce5255cefe4fa34ec"
     },
     {
       "path": "docs/PUBLICATION_PROVENANCE.md",
