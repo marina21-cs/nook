@@ -1,0 +1,499 @@
+[
+  {
+    "path": "wheels/addict-2.4.0-py3-none-any.whl",
+    "bytes": 3832,
+    "sha256": "249bb56bbfd3cdc2a004ea0ff4c2b6ddc84d53bc2194761636eb314d5cfa5dfc",
+    "source": "https://files.pythonhosted.org/packages/6a/00/b08f23b7d7e1e14ce01419a467b583edbb93c6cdb8654e54a9cc579cd61f/addict-2.4.0-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/attrs-26.1.0-py3-none-any.whl",
+    "bytes": 67548,
+    "sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309",
+    "source": "https://files.pythonhosted.org/packages/64/b4/17d4b0b2a2dc85a6df63d1157e028ed19f90d4cd97c36717afef2bc2f395/attrs-26.1.0-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/babel-2.18.0-py3-none-any.whl",
+    "bytes": 10196845,
+    "sha256": "e2b422b277c2b9a9630c1d7903c2a00d0830c409c59ac8cae9081c92f1aeba35",
+    "source": "https://files.pythonhosted.org/packages/77/f5/21d2de20e8b8b0408f0681956ca2c69f1320a3848ac50e6e7f39c6159675/babel-2.18.0-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/blis-1.3.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "bytes": 11377746,
+    "sha256": "e9327a6ca67de8ae76fe071e8584cc7f3b2e8bfadece4961d40f2826e1cda2df",
+    "source": "https://files.pythonhosted.org/packages/6c/93/ab547f1a5c23e20bca16fbcf04021c32aac3f969be737ea4980509a7ca90/blis-1.3.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/catalogue-2.0.10-py3-none-any.whl",
+    "bytes": 17325,
+    "sha256": "58c2de0020aa90f4a2da7dfad161bf7b3b054c86a5f09fcedc0b2b740c109a9f",
+    "source": "https://files.pythonhosted.org/packages/9e/96/d32b941a501ab566a16358d68b6eb4e4acc373fab3c3c4d7d9e649f7b4bb/catalogue-2.0.10-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/cloudpathlib-0.26.0-py3-none-any.whl",
+    "bytes": 66408,
+    "sha256": "abcd7f54bcbb2fbb79c0e96b79241f08866760aee6276586882b3558672d571b",
+    "source": "https://files.pythonhosted.org/packages/97/aa/c333f1be2afab2d033d51a66cb105f4bfc885b0c546e1168fb889a416b9d/cloudpathlib-0.26.0-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/cloudpickle-3.1.2-py3-none-any.whl",
+    "bytes": 22228,
+    "sha256": "9acb47f6afd73f60dc1df93bb801b472f05ff42fa6c84167d25cb206be1fbf4a",
+    "source": "https://files.pythonhosted.org/packages/88/39/799be3f2f0f38cc727ee3b4f1445fe6d5e4133064ec2e4115069418a5bb6/cloudpickle-3.1.2-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/confection-1.3.3-py3-none-any.whl",
+    "bytes": 35902,
+    "sha256": "b9fef9ee84b237ef4611ec3eb5797b70e13063e6310ad9f15536373f5e313c82",
+    "source": "https://files.pythonhosted.org/packages/8d/e4/d66708bdf0d92fb4d49b22cdff4b10cec38aca5dcd7e81d909bb55c65cd7/confection-1.3.3-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/csvw-4.1.0-py2.py3-none-any.whl",
+    "bytes": 69495,
+    "sha256": "d432d4cccd8dcdf31ccb2272d6d7ad40a9ebde7de3c7d6ced9033afb23bb76dd",
+    "source": "https://files.pythonhosted.org/packages/fe/7f/9586327961379fd23362eafddac9fc9ba1d6783686d20154d55e93dd8a61/csvw-4.1.0-py2.py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/curated_tokenizers-0.0.10-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "bytes": 6283169,
+    "sha256": "9151bda753cbb0fc1f9167fb1f939ceb45b841dc3230f9f835ac9eb4a0caf2e6",
+    "source": "https://files.pythonhosted.org/packages/51/26/fe332392fc589ea723d4740b7ed5826e1de8e12f84864dbcbc150a3f7907/curated_tokenizers-0.0.10-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/curated_transformers-0.1.1-py2.py3-none-any.whl",
+    "bytes": 25972,
+    "sha256": "d716063d73d803c6925d2dab56fde9b9ab8e89e663c2c0587804944ba488ff01",
+    "source": "https://files.pythonhosted.org/packages/d6/67/3b72b3fdfcadab61bc8f59c17e63770e526ffabd583ed32f174a7c01af85/curated_transformers-0.1.1-py2.py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/cymem-2.0.13-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "bytes": 244496,
+    "sha256": "30c4e75a3a1d809e89106b0b21803eb78e839881aa1f5b9bd27b454bc73afde3",
+    "source": "https://files.pythonhosted.org/packages/d6/01/6bc654101526fa86e82bf6b05d99b2cd47c30a333cfe8622c26c0592beb2/cymem-2.0.13-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/dlinfo-2.0.0-py3-none-any.whl",
+    "bytes": 3654,
+    "sha256": "b32cc18e3ea67c0ca9ca409e5b41eed863bd1363dbc9dd3de90fedf11b61e7bc",
+    "source": "https://files.pythonhosted.org/packages/da/90/022c79d6e5e6f843268c10b84d4a021ee3afba0621d3c176d3ff2024bfc8/dlinfo-2.0.0-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/docopt-0.6.2.tar.gz",
+    "bytes": 25901,
+    "sha256": "49b3a825280bd66b3aa83585ef59c4a8c82f2c8a522dbe754a8bc8d08c85c491",
+    "source": "https://files.pythonhosted.org/packages/a2/55/8f8cab2afd404cf578136ef2cc5dfb50baa1761b68c9da1fb1e4eed343c9/docopt-0.6.2.tar.gz",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/espeakng_loader-0.2.4-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "bytes": 10078484,
+    "sha256": "08721baf27d13d461f6be6eed9a65277e70d68234ff484fd8b9897b222cdcb6d",
+    "source": "https://files.pythonhosted.org/packages/de/1e/25ec5ab07528c0fbb215a61800a38eca05c8a99445515a02d7fa5debcb32/espeakng_loader-0.2.4-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/isodate-0.7.2-py3-none-any.whl",
+    "bytes": 22320,
+    "sha256": "28009937d8031054830160fce6d409ed342816b543597cece116d966c6d99e15",
+    "source": "https://files.pythonhosted.org/packages/15/aa/0aca39a37d3c7eb941ba736ede56d689e7be91cab5d9ca846bde3999eba6/isodate-0.7.2-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/joblib-1.6.0-py3-none-any.whl",
+    "bytes": 306115,
+    "sha256": "3dbbf9f6e4b592a2357b854608e980fe6390d131d7a82f011a377ef2ebef7aba",
+    "source": "https://files.pythonhosted.org/packages/18/53/84099323c2ec4be98d935f63c033ac4151ee83836ca1050ede3b3aadf155/joblib-1.6.0-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/jsonschema-4.26.0-py3-none-any.whl",
+    "bytes": 90630,
+    "sha256": "d489f15263b8d200f8387e64b4c3a75f06629559fb73deb8fdfb525f2dab50ce",
+    "source": "https://files.pythonhosted.org/packages/69/90/f63fb5873511e014207a475e2bb4e8b2e570d655b00ac19a9a0ca0a385ee/jsonschema-4.26.0-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/jsonschema_specifications-2025.9.1-py3-none-any.whl",
+    "bytes": 18437,
+    "sha256": "98802fee3a11ee76ecaca44429fda8a41bff98b00a0f2838151b113f210cc6fe",
+    "source": "https://files.pythonhosted.org/packages/41/45/1a4ed80516f02155c51f51e8cedb3c1902296743db0bbc66608a0db2814f/jsonschema_specifications-2025.9.1-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/kokoro-0.9.4-py3-none-any.whl",
+    "bytes": 32592,
+    "sha256": "a129dc6364a286bd6a92c396e9862459d3d3e45f2c15596ed5a94dcee5789efd",
+    "source": "https://files.pythonhosted.org/packages/ea/cc/75f41633c75224ba820a4533163bc8b070b6bf25416014074c63284c2d4e/kokoro-0.9.4-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/language_tags-1.3.1-py3-none-any.whl",
+    "bytes": 216654,
+    "sha256": "f7db7ef8879523019603e09644a86d95ba60595ce5e5ea82d46e8971b0f68f7b",
+    "source": "https://files.pythonhosted.org/packages/0a/21/b48b9e8408b3faec9fb7cb2f68352c7724add35a980c948eaceb29ac41e4/language_tags-1.3.1-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/loguru-0.7.3-py3-none-any.whl",
+    "bytes": 61595,
+    "sha256": "31a33c10c8e1e10422bfd431aeb5d351c7cf7fa671e3c4df004162264b28220c",
+    "source": "https://files.pythonhosted.org/packages/0c/29/0348de65b8cc732daa3e33e67806420b2ae89bdce2b04af740289c5c6c8c/loguru-0.7.3-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/markdown_it_py-4.2.0-py3-none-any.whl",
+    "bytes": 91687,
+    "sha256": "9f7ebbcd14fe59494226453aed97c1070d83f8d24b6fc3a3bcf9a38092641c4a",
+    "source": "https://files.pythonhosted.org/packages/b3/81/4da04ced5a082363ecfa159c010d200ecbd959ae410c10c0264a38cac0f5/markdown_it_py-4.2.0-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/mdurl-0.1.2-py3-none-any.whl",
+    "bytes": 9979,
+    "sha256": "84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8",
+    "source": "https://files.pythonhosted.org/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/misaki-0.9.4-py3-none-any.whl",
+    "bytes": 3617774,
+    "sha256": "90e2eeb169786c014c429e5058d2ea6bcd02d651f2a24450ba6c9ffc0f8da15a",
+    "source": "https://files.pythonhosted.org/packages/82/ec/0ee4110ddb54278b8f21c40a140370ae8f687036c4edf578316602697c56/misaki-0.9.4-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/murmurhash-1.0.15-cp311-cp311-manylinux1_x86_64.manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_5_x86_64.whl",
+    "bytes": 128396,
+    "sha256": "c4cd739a00f5a4602201b74568ddabae46ec304719d9be752fd8f534a9464b5e",
+    "source": "https://files.pythonhosted.org/packages/4d/64/5f8cfd1fd9cbeb43fcff96672f5bd9e7e1598d1c970f808ecd915490dc20/murmurhash-1.0.15-cp311-cp311-manylinux1_x86_64.manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_5_x86_64.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/num2words-0.5.14-py3-none-any.whl",
+    "bytes": 163525,
+    "sha256": "1c8e5b00142fc2966fd8d685001e36c4a9911e070d1b120e1beb721fa1edb33d",
+    "source": "https://files.pythonhosted.org/packages/d6/5b/545e9267a1cc080c8a1be2746113a063e34bcdd0f5173fd665a5c13cb234/num2words-0.5.14-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/phonemizer_fork-3.3.2-py3-none-any.whl",
+    "bytes": 82700,
+    "sha256": "97305c76f4183b3825dae8f4c032265fe78c9946ce58c47d4b62161349264b74",
+    "source": "https://files.pythonhosted.org/packages/64/f1/0dcce21b0ae16a82df4b6583f8f3ad8e55b35f7e98b6bf536a4dd225fa08/phonemizer_fork-3.3.2-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/preshed-3.0.13-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "bytes": 823096,
+    "sha256": "f8e6fe0620ed0f96a246d46447055c447e071cd8222731a045c235e8a758c918",
+    "source": "https://files.pythonhosted.org/packages/ee/2e/1ac761e973966893cd3a0ad3256360365276e2d1e779e351448981a1156a/preshed-3.0.13-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/pyparsing-3.3.3-py3-none-any.whl",
+    "bytes": 126420,
+    "sha256": "ece8c00a69cf01b45d0b1dedabb469c90d8caf996d4fda40f147627a122849a4",
+    "source": "https://files.pythonhosted.org/packages/38/bb/d215ee7c73b61497b28a5503f9f53523f294fcc936762b7caf90e0c1c2b5/pyparsing-3.3.3-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+    "bytes": 229892,
+    "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+    "source": "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/rdflib-7.6.0-py3-none-any.whl",
+    "bytes": 615416,
+    "sha256": "30c0a3ebf4c0e09215f066be7246794b6492e054e782d7ac2a34c9f70a15e0dd",
+    "source": "https://files.pythonhosted.org/packages/10/c2/6604a71269e0c1bd75656d5a001432d16f2cc5b8c057140ec797155c295e/rdflib-7.6.0-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/referencing-0.37.0-py3-none-any.whl",
+    "bytes": 26766,
+    "sha256": "381329a9f99628c9069361716891d34ad94af76e461dcb0335825aecc7692231",
+    "source": "https://files.pythonhosted.org/packages/2c/58/ca301544e1fa93ed4f80d724bf5b194f6e4b945841c5bfd555878eea9fcb/referencing-0.37.0-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/rfc3986-1.5.0-py2.py3-none-any.whl",
+    "bytes": 31976,
+    "sha256": "a86d6e1f5b1dc238b218b012df0aa79409667bb209e58da56d0b94704e712a97",
+    "source": "https://files.pythonhosted.org/packages/c4/e5/63ca2c4edf4e00657584608bee1001302bbf8c5f569340b78304f2f446cb/rfc3986-1.5.0-py2.py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/rich-15.0.0-py3-none-any.whl",
+    "bytes": 310654,
+    "sha256": "33bd4ef74232fb73fe9279a257718407f169c09b78a87ad3d296f548e27de0bb",
+    "source": "https://files.pythonhosted.org/packages/82/3b/64d4899d73f91ba49a8c18a8ff3f0ea8f1c1d75481760df8c68ef5235bf5/rich-15.0.0-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/rpds_py-2026.9.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "bytes": 375426,
+    "sha256": "136a1c3fe4402b7008bc81cb62ee538481795b61a7e83df88dff3b3f02b726ff",
+    "source": "https://files.pythonhosted.org/packages/2d/5c/aac3b960fd55d37b49f77c0eebbe043eaf36762ebd48e7b46951e59c1c05/rpds_py-2026.9.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/segments-2.4.0-py2.py3-none-any.whl",
+    "bytes": 16321,
+    "sha256": "4021dc67f201cc03c864c74c618bdb163b1af629da3040babbaa37d8813f3db0",
+    "source": "https://files.pythonhosted.org/packages/be/60/eef9acce946177f92c9aabf432224d87ab908bafafac516a36ab924199f3/segments-2.4.0-py2.py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/shellingham-1.5.4-py2.py3-none-any.whl",
+    "bytes": 9755,
+    "sha256": "7ecfff8f2fd72616f7481040475a65b2bf8af90a56c89140852d1120324e8686",
+    "source": "https://files.pythonhosted.org/packages/e0/f9/0595336914c5619e5f28a1fb793285925a8cd4b432c9da0a987836c7f822/shellingham-1.5.4-py2.py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/six-1.17.0-py2.py3-none-any.whl",
+    "bytes": 11050,
+    "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+    "source": "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/smart_open-8.0.2-py3-none-any.whl",
+    "bytes": 73414,
+    "sha256": "7ff6e4acf454269905db0c747f5d14fdba6056db572c0f8398043676dc91515c",
+    "source": "https://files.pythonhosted.org/packages/1c/48/d362978544ab08b385c6222ccb048fab1db3e3b820a07ef652c5d75678ae/smart_open-8.0.2-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/spacy-3.8.16-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+    "bytes": 34678935,
+    "sha256": "bc4e59799dcb0eb4823e5946515d3ca0d503ff78ef2502172d4b59ee0fc567ec",
+    "source": "https://files.pythonhosted.org/packages/10/3e/39e910b91b9a6cae61dbde9e42196c37388ba4f2d3abb88ebf1e9e4a303e/spacy-3.8.16-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/spacy_curated_transformers-0.3.1-py2.py3-none-any.whl",
+    "bytes": 237943,
+    "sha256": "503559b6a1d6e44ec2c978e18ed871ce5c3d56871dc9216c0e1523428204e610",
+    "source": "https://files.pythonhosted.org/packages/42/d8/f053d43125ae4ad14f3e2a12a475a656128233f1f40a272c6e09a05c73e8/spacy_curated_transformers-0.3.1-py2.py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/spacy_legacy-3.0.12-py2.py3-none-any.whl",
+    "bytes": 29971,
+    "sha256": "476e3bd0d05f8c339ed60f40986c07387c0a71479245d6d0f4298dbd52cda55f",
+    "source": "https://files.pythonhosted.org/packages/c3/55/12e842c70ff8828e34e543a2c7176dac4da006ca6901c9e8b43efab8bc6b/spacy_legacy-3.0.12-py2.py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/spacy_loggers-1.0.5-py3-none-any.whl",
+    "bytes": 22343,
+    "sha256": "196284c9c446cc0cdb944005384270d775fdeaf4f494d8e269466cfa497ef645",
+    "source": "https://files.pythonhosted.org/packages/33/78/d1a1a026ef3af911159398c939b1509d5c36fe524c7b644f34a5146c4e16/spacy_loggers-1.0.5-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/srsly-2.5.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "bytes": 1204530,
+    "sha256": "872249c20013578f940f0cd96ea697210e8113b02c92832c42250a38fc12b4a5",
+    "source": "https://files.pythonhosted.org/packages/ee/56/8ba80305fcd90e6a883cf8a56148180fc468dbeffa38870a1d41e6e0ea1b/srsly-2.5.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/termcolor-3.3.0-py3-none-any.whl",
+    "bytes": 7734,
+    "sha256": "cf642efadaf0a8ebbbf4bc7a31cec2f9b5f21a9f726f4ccbb08192c9c26f43a5",
+    "source": "https://files.pythonhosted.org/packages/33/d1/8bb87d21e9aeb323cc03034f5eaf2c8f69841e40e4853c2627edf8111ed3/termcolor-3.3.0-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/thinc-8.3.13-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "bytes": 4131972,
+    "sha256": "81337dfbee37f58f36c0c70f9a819dce1b32cdc13d959181e10de079621f6ac6",
+    "source": "https://files.pythonhosted.org/packages/ad/51/ec91c0434bd9a1096ab874bbd6dc110c5089d7fc513137e6af59bd051eec/thinc-8.3.13-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/typer-0.27.3-py3-none-any.whl",
+    "bytes": 123312,
+    "sha256": "e50022f28b82a86313e54501317a1db64bf8f8d036ff8cfe5ca7e47675454aff",
+    "source": "https://files.pythonhosted.org/packages/07/ea/2e31b67051e91a133189e9c000c222502ddc6969856416de0d095de4c0b0/typer-0.27.3-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/typing_extensions-4.16.0-py3-none-any.whl",
+    "bytes": 45571,
+    "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+    "source": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/uritemplate-4.2.0-py3-none-any.whl",
+    "bytes": 11488,
+    "sha256": "962201ba1c4edcab02e60f9a0d3821e82dfc5d2d6662a21abd533879bdb8a686",
+    "source": "https://files.pythonhosted.org/packages/a9/99/3ae339466c9183ea5b8ae87b34c0b897eda475d2aec2307cae60e5cd4f29/uritemplate-4.2.0-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/wasabi-1.1.3-py3-none-any.whl",
+    "bytes": 27880,
+    "sha256": "f76e16e8f7e79f8c4c8be49b4024ac725713ab10cd7f19350ad18a8e3f71728c",
+    "source": "https://files.pythonhosted.org/packages/06/7c/34330a89da55610daa5f245ddce5aab81244321101614751e7537f125133/wasabi-1.1.3-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/weasel-1.0.0-py3-none-any.whl",
+    "bytes": 50713,
+    "sha256": "89518acee027f49d743126c3502d35e6dd14f5768be5c37c9af47c171b6005cc",
+    "source": "https://files.pythonhosted.org/packages/0a/07/57ebf7a6798b016c064bd0ca81b4c6a99daa4dc377b898bc7b41eb6b5af0/weasel-1.0.0-py3-none-any.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "wheels/wrapt-1.17.3-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl",
+    "bytes": 82376,
+    "sha256": "b32888aad8b6e68f83a8fdccbf3165f5469702a7544472bdf41f582970ed3311",
+    "source": "https://files.pythonhosted.org/packages/5d/8f/a32a99fc03e4b37e31b57cb9cefc65050ea08147a8ce12f288616b05ef54/wrapt-1.17.3-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "licenses/kokoro-README.md",
+    "bytes": 6348,
+    "sha256": "91dcabced89db6f109b8786642f50402d3ee87450e8189589b6f85520e7f4d78",
+    "source": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/f3ff3571791e39611d31c381e3a41a3af07b4987/README.md",
+    "upstream_sha256_available": false
+  },
+  {
+    "path": "licenses/kokoro-VOICES.md",
+    "bytes": 7625,
+    "sha256": "ec7e4941ad7e194af61e3455928528a9ff5360c7c505e412efab27d6a69ea106",
+    "source": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/f3ff3571791e39611d31c381e3a41a3af07b4987/VOICES.md",
+    "upstream_sha256_available": false
+  },
+  {
+    "path": "artifacts/kokoro/config.json",
+    "bytes": 2351,
+    "sha256": "5abb01e2403b072bf03d04fde160443e209d7a0dad49a423be15196b9b43c17f",
+    "source": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/f3ff3571791e39611d31c381e3a41a3af07b4987/config.json",
+    "upstream_sha256_available": false
+  },
+  {
+    "path": "artifacts/kokoro/kokoro-v1_0.pth",
+    "bytes": 327212226,
+    "sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+    "source": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/f3ff3571791e39611d31c381e3a41a3af07b4987/kokoro-v1_0.pth",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "artifacts/kokoro/af_heart.pt",
+    "bytes": 523425,
+    "sha256": "0ab5709b8ffab19bfd849cd11d98f75b60af7733253ad0d67b12382a102cb4ff",
+    "source": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/f3ff3571791e39611d31c381e3a41a3af07b4987/voices/af_heart.pt",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "artifacts/whisper/README.md",
+    "bytes": 19787,
+    "sha256": "57a3bbbbf1e79369e4d1ced790812a1723b43a256c1b43fc70cc2f3339ae9881",
+    "source": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/README.md",
+    "upstream_sha256_available": false
+  },
+  {
+    "path": "artifacts/whisper/added_tokens.json",
+    "bytes": 34604,
+    "sha256": "9715fd2243b6f06a5858b5e32950d2853f73dd5bc201aafcf76f5082a2d8acd1",
+    "source": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/added_tokens.json",
+    "upstream_sha256_available": false
+  },
+  {
+    "path": "artifacts/whisper/config.json",
+    "bytes": 1983,
+    "sha256": "ffdccec4f3211f4c63310f2b7098f309fe70f3952cedc5e4d11e43f5b2379b98",
+    "source": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/config.json",
+    "upstream_sha256_available": false
+  },
+  {
+    "path": "artifacts/whisper/generation_config.json",
+    "bytes": 3747,
+    "sha256": "a5d5325911f16e74001a72fa13d6e208eee51548f994646de1f4b4cc8b35b512",
+    "source": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/generation_config.json",
+    "upstream_sha256_available": false
+  },
+  {
+    "path": "artifacts/whisper/merges.txt",
+    "bytes": 493869,
+    "sha256": "2df2990a395e35e8dfbc7511e08c12d56018d8d04691e0133e5d63b21e154dc6",
+    "source": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/merges.txt",
+    "upstream_sha256_available": false
+  },
+  {
+    "path": "artifacts/whisper/model.safetensors",
+    "bytes": 151061672,
+    "sha256": "7ebd0e69e78190ffe1438491fa05cc1f5c1aa3a4c4db3bc1723adbb551ea2395",
+    "source": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/model.safetensors",
+    "upstream_sha256_available": true
+  },
+  {
+    "path": "artifacts/whisper/normalizer.json",
+    "bytes": 52666,
+    "sha256": "bf1c507dc8724ca9cf9903640dacfb69dae2f00edee4f21ceba106a7392f26dd",
+    "source": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/normalizer.json",
+    "upstream_sha256_available": false
+  },
+  {
+    "path": "artifacts/whisper/preprocessor_config.json",
+    "bytes": 184990,
+    "sha256": "9b5cd03a36fbb8a627c64d98a5b5b126ead95a77720723944487311f0110b666",
+    "source": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/preprocessor_config.json",
+    "upstream_sha256_available": false
+  },
+  {
+    "path": "artifacts/whisper/special_tokens_map.json",
+    "bytes": 2194,
+    "sha256": "e67ae3a0aaa99abcd9f187138e12db1f65c16a14761c50ef10eef2c174a7a691",
+    "source": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/special_tokens_map.json",
+    "upstream_sha256_available": false
+  },
+  {
+    "path": "artifacts/whisper/tokenizer.json",
+    "bytes": 2480466,
+    "sha256": "27fc476bfe7f17299480be2273fc0608e4d5a99aba2ab5dec5374b4482d1a566",
+    "source": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/tokenizer.json",
+    "upstream_sha256_available": false
+  },
+  {
+    "path": "artifacts/whisper/tokenizer_config.json",
+    "bytes": 282683,
+    "sha256": "2a4c4281cf9f51ac6ccc406fdc711a087afe6530f671fa7b80953edc498275ce",
+    "source": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/tokenizer_config.json",
+    "upstream_sha256_available": false
+  },
+  {
+    "path": "artifacts/whisper/vocab.json",
+    "bytes": 835550,
+    "sha256": "8f680bba319e01a653d2e8a5dbc17a9157179e0576e6ce74ce0c06356c6e24f9",
+    "source": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/vocab.json",
+    "upstream_sha256_available": false
+  },
+  {
+    "path": "wheels/en_core_web_sm-3.8.0-py3-none-any.whl",
+    "bytes": 12806118,
+    "sha256": "1932429db727d4bff3deed6b34cfc05df17794f4a52eeb26cf8928f7c1a0fb85",
+    "source": "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl",
+    "upstream_sha256_available": false
+  }
+]

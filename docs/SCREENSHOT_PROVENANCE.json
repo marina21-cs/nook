@@ -1,0 +1,38 @@
+[
+  {
+    "path": "deliverables/nook-integration/capture-desktop.png",
+    "sha256": "5ededfbd3fbc30214ab34d988128057571618cb99f874e779727aa4b64bf3fa4",
+    "version": "verified baseline ZIP 6af30497d7cae2a3ea59af7847abcf9f9636cc10fae2b0de96b44eda3d4b6f31",
+    "review": "Visually inspected for personal data; invented test records and credited public CC0 photo only; no private account details visible."
+  },
+  {
+    "path": "deliverables/nook-integration/onboarding-mobile.png",
+    "sha256": "9428f309cf569c070897516e972b289fc97fa450d24422cc594346f4a73d6111",
+    "version": "verified baseline ZIP 6af30497d7cae2a3ea59af7847abcf9f9636cc10fae2b0de96b44eda3d4b6f31",
+    "review": "Visually inspected for personal data; invented test records and credited public CC0 photo only; no private account details visible."
+  },
+  {
+    "path": "deliverables/nook-integration/recall-desktop.png",
+    "sha256": "01b339e501d1dfa5e0d3e25bd33f3cd532d8f13d3b4d549c288c8fbaf281f301",
+    "version": "verified baseline ZIP 6af30497d7cae2a3ea59af7847abcf9f9636cc10fae2b0de96b44eda3d4b6f31",
+    "review": "Visually inspected for personal data; invented test records and credited public CC0 photo only; no private account details visible."
+  },
+  {
+    "path": "deliverables/nook-integration/recall-mobile-dark.png",
+    "sha256": "5d4af02a65082e284fed5546675b012d81eaabf0c04567ed24242e8b16d65449",
+    "version": "verified baseline ZIP 6af30497d7cae2a3ea59af7847abcf9f9636cc10fae2b0de96b44eda3d4b6f31",
+    "review": "Visually inspected for personal data; invented test records and credited public CC0 photo only; no private account details visible."
+  },
+  {
+    "path": "deliverables/nook-integration/saved-mobile.png",
+    "sha256": "93a06eec02a3d17c43bdfb6c72320d5794d2376c4423a2826d807192d82b132d",
+    "version": "verified baseline ZIP 6af30497d7cae2a3ea59af7847abcf9f9636cc10fae2b0de96b44eda3d4b6f31",
+    "review": "Visually inspected for personal data; invented test records and credited public CC0 photo only; no private account details visible."
+  },
+  {
+    "path": "deliverables/nook-integration/talk-desktop.png",
+    "sha256": "727c0fc5fa6f179fb3c54dfb32d41e4ea5ed3e6ddf11f5770653b2319fa67446",
+    "version": "verified baseline ZIP 6af30497d7cae2a3ea59af7847abcf9f9636cc10fae2b0de96b44eda3d4b6f31",
+    "review": "Visually inspected for personal data; invented test records and credited public CC0 photo only; no private account details visible."
+  }
+]

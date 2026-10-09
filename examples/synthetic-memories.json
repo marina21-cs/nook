@@ -1,0 +1,14 @@
+{
+  "synthetic": true,
+  "instructions": "Manual entry examples, not an API import format. No real household data.",
+  "memories": [
+    {
+      "name": "House keys",
+      "location": "Hall cabinet, top drawer"
+    },
+    {
+      "name": "Demo wallet",
+      "location": "Nightstand tray"
+    }
+  ]
+}

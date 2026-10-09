@@ -1,0 +1,22 @@
+{
+  "chelsea.png": {
+    "bytes": 240512,
+    "sha256": "596aa1e7cb875eb79f437e310381d26b338a81c2da23439704a73c4651e8c4bb"
+  },
+  "coffee.png": {
+    "bytes": 466706,
+    "sha256": "cc02f8ca188b167c775a7101b5d767d1e71792cf762c33d6fa15a4599b5a8de7"
+  },
+  "keys.jpg": {
+    "bytes": 5097723,
+    "sha256": "a780e959480a21e29ed6cd75f42a343aab1d5e16371d4d9073af08111c64c22e"
+  },
+  "scissors-collection.jpg": {
+    "bytes": 3042095,
+    "sha256": "fe70aa697d53d2ff1d9cb644f14d518b963e1a0d64f92ab4a51dd1ba5259140e"
+  },
+  "scissors.jpg": {
+    "bytes": 4194580,
+    "sha256": "fa2f611c2cd3d6af808008c9853efa674d9c4c67e338a4c7f43ef7b1fd8316df"
+  }
+}

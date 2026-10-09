@@ -1,0 +1,31 @@
+{
+  "archive": "Nook-v1-source-20261009.zip",
+  "bytes": 6185152,
+  "sha256": "6af30497d7cae2a3ea59af7847abcf9f9636cc10fae2b0de96b44eda3d4b6f31",
+  "payload_files": 183,
+  "entries": 185,
+  "sanitized_text_paths": [
+    "BACKEND_QA_REPORT.md",
+    "BACKEND_STATUS.md",
+    "DEMO_RUNBOOK.md",
+    "docs/PRODUCT_NAME_STATUS.md"
+  ],
+  "zip_crc_and_payload_hashes_verified": true,
+  "secret_pattern_scan": "passed on explicit allowlist; not a universal proof",
+  "excluded": [
+    "credentials/env files",
+    "personal data/databases",
+    "raw resource/log histories",
+    "Library receipts",
+    "venvs",
+    "wheels",
+    "model weights",
+    "browsers",
+    "git",
+    "Devin snapshots"
+  ],
+  "byte_identical_rebuild": true,
+  "extracted_tests_passed": 335,
+  "extracted_test_seconds": 16.4,
+  "final_executable_files_identical_to_tested_extraction": 84
+}

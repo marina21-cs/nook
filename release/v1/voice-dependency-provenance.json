@@ -1,0 +1,1126 @@
+{
+  "scope": "Existing approved speech environment; no new downloads; wheel hashes where retained plus installed metadata/RECORD hashes. Metadata hashes are not substitutes for wheel artifact hashes.",
+  "dependencies": [
+    {
+      "name": "addict",
+      "version": "2.4.0",
+      "cached": false,
+      "filename": "addict-2.4.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/6a/00/b08f23b7d7e1e14ce01419a467b583edbb93c6cdb8654e54a9cc579cd61f/addict-2.4.0-py3-none-any.whl",
+      "bytes": 3832,
+      "sha256": "249bb56bbfd3cdc2a004ea0ff4c2b6ddc84d53bc2194761636eb314d5cfa5dfc",
+      "license": "",
+      "classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "installed_metadata_sha256": "66320967996f85fa211f1216a7bf5f921d13b41b0de5db97f389daddbc54eaf4",
+      "installed_record_sha256": "553d5cb31f81a728de58c9282a61a77dc69bc87d8db8f3a5b1b85f0cdbabebe4",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "annotated-doc",
+      "version": "0.0.5",
+      "cached": true,
+      "hash_basis": "installed distribution metadata/RECORD; exact original wheel URL not retained in this release inventory"
+    },
+    {
+      "name": "annotated-types",
+      "version": "0.8.0",
+      "cached": true,
+      "hash_basis": "installed distribution metadata/RECORD; exact original wheel URL not retained in this release inventory"
+    },
+    {
+      "name": "anyio",
+      "version": "4.15.1",
+      "cached": true,
+      "hash_basis": "installed distribution metadata/RECORD; exact original wheel URL not retained in this release inventory"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0",
+      "cached": false,
+      "filename": "attrs-26.1.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/64/b4/17d4b0b2a2dc85a6df63d1157e028ed19f90d4cd97c36717afef2bc2f395/attrs-26.1.0-py3-none-any.whl",
+      "bytes": 67548,
+      "sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309",
+      "license": "MIT",
+      "classifiers": [],
+      "installed_metadata_sha256": "4cd40e690f23bf37cbcad34efd6758e062df1df07c86833f7e3ce95bf1fa38cc",
+      "installed_record_sha256": "66ce5c1bc693e4798e98cb38d3e5f8b07a1b6025eecd4c531d12945b95b51c63",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "babel",
+      "version": "2.18.0",
+      "cached": false,
+      "filename": "babel-2.18.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/77/f5/21d2de20e8b8b0408f0681956ca2c69f1320a3848ac50e6e7f39c6159675/babel-2.18.0-py3-none-any.whl",
+      "bytes": 10196845,
+      "sha256": "e2b422b277c2b9a9630c1d7903c2a00d0830c409c59ac8cae9081c92f1aeba35",
+      "license": "BSD-3-Clause",
+      "classifiers": [
+        "License :: OSI Approved :: BSD License"
+      ],
+      "installed_metadata_sha256": "11399bc03a6b81fd20e8b82823392052a8db969a8ef150382b0cf5996afcf41a",
+      "installed_record_sha256": "c702d8d56de924816f95d89834de2a6444ba337daacd8d15ce6c6360f6056a34",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "blis",
+      "version": "1.3.3",
+      "cached": false,
+      "filename": "blis-1.3.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/6c/93/ab547f1a5c23e20bca16fbcf04021c32aac3f969be737ea4980509a7ca90/blis-1.3.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "bytes": 11377746,
+      "sha256": "e9327a6ca67de8ae76fe071e8584cc7f3b2e8bfadece4961d40f2826e1cda2df",
+      "license": "BSD",
+      "classifiers": [
+        "License :: OSI Approved :: BSD License"
+      ],
+      "installed_metadata_sha256": "535aa94ba125115b4c5af94f067168f0bb38f227bfa7d1b5dccf56e66ff66cb4",
+      "installed_record_sha256": "55edde13d2c8214a4a0471258ee5377a595b7dcc8aadccb4f79c382cea7039c5",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "catalogue",
+      "version": "2.0.10",
+      "cached": false,
+      "filename": "catalogue-2.0.10-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/9e/96/d32b941a501ab566a16358d68b6eb4e4acc373fab3c3c4d7d9e649f7b4bb/catalogue-2.0.10-py3-none-any.whl",
+      "bytes": 17325,
+      "sha256": "58c2de0020aa90f4a2da7dfad161bf7b3b054c86a5f09fcedc0b2b740c109a9f",
+      "license": "MIT",
+      "classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "installed_metadata_sha256": "570324cbd96a88587fd07f0cc7c29e0bc3c92b6d097d32e09775f8fcdd6576d2",
+      "installed_record_sha256": "d319cf18075498128a7f16b511b905210b06dbe79f3a4bc679b6a26a0e543355",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "certifi",
+      "version": "2025.10.5",
+      "cached": true,
+      "filename": "certifi-2025.10.5-py3-none-any.whl",
+      "source": "https://files.pythonhosted.org/packages/e4/37/af0d2ef3967ac0d6113837b44a4f0bfe1328c2b9763bd5b1744520e5cfed/certifi-2025.10.5-py3-none-any.whl",
+      "bytes": 163286,
+      "sha256": "0f212c2744a9bb6de0c56639a6f68afe01ecd92d91f14ae897c4fe7bbeeef0de",
+      "hash_basis": "prior verified cached wheel ledger"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.4.3",
+      "cached": true,
+      "filename": "charset_normalizer-3.4.3-py3-none-any.whl",
+      "source": "https://files.pythonhosted.org/packages/8a/1f/f041989e93b001bc4e44bb1669ccdcf54d3f00e628229a85b08d330615c5/charset_normalizer-3.4.3-py3-none-any.whl",
+      "bytes": 53175,
+      "sha256": "ce571ab16d890d23b5c278547ba694193a45011ff86a9162a71307ed9f86759a",
+      "hash_basis": "prior verified cached wheel ledger"
+    },
+    {
+      "name": "click",
+      "version": "8.5.0",
+      "cached": true,
+      "hash_basis": "installed distribution metadata/RECORD; exact original wheel URL not retained in this release inventory"
+    },
+    {
+      "name": "cloudpathlib",
+      "version": "0.26.0",
+      "cached": false,
+      "filename": "cloudpathlib-0.26.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/97/aa/c333f1be2afab2d033d51a66cb105f4bfc885b0c546e1168fb889a416b9d/cloudpathlib-0.26.0-py3-none-any.whl",
+      "bytes": 66408,
+      "sha256": "abcd7f54bcbb2fbb79c0e96b79241f08866760aee6276586882b3558672d571b",
+      "license": "",
+      "classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "installed_metadata_sha256": "8d1d5c34dda3f5bf5de110807876fd44d35fbb26ba1a4ef6e49674b370f16745",
+      "installed_record_sha256": "e40d7cf4162bf6054243d433ef34f3b1b0c850ed4ba143f3a6039e8ba8e89175",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "cloudpickle",
+      "version": "3.1.2",
+      "cached": false,
+      "filename": "cloudpickle-3.1.2-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/88/39/799be3f2f0f38cc727ee3b4f1445fe6d5e4133064ec2e4115069418a5bb6/cloudpickle-3.1.2-py3-none-any.whl",
+      "bytes": 22228,
+      "sha256": "9acb47f6afd73f60dc1df93bb801b472f05ff42fa6c84167d25cb206be1fbf4a",
+      "license": "BSD-3-Clause",
+      "classifiers": [
+        "License :: OSI Approved :: BSD License"
+      ],
+      "installed_metadata_sha256": "3d0263bfe9ee4f23b244bdcaff73acbe7a1957ebf82743b6ae42693adc48d721",
+      "installed_record_sha256": "7cd8ee16ee9ea6fde7451031bfb15bd09586fd478dcc3420555daab4a667f19f",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "confection",
+      "version": "1.3.3",
+      "cached": false,
+      "filename": "confection-1.3.3-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/8d/e4/d66708bdf0d92fb4d49b22cdff4b10cec38aca5dcd7e81d909bb55c65cd7/confection-1.3.3-py3-none-any.whl",
+      "bytes": 35902,
+      "sha256": "b9fef9ee84b237ef4611ec3eb5797b70e13063e6310ad9f15536373f5e313c82",
+      "license": "MIT",
+      "classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "installed_metadata_sha256": "19791218537d8fe97ed57409c2784f7c7c7e7f443df2d08d7042187e32effad3",
+      "installed_record_sha256": "928adb9c4332c4ede9dd97219f91225bcb6689e0b787a1c1c001272d8190e031",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "csvw",
+      "version": "4.1.0",
+      "cached": false,
+      "filename": "csvw-4.1.0-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/fe/7f/9586327961379fd23362eafddac9fc9ba1d6783686d20154d55e93dd8a61/csvw-4.1.0-py2.py3-none-any.whl",
+      "bytes": 69495,
+      "sha256": "d432d4cccd8dcdf31ccb2272d6d7ad40a9ebde7de3c7d6ced9033afb23bb76dd",
+      "license": "Apache 2.0",
+      "classifiers": [
+        "License :: OSI Approved :: Apache Software License"
+      ],
+      "installed_metadata_sha256": "32498a2bfd45f70040fd50d517edda8f9c1326781071f83c909967495fa6848b",
+      "installed_record_sha256": "018148a8f2054ffb8f8a7d4e287cc77bad5bdff0028386a1a9b12dd4b5fcefc7",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "curated-tokenizers",
+      "version": "0.0.10",
+      "cached": false,
+      "filename": "curated_tokenizers-0.0.10-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/51/26/fe332392fc589ea723d4740b7ed5826e1de8e12f84864dbcbc150a3f7907/curated_tokenizers-0.0.10-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+      "bytes": 6283169,
+      "sha256": "9151bda753cbb0fc1f9167fb1f939ceb45b841dc3230f9f835ac9eb4a0caf2e6",
+      "license": "MIT",
+      "classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "installed_metadata_sha256": "5e72cabdc78ad2f1f5c881cb62e26a90e7a765f3eca8926298a9b9310d818e01",
+      "installed_record_sha256": "7e0fcfe43a72bdefc64347d7ea9a8405390e2852f638715212cf1c07d26c60a9",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "curated-transformers",
+      "version": "0.1.1",
+      "cached": false,
+      "filename": "curated_transformers-0.1.1-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/d6/67/3b72b3fdfcadab61bc8f59c17e63770e526ffabd583ed32f174a7c01af85/curated_transformers-0.1.1-py2.py3-none-any.whl",
+      "bytes": 25972,
+      "sha256": "d716063d73d803c6925d2dab56fde9b9ab8e89e663c2c0587804944ba488ff01",
+      "license": "MIT",
+      "classifiers": [],
+      "installed_metadata_sha256": "690f6936edca7cc1ebc4f3278146fd44949d3731eee81040c664275479a98cb7",
+      "installed_record_sha256": "24ce0c1f69d33adfde43fd491b515d5605392a390ff8005289f71da187181cbf",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "cymem",
+      "version": "2.0.13",
+      "cached": false,
+      "filename": "cymem-2.0.13-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/d6/01/6bc654101526fa86e82bf6b05d99b2cd47c30a333cfe8622c26c0592beb2/cymem-2.0.13-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "bytes": 244496,
+      "sha256": "30c4e75a3a1d809e89106b0b21803eb78e839881aa1f5b9bd27b454bc73afde3",
+      "license": "MIT",
+      "classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "installed_metadata_sha256": "615faac88aa1a2a800731e4add6f0be60967502a37a9c9b3bfd8feed5cc4f99a",
+      "installed_record_sha256": "229852cc56dbbf82336f7ed2a0447b4577bc5ddcc9940c910609c902d9063b7c",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "dlinfo",
+      "version": "2.0.0",
+      "cached": false,
+      "filename": "dlinfo-2.0.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/da/90/022c79d6e5e6f843268c10b84d4a021ee3afba0621d3c176d3ff2024bfc8/dlinfo-2.0.0-py3-none-any.whl",
+      "bytes": 3654,
+      "sha256": "b32cc18e3ea67c0ca9ca409e5b41eed863bd1363dbc9dd3de90fedf11b61e7bc",
+      "license": "MIT",
+      "classifiers": [],
+      "installed_metadata_sha256": "380c36fadd6b34f01daa6a4ab51379cd2563b47f9ffbf40f7c700bb0a68df138",
+      "installed_record_sha256": "d42a6a27e0dd4af0f231402bdf8d488f343981eac7fc951d0599a00d402673b0",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "docopt",
+      "version": "0.6.2",
+      "cached": false,
+      "filename": "docopt-0.6.2.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/a2/55/8f8cab2afd404cf578136ef2cc5dfb50baa1761b68c9da1fb1e4eed343c9/docopt-0.6.2.tar.gz",
+      "bytes": 25901,
+      "sha256": "49b3a825280bd66b3aa83585ef59c4a8c82f2c8a522dbe754a8bc8d08c85c491",
+      "license": "MIT",
+      "classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "installed_metadata_sha256": "d4c3ef35e6f87c733814ee02bcd50e34c431f4044195d4f997a79201f49c5176",
+      "installed_record_sha256": "27e3d89922a2d1f5351521ce4ca732365b2070b6bf4b7a8cf9eea5c1dcd2356e",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "espeakng-loader",
+      "version": "0.2.4",
+      "cached": false,
+      "filename": "espeakng_loader-0.2.4-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/de/1e/25ec5ab07528c0fbb215a61800a38eca05c8a99445515a02d7fa5debcb32/espeakng_loader-0.2.4-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "bytes": 10078484,
+      "sha256": "08721baf27d13d461f6be6eed9a65277e70d68234ff484fd8b9897b222cdcb6d",
+      "license": "",
+      "classifiers": [],
+      "installed_metadata_sha256": "dd7a4afdebbe21be5cce77b22da72c779da3ba15e1b9a7dd2bd401d4e7f514ee",
+      "installed_record_sha256": "46afed4880dec0eaf71a1bb01bf69d3c22b3e258f3229ca56a069286d2797a2f",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "filelock",
+      "version": "3.19.1",
+      "cached": true,
+      "filename": "filelock-3.19.1-py3-none-any.whl",
+      "source": "https://files.pythonhosted.org/packages/42/14/42b2651a2f46b022ccd948bca9f2d5af0fd8929c4eec235b8d6d844fbe67/filelock-3.19.1-py3-none-any.whl",
+      "bytes": 15988,
+      "sha256": "d38e30481def20772f5baf097c122c3babc4fcdb7e14e57049eb9d88c6dc017d",
+      "hash_basis": "prior verified cached wheel ledger"
+    },
+    {
+      "name": "fsspec",
+      "version": "2025.9.0",
+      "cached": true,
+      "filename": "fsspec-2025.9.0-py3-none-any.whl",
+      "source": "https://files.pythonhosted.org/packages/47/71/70db47e4f6ce3e5c37a607355f80da8860a33226be640226ac52cb05ef2e/fsspec-2025.9.0-py3-none-any.whl",
+      "bytes": 199289,
+      "sha256": "530dc2a2af60a414a832059574df4a6e10cce927f6f4a78209390fe38955cfb7",
+      "hash_basis": "prior verified cached wheel ledger"
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0",
+      "cached": true,
+      "hash_basis": "installed distribution metadata/RECORD; exact original wheel URL not retained in this release inventory"
+    },
+    {
+      "name": "hf-xet",
+      "version": "1.1.10",
+      "cached": true,
+      "filename": "hf_xet-1.1.10-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "source": "https://files.pythonhosted.org/packages/15/07/86397573efefff941e100367bbda0b21496ffcdb34db7ab51912994c32a2/hf_xet-1.1.10-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "bytes": 3186960,
+      "sha256": "6b6bceb6361c80c1cc42b5a7b4e3efd90e64630bcf11224dcac50ef30a47e435",
+      "hash_basis": "prior verified cached wheel ledger"
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9",
+      "cached": true,
+      "hash_basis": "installed distribution metadata/RECORD; exact original wheel URL not retained in this release inventory"
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1",
+      "cached": true,
+      "hash_basis": "installed distribution metadata/RECORD; exact original wheel URL not retained in this release inventory"
+    },
+    {
+      "name": "huggingface-hub",
+      "version": "0.35.3",
+      "cached": true,
+      "filename": "huggingface_hub-0.35.3-py3-none-any.whl",
+      "source": "https://files.pythonhosted.org/packages/31/a0/651f93d154cb72323358bf2bbae3e642bdb5d2f1bfc874d096f7cb159fa0/huggingface_hub-0.35.3-py3-none-any.whl",
+      "bytes": 564262,
+      "sha256": "0e3a01829c19d86d03793e4577816fe3bdfc1602ac62c7fb220d593d351224ba",
+      "hash_basis": "prior verified cached wheel ledger"
+    },
+    {
+      "name": "idna",
+      "version": "3.10",
+      "cached": true,
+      "filename": "idna-3.10-py3-none-any.whl",
+      "source": "https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl",
+      "bytes": 70442,
+      "sha256": "946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3",
+      "hash_basis": "prior verified cached wheel ledger"
+    },
+    {
+      "name": "isodate",
+      "version": "0.7.2",
+      "cached": false,
+      "filename": "isodate-0.7.2-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/15/aa/0aca39a37d3c7eb941ba736ede56d689e7be91cab5d9ca846bde3999eba6/isodate-0.7.2-py3-none-any.whl",
+      "bytes": 22320,
+      "sha256": "28009937d8031054830160fce6d409ed342816b543597cece116d966c6d99e15",
+      "license": "Copyright (c) 2021, Hugo van Kemenade and contributors Copyright (c) 2009-2018, Gerhard Weis and contributors Copyright (c) 2009, Gerhard Weis All rig",
+      "classifiers": [
+        "License :: OSI Approved :: BSD License"
+      ],
+      "installed_metadata_sha256": "90bc9d1eee7c3c97fd3a52001dece07c0f9b480cfc8fbbf767ca4ae0ab848529",
+      "installed_record_sha256": "d4898cbea97088499cb8830d8c6ff04bb5db196396acb673fdffe1aacda63134",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "jinja2",
+      "version": "3.1.6",
+      "cached": true,
+      "filename": "jinja2-3.1.6-py3-none-any.whl",
+      "source": "https://files.pythonhosted.org/packages/62/a1/3d680cbfd5f4b8f15abc1d571870c5fc3e594bb582bc3b64ea099db13e56/jinja2-3.1.6-py3-none-any.whl",
+      "bytes": 134899,
+      "sha256": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67",
+      "hash_basis": "prior verified cached wheel ledger"
+    },
+    {
+      "name": "joblib",
+      "version": "1.6.0",
+      "cached": false,
+      "filename": "joblib-1.6.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/18/53/84099323c2ec4be98d935f63c033ac4151ee83836ca1050ede3b3aadf155/joblib-1.6.0-py3-none-any.whl",
+      "bytes": 306115,
+      "sha256": "3dbbf9f6e4b592a2357b854608e980fe6390d131d7a82f011a377ef2ebef7aba",
+      "license": "BSD-3-Clause",
+      "classifiers": [],
+      "installed_metadata_sha256": "c5fd6509906c5795fd6724d97bc1709d1f266b78aff92c0156d6cf5ad7c045e3",
+      "installed_record_sha256": "dbe561909c21f29db08a19385d28a261a8a0e46f66d4759f0fc33068fa902138",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "jsonschema",
+      "version": "4.26.0",
+      "cached": false,
+      "filename": "jsonschema-4.26.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/69/90/f63fb5873511e014207a475e2bb4e8b2e570d655b00ac19a9a0ca0a385ee/jsonschema-4.26.0-py3-none-any.whl",
+      "bytes": 90630,
+      "sha256": "d489f15263b8d200f8387e64b4c3a75f06629559fb73deb8fdfb525f2dab50ce",
+      "license": "MIT",
+      "classifiers": [],
+      "installed_metadata_sha256": "05b189866ca98a96da3934bf6b83687ced3ff85325273b77e16b705f6d8b26d2",
+      "installed_record_sha256": "0f6d095cba2f70d31a60e3eefab45c1d443dfe6572cdfd9cf6da123407e9d8eb",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1",
+      "cached": false,
+      "filename": "jsonschema_specifications-2025.9.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/41/45/1a4ed80516f02155c51f51e8cedb3c1902296743db0bbc66608a0db2814f/jsonschema_specifications-2025.9.1-py3-none-any.whl",
+      "bytes": 18437,
+      "sha256": "98802fee3a11ee76ecaca44429fda8a41bff98b00a0f2838151b113f210cc6fe",
+      "license": "MIT",
+      "classifiers": [],
+      "installed_metadata_sha256": "35abd41757f32b4ea24756920ded47b70173d77cbc052a5a6d3ab583b2e8d89d",
+      "installed_record_sha256": "228bff24f78dbf30e0499c6a516229c245cb32ecb3b5e146f7683ee5796c6a96",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "kokoro",
+      "version": "0.9.4",
+      "cached": false,
+      "filename": "kokoro-0.9.4-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/ea/cc/75f41633c75224ba820a4533163bc8b070b6bf25416014074c63284c2d4e/kokoro-0.9.4-py3-none-any.whl",
+      "bytes": 32592,
+      "sha256": "a129dc6364a286bd6a92c396e9862459d3d3e45f2c15596ed5a94dcee5789efd",
+      "license": "Apache License\n                                   Version 2.0, January 2004\n                                http://www.apache.org/licenses/\n        \n ",
+      "classifiers": [
+        "License :: OSI Approved :: Apache Software License"
+      ],
+      "installed_metadata_sha256": "df4f6feeac0374af0e6fc7d3f1fb533614dd1dc0633ad1a47ca208e29c2ba391",
+      "installed_record_sha256": "fa92196b205204f84fc7900fc11cc785b97aa255384fcb3eb64af71029946126",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "language-tags",
+      "version": "1.3.1",
+      "cached": false,
+      "filename": "language_tags-1.3.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/0a/21/b48b9e8408b3faec9fb7cb2f68352c7724add35a980c948eaceb29ac41e4/language_tags-1.3.1-py3-none-any.whl",
+      "bytes": 216654,
+      "sha256": "f7db7ef8879523019603e09644a86d95ba60595ce5e5ea82d46e8971b0f68f7b",
+      "license": "MIT",
+      "classifiers": [],
+      "installed_metadata_sha256": "91c72915f82e56169e421da6f32a083c179fe2c9600d6d1960f4999a285692b2",
+      "installed_record_sha256": "287a4fac6688dff0c469f98916f4b7a579d2446dc0458531c697582573574fb3",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "loguru",
+      "version": "0.7.3",
+      "cached": false,
+      "filename": "loguru-0.7.3-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/0c/29/0348de65b8cc732daa3e33e67806420b2ae89bdce2b04af740289c5c6c8c/loguru-0.7.3-py3-none-any.whl",
+      "bytes": 61595,
+      "sha256": "31a33c10c8e1e10422bfd431aeb5d351c7cf7fa671e3c4df004162264b28220c",
+      "license": "",
+      "classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "installed_metadata_sha256": "3a371f8b089014fdaee055edc440d448242847926ad67613621af402f9975fd9",
+      "installed_record_sha256": "b90c0af8b263dd8a1726d494ad56512a00e3c0e9393cdde7f30c8573e4de718a",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "markdown-it-py",
+      "version": "4.2.0",
+      "cached": false,
+      "filename": "markdown_it_py-4.2.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/b3/81/4da04ced5a082363ecfa159c010d200ecbd959ae410c10c0264a38cac0f5/markdown_it_py-4.2.0-py3-none-any.whl",
+      "bytes": 91687,
+      "sha256": "9f7ebbcd14fe59494226453aed97c1070d83f8d24b6fc3a3bcf9a38092641c4a",
+      "license": "",
+      "classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "installed_metadata_sha256": "72c36ff516755443b1ecb61e17b2567a990230b49a504b0eb0c42d5f82448a9c",
+      "installed_record_sha256": "6cf9a725a00da97386ed2db28b5e0080b9cc77a4b380a8a748364bd5c89e7533",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "markupsafe",
+      "version": "3.0.3",
+      "cached": true,
+      "filename": "markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+      "source": "https://files.pythonhosted.org/packages/30/ac/0273f6fcb5f42e314c6d8cd99effae6a5354604d461b8d392b5ec9530a54/markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+      "bytes": 22940,
+      "sha256": "0bf2a864d67e76e5c9a34dc26ec616a66b9888e25e7b9460e1c76d3293bd9dbf",
+      "hash_basis": "prior verified cached wheel ledger"
+    },
+    {
+      "name": "mdurl",
+      "version": "0.1.2",
+      "cached": false,
+      "filename": "mdurl-0.1.2-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl",
+      "bytes": 9979,
+      "sha256": "84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8",
+      "license": "",
+      "classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "installed_metadata_sha256": "b53b29d48f499367053fda3c81e7ce27d2558380ebbf83e66023b02eb7ddd25d",
+      "installed_record_sha256": "729ca7851dffa28ebe5620e5efdee2efdda8d878d0ff06804bfa944f963529ff",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "misaki",
+      "version": "0.9.4",
+      "cached": false,
+      "filename": "misaki-0.9.4-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/82/ec/0ee4110ddb54278b8f21c40a140370ae8f687036c4edf578316602697c56/misaki-0.9.4-py3-none-any.whl",
+      "bytes": 3617774,
+      "sha256": "90e2eeb169786c014c429e5058d2ea6bcd02d651f2a24450ba6c9ffc0f8da15a",
+      "license": "Apache License\n                                   Version 2.0, January 2004\n                                http://www.apache.org/licenses/\n        \n ",
+      "classifiers": [
+        "License :: OSI Approved :: Apache Software License"
+      ],
+      "installed_metadata_sha256": "90a060bb617b1ffa63b2220ca42200a56093e76c0899c1684684cede80086e39",
+      "installed_record_sha256": "b582e68a0a4f48d749358020806f17bbf293d654ffa868a9452b43408de588e5",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "mpmath",
+      "version": "1.3.0",
+      "cached": true,
+      "filename": "mpmath-1.3.0-py3-none-any.whl",
+      "source": "https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl",
+      "bytes": 536198,
+      "sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c",
+      "hash_basis": "prior verified cached wheel ledger"
+    },
+    {
+      "name": "murmurhash",
+      "version": "1.0.15",
+      "cached": false,
+      "filename": "murmurhash-1.0.15-cp311-cp311-manylinux1_x86_64.manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_5_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/4d/64/5f8cfd1fd9cbeb43fcff96672f5bd9e7e1598d1c970f808ecd915490dc20/murmurhash-1.0.15-cp311-cp311-manylinux1_x86_64.manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_5_x86_64.whl",
+      "bytes": 128396,
+      "sha256": "c4cd739a00f5a4602201b74568ddabae46ec304719d9be752fd8f534a9464b5e",
+      "license": "MIT",
+      "classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "installed_metadata_sha256": "e3b1f1ffa44da7ce73e64ece028991d1c9c52b5d466b2586575ea822a03dfd6e",
+      "installed_record_sha256": "d4f9738f0c90816738996447c0f707dacb55cb893307707d4d3c7361e8dd8d74",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "networkx",
+      "version": "3.5",
+      "cached": true,
+      "filename": "networkx-3.5-py3-none-any.whl",
+      "source": "https://files.pythonhosted.org/packages/eb/8d/776adee7bbf76365fdd7f2552710282c79a4ead5d2a46408c9043a2b70ba/networkx-3.5-py3-none-any.whl",
+      "bytes": 2034406,
+      "sha256": "0030d386a9a06dee3565298b4a734b68589749a544acbb6c412dc9e2489ec6ec",
+      "hash_basis": "prior verified cached wheel ledger"
+    },
+    {
+      "name": "num2words",
+      "version": "0.5.14",
+      "cached": false,
+      "filename": "num2words-0.5.14-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/d6/5b/545e9267a1cc080c8a1be2746113a063e34bcdd0f5173fd665a5c13cb234/num2words-0.5.14-py3-none-any.whl",
+      "bytes": 163525,
+      "sha256": "1c8e5b00142fc2966fd8d685001e36c4a9911e070d1b120e1beb721fa1edb33d",
+      "license": "LGPL",
+      "classifiers": [
+        "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)"
+      ],
+      "installed_metadata_sha256": "7b5b9217db18274db0fdb75c1e7dee83c61be4f408be4d9d796a2253d55786df",
+      "installed_record_sha256": "45e05efe1cdb3b2c2e1c3d44725fddf5bbd2e42607d58db93fd74d4c294dfdc3",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "numpy",
+      "version": "2.2.6",
+      "cached": true,
+      "filename": "numpy-2.2.6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "source": "https://files.pythonhosted.org/packages/b3/dd/2238b898e51bd6d389b7389ffb20d7f4c10066d80351187ec8e303a5a475/numpy-2.2.6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "bytes": 16821570,
+      "sha256": "ba10f8411898fc418a521833e014a77d3ca01c15b0c6cdcce6a0d2897e6dbbdf",
+      "hash_basis": "prior verified cached wheel ledger"
+    },
+    {
+      "name": "packaging",
+      "version": "25.0",
+      "cached": true,
+      "filename": "packaging-25.0-py3-none-any.whl",
+      "source": "https://files.pythonhosted.org/packages/20/12/38679034af332785aac8774540895e234f4d07f7545804097de4b666afd8/packaging-25.0-py3-none-any.whl",
+      "bytes": 66469,
+      "sha256": "29572ef2b1f17581046b3a2227d5c611fb25ec70ca1ba8554b24b0e69331a484",
+      "hash_basis": "prior verified cached wheel ledger"
+    },
+    {
+      "name": "phonemizer-fork",
+      "version": "3.3.2",
+      "cached": false,
+      "filename": "phonemizer_fork-3.3.2-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/64/f1/0dcce21b0ae16a82df4b6583f8f3ad8e55b35f7e98b6bf536a4dd225fa08/phonemizer_fork-3.3.2-py3-none-any.whl",
+      "bytes": 82700,
+      "sha256": "97305c76f4183b3825dae8f4c032265fe78c9946ce58c47d4b62161349264b74",
+      "license": "GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007  Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/> Everyone is permitted to copy ",
+      "classifiers": [
+        "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"
+      ],
+      "installed_metadata_sha256": "8b85e61f526e6abc4cfe2f9dbf56dfc6a436a16941163186f686f632b43ea64d",
+      "installed_record_sha256": "c8b91afa8b3f9aaa2676ae4da7cdd140ac3c01f4d529e1df24ed2630914aeb65",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "preshed",
+      "version": "3.0.13",
+      "cached": false,
+      "filename": "preshed-3.0.13-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/ee/2e/1ac761e973966893cd3a0ad3256360365276e2d1e779e351448981a1156a/preshed-3.0.13-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "bytes": 823096,
+      "sha256": "f8e6fe0620ed0f96a246d46447055c447e071cd8222731a045c235e8a758c918",
+      "license": "MIT",
+      "classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "installed_metadata_sha256": "52df36fb1dc14a7d67da1bf440d7198214c688b53a571da0a443d531b387eb88",
+      "installed_record_sha256": "663be047a1f8a561e27b7f87b25c5253f99d8db44165a587554a8bfc0434426f",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "pydantic",
+      "version": "2.14.0",
+      "cached": true,
+      "hash_basis": "installed distribution metadata/RECORD; exact original wheel URL not retained in this release inventory"
+    },
+    {
+      "name": "pydantic-core",
+      "version": "2.50.0",
+      "cached": true,
+      "hash_basis": "installed distribution metadata/RECORD; exact original wheel URL not retained in this release inventory"
+    },
+    {
+      "name": "pygments",
+      "version": "2.21.0",
+      "cached": true,
+      "hash_basis": "installed distribution metadata/RECORD; exact original wheel URL not retained in this release inventory"
+    },
+    {
+      "name": "pyparsing",
+      "version": "3.3.3",
+      "cached": false,
+      "filename": "pyparsing-3.3.3-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/38/bb/d215ee7c73b61497b28a5503f9f53523f294fcc936762b7caf90e0c1c2b5/pyparsing-3.3.3-py3-none-any.whl",
+      "bytes": 126420,
+      "sha256": "ece8c00a69cf01b45d0b1dedabb469c90d8caf996d4fda40f147627a122849a4",
+      "license": "MIT",
+      "classifiers": [],
+      "installed_metadata_sha256": "f2ca34052d720622d300023472ef8ae94fe5b57d69acbb28a8667f6dd0e13497",
+      "installed_record_sha256": "b2f1f76b516b033fae6caec9a6de613d1229f3e66060913a24af8daf7bd24026",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "cached": false,
+      "filename": "python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+      "bytes": 229892,
+      "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+      "license": "Dual License",
+      "classifiers": [
+        "License :: OSI Approved :: Apache Software License",
+        "License :: OSI Approved :: BSD License"
+      ],
+      "installed_metadata_sha256": "a9d436da322be808332f98d88325998e87cb693a678a9969feb4cfad729a6e93",
+      "installed_record_sha256": "45756c72bb97dcdd31a1f935b0556360ea99881dfe441c8e13fe3247b4266438",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "pyyaml",
+      "version": "6.0.3",
+      "cached": true,
+      "filename": "pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+      "source": "https://files.pythonhosted.org/packages/71/60/917329f640924b18ff085ab889a11c763e0b573da888e8404ff486657602/pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+      "bytes": 806638,
+      "sha256": "b8bb0864c5a28024fac8a632c443c87c5aa6f215c0b126c449ae1a150412f31d",
+      "hash_basis": "prior verified cached wheel ledger"
+    },
+    {
+      "name": "rdflib",
+      "version": "7.6.0",
+      "cached": false,
+      "filename": "rdflib-7.6.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/10/c2/6604a71269e0c1bd75656d5a001432d16f2cc5b8c057140ec797155c295e/rdflib-7.6.0-py3-none-any.whl",
+      "bytes": 615416,
+      "sha256": "30c0a3ebf4c0e09215f066be7246794b6492e054e782d7ac2a34c9f70a15e0dd",
+      "license": "BSD-3-Clause",
+      "classifiers": [
+        "License :: OSI Approved :: BSD License"
+      ],
+      "installed_metadata_sha256": "29c569443738a45bfd85dd37865a038d7e19e5cb282dd3bd5f80f149d8d1f552",
+      "installed_record_sha256": "ef508d739059f24c8fd2436fbb13222609ee505e9b59d8b3682bf0e992af4b6f",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "referencing",
+      "version": "0.37.0",
+      "cached": false,
+      "filename": "referencing-0.37.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/2c/58/ca301544e1fa93ed4f80d724bf5b194f6e4b945841c5bfd555878eea9fcb/referencing-0.37.0-py3-none-any.whl",
+      "bytes": 26766,
+      "sha256": "381329a9f99628c9069361716891d34ad94af76e461dcb0335825aecc7692231",
+      "license": "MIT",
+      "classifiers": [],
+      "installed_metadata_sha256": "c93b00e6ab1524fd60848376604c189a114374776475c25a31d57be47b29de6a",
+      "installed_record_sha256": "3a86656c24559fb987e2d0cbf1e986d27b13ee0e5e914fd1b2e80f8c13fcb1ff",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "regex",
+      "version": "2025.9.18",
+      "cached": true,
+      "filename": "regex-2025.9.18-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+      "source": "https://files.pythonhosted.org/packages/fe/d0/c51d1e6a80eab11ef96a4cbad17fc0310cf68994fb01a7283276b7e5bbd6/regex-2025.9.18-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+      "bytes": 798981,
+      "sha256": "f2f422214a03fab16bfa495cfec72bee4aaa5731843b771860a471282f1bf74f",
+      "hash_basis": "prior verified cached wheel ledger"
+    },
+    {
+      "name": "requests",
+      "version": "2.32.5",
+      "cached": true,
+      "filename": "requests-2.32.5-py3-none-any.whl",
+      "source": "https://files.pythonhosted.org/packages/1e/db/4254e3eabe8020b458f1a747140d32277ec7a271daf1d235b70dc0b4e6e3/requests-2.32.5-py3-none-any.whl",
+      "bytes": 64738,
+      "sha256": "2462f94637a34fd532264295e186976db0f5d453d1cdd31473c85a6a161affb6",
+      "hash_basis": "prior verified cached wheel ledger"
+    },
+    {
+      "name": "rfc3986",
+      "version": "1.5.0",
+      "cached": false,
+      "filename": "rfc3986-1.5.0-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/c4/e5/63ca2c4edf4e00657584608bee1001302bbf8c5f569340b78304f2f446cb/rfc3986-1.5.0-py2.py3-none-any.whl",
+      "bytes": 31976,
+      "sha256": "a86d6e1f5b1dc238b218b012df0aa79409667bb209e58da56d0b94704e712a97",
+      "license": "Apache 2.0",
+      "classifiers": [
+        "License :: OSI Approved :: Apache Software License"
+      ],
+      "installed_metadata_sha256": "aa4b8207f89f832a6d84d4baf8cf8838a962f85dd83d1f31cce3973c712ed96a",
+      "installed_record_sha256": "28292d7c85846a890189845401e4d5a5dd1c84a54e2774c076adc70d8bf59516",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "rich",
+      "version": "15.0.0",
+      "cached": false,
+      "filename": "rich-15.0.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/82/3b/64d4899d73f91ba49a8c18a8ff3f0ea8f1c1d75481760df8c68ef5235bf5/rich-15.0.0-py3-none-any.whl",
+      "bytes": 310654,
+      "sha256": "33bd4ef74232fb73fe9279a257718407f169c09b78a87ad3d296f548e27de0bb",
+      "license": "MIT",
+      "classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "installed_metadata_sha256": "fad34fc603fac4481bf81f8dd629492fc302c0ec31909c86644751512afb2e3b",
+      "installed_record_sha256": "7ade9db6bd56695c0bbec5c4a9c9c57dd47e66e3781383d489e6fc3c0a42bba3",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "rpds-py",
+      "version": "2026.9.1",
+      "cached": false,
+      "filename": "rpds_py-2026.9.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/2d/5c/aac3b960fd55d37b49f77c0eebbe043eaf36762ebd48e7b46951e59c1c05/rpds_py-2026.9.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "bytes": 375426,
+      "sha256": "136a1c3fe4402b7008bc81cb62ee538481795b61a7e83df88dff3b3f02b726ff",
+      "license": "MIT",
+      "classifiers": [],
+      "installed_metadata_sha256": "5d72dca2e387c8d2b4180b68ee87c15b64751e059100a6db58891ec9995445c3",
+      "installed_record_sha256": "1bb22ddeb5168929820349e5255dcd7417b553be83fce21c8c65b875e8d0348d",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "safetensors",
+      "version": "0.6.2",
+      "cached": true,
+      "filename": "safetensors-0.6.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "source": "https://files.pythonhosted.org/packages/fe/5d/5a514d7b88e310c8b146e2404e0dc161282e78634d9358975fd56dfd14be/safetensors-0.6.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "bytes": 485835,
+      "sha256": "8045db2c872db8f4cbe3faa0495932d89c38c899c603f21e9b6486951a5ecb8f",
+      "hash_basis": "prior verified cached wheel ledger"
+    },
+    {
+      "name": "segments",
+      "version": "2.4.0",
+      "cached": false,
+      "filename": "segments-2.4.0-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/be/60/eef9acce946177f92c9aabf432224d87ab908bafafac516a36ab924199f3/segments-2.4.0-py2.py3-none-any.whl",
+      "bytes": 16321,
+      "sha256": "4021dc67f201cc03c864c74c618bdb163b1af629da3040babbaa37d8813f3db0",
+      "license": "Apache 2.0",
+      "classifiers": [
+        "License :: OSI Approved :: Apache Software License"
+      ],
+      "installed_metadata_sha256": "1d337da7a0f8ca58956e4e8e482b4b531bb4237b81486d012e0684b125c1060d",
+      "installed_record_sha256": "ce0db33611673882b7c5662730a01b1265022e28ef5bf1fb151b9c0fdf173abe",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "setuptools",
+      "version": "80.9.0",
+      "cached": true,
+      "installed_metadata_sha256": "7f890ca8dbc16b63b568c89312ed6a7f9f0a79d0b2b7f3c83bf796ac3d930615",
+      "installed_record_sha256": "364cf514a44d12967460e216895f400d418f7677d86cc014c8807a87c7175e4a",
+      "filename": "setuptools-80.9.0-py3-none-any.whl",
+      "source": "https://files.pythonhosted.org/packages/a3/dc/17031897dae0efacfea57dfd3a82fdd2a2aeb58e0ff71b77b87e44edc772/setuptools-80.9.0-py3-none-any.whl",
+      "bytes": 1201486,
+      "sha256": "062d34222ad13e0cc312a4c02d73f059e86a4acbfbdea8f8f76b28c99f306922",
+      "hash_basis": "prior verified cached wheel ledger"
+    },
+    {
+      "name": "shellingham",
+      "version": "1.5.4",
+      "cached": false,
+      "filename": "shellingham-1.5.4-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/e0/f9/0595336914c5619e5f28a1fb793285925a8cd4b432c9da0a987836c7f822/shellingham-1.5.4-py2.py3-none-any.whl",
+      "bytes": 9755,
+      "sha256": "7ecfff8f2fd72616f7481040475a65b2bf8af90a56c89140852d1120324e8686",
+      "license": "ISC License",
+      "classifiers": [
+        "License :: OSI Approved :: ISC License (ISCL)"
+      ],
+      "installed_metadata_sha256": "183d80220a37493262795739dd357cc5bb3f49bd390cc9198d5180e5451a07fa",
+      "installed_record_sha256": "a4768e4ddad24ee556a23164f3136d2867eaf756423428b51302a1aa8d7eae15",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "six",
+      "version": "1.17.0",
+      "cached": false,
+      "filename": "six-1.17.0-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl",
+      "bytes": 11050,
+      "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+      "license": "MIT",
+      "classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "installed_metadata_sha256": "562042078c2752549f6d8a7c86dbc5dd708088a7be6d80672ec7b07100b72468",
+      "installed_record_sha256": "4023a5f17cf11fbf779c7b1fdd401f5d46b8c746e82133d23059af148e4c7753",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "smart-open",
+      "version": "8.0.2",
+      "cached": false,
+      "filename": "smart_open-8.0.2-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/1c/48/d362978544ab08b385c6222ccb048fab1db3e3b820a07ef652c5d75678ae/smart_open-8.0.2-py3-none-any.whl",
+      "bytes": 73414,
+      "sha256": "7ff6e4acf454269905db0c747f5d14fdba6056db572c0f8398043676dc91515c",
+      "license": "",
+      "classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "installed_metadata_sha256": "4d567d353122b0d8808ea218280e076d89de3bcb1ba76429df3907143b5cb864",
+      "installed_record_sha256": "ca59f0f306a40088a297ed4bda319ab4e289752e04bebc7aaa76959f6c9163bb",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "spacy",
+      "version": "3.8.16",
+      "cached": false,
+      "filename": "spacy-3.8.16-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/10/3e/39e910b91b9a6cae61dbde9e42196c37388ba4f2d3abb88ebf1e9e4a303e/spacy-3.8.16-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+      "bytes": 34678935,
+      "sha256": "bc4e59799dcb0eb4823e5946515d3ca0d503ff78ef2502172d4b59ee0fc567ec",
+      "license": "MIT",
+      "classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "installed_metadata_sha256": "f7e3c7b28d3dd4856541c416c0874a34408fbaa8450dec8feb44ef8640ca9274",
+      "installed_record_sha256": "e3d836bc952ef8a5d24194f7c0fb9b62027c5c1c6a5fb1d73e259fe2bc9eba63",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "spacy-curated-transformers",
+      "version": "0.3.1",
+      "cached": false,
+      "filename": "spacy_curated_transformers-0.3.1-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/42/d8/f053d43125ae4ad14f3e2a12a475a656128233f1f40a272c6e09a05c73e8/spacy_curated_transformers-0.3.1-py2.py3-none-any.whl",
+      "bytes": 237943,
+      "sha256": "503559b6a1d6e44ec2c978e18ed871ce5c3d56871dc9216c0e1523428204e610",
+      "license": "MIT",
+      "classifiers": [],
+      "installed_metadata_sha256": "62cebcfcb8500c73423d73c4cfd066cb499a4f33fdd612cee32c0a6b7c4bf159",
+      "installed_record_sha256": "53a4e15d1af15f51483cc6815d658897cd0eaaa13c2247f34d9b1d25fbb19219",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "spacy-legacy",
+      "version": "3.0.12",
+      "cached": false,
+      "filename": "spacy_legacy-3.0.12-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/c3/55/12e842c70ff8828e34e543a2c7176dac4da006ca6901c9e8b43efab8bc6b/spacy_legacy-3.0.12-py2.py3-none-any.whl",
+      "bytes": 29971,
+      "sha256": "476e3bd0d05f8c339ed60f40986c07387c0a71479245d6d0f4298dbd52cda55f",
+      "license": "MIT",
+      "classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "installed_metadata_sha256": "d7d8fd88b4c1a701001877c575575049a22449481344d7e798b2637a2555dfd2",
+      "installed_record_sha256": "541bc8d468809c2106b3893ec16d65fe02e66410764947ca8cbbdf099a324a3e",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "spacy-loggers",
+      "version": "1.0.5",
+      "cached": false,
+      "filename": "spacy_loggers-1.0.5-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/33/78/d1a1a026ef3af911159398c939b1509d5c36fe524c7b644f34a5146c4e16/spacy_loggers-1.0.5-py3-none-any.whl",
+      "bytes": 22343,
+      "sha256": "196284c9c446cc0cdb944005384270d775fdeaf4f494d8e269466cfa497ef645",
+      "license": "MIT",
+      "classifiers": [],
+      "installed_metadata_sha256": "18a091c9186a04bc9032859fd2ad3f853101ebe5aabff066391f0e584e692b73",
+      "installed_record_sha256": "1cbf3420865cab3d45140b98027aceaa79ab8d948ff05dc6f1dce3fa9399e3dd",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "srsly",
+      "version": "2.5.4",
+      "cached": false,
+      "filename": "srsly-2.5.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/ee/56/8ba80305fcd90e6a883cf8a56148180fc468dbeffa38870a1d41e6e0ea1b/srsly-2.5.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "bytes": 1204530,
+      "sha256": "872249c20013578f940f0cd96ea697210e8113b02c92832c42250a38fc12b4a5",
+      "license": "MIT",
+      "classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "installed_metadata_sha256": "19b11ee9c724a02f3722ec6c58788a70a70734f9070dfef629dbfbf021da8919",
+      "installed_record_sha256": "9619468f1ba5391ecd4e6e6e28b65b84ad27358d7141ddb71ac88b9f037aaf86",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "sympy",
+      "version": "1.14.0",
+      "cached": true,
+      "filename": "sympy-1.14.0-py3-none-any.whl",
+      "source": "https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl",
+      "bytes": 6299353,
+      "sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5",
+      "hash_basis": "prior verified cached wheel ledger"
+    },
+    {
+      "name": "termcolor",
+      "version": "3.3.0",
+      "cached": false,
+      "filename": "termcolor-3.3.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/33/d1/8bb87d21e9aeb323cc03034f5eaf2c8f69841e40e4853c2627edf8111ed3/termcolor-3.3.0-py3-none-any.whl",
+      "bytes": 7734,
+      "sha256": "cf642efadaf0a8ebbbf4bc7a31cec2f9b5f21a9f726f4ccbb08192c9c26f43a5",
+      "license": "MIT",
+      "classifiers": [],
+      "installed_metadata_sha256": "880aeaba6300677d4ecc022fb63f8adcd57a753b6fd2b5ec17841f722f910196",
+      "installed_record_sha256": "3088e7f5dbf13725f287cf0dc1a05c5717c279b02ca7b9bc7cb9232598744534",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "thinc",
+      "version": "8.3.13",
+      "cached": false,
+      "filename": "thinc-8.3.13-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/ad/51/ec91c0434bd9a1096ab874bbd6dc110c5089d7fc513137e6af59bd051eec/thinc-8.3.13-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "bytes": 4131972,
+      "sha256": "81337dfbee37f58f36c0c70f9a819dce1b32cdc13d959181e10de079621f6ac6",
+      "license": "MIT",
+      "classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "installed_metadata_sha256": "151e4f7732eb618431031e5945aef62898bd729c32e2a28c8378af15809df1f0",
+      "installed_record_sha256": "f37d8c158d4da33995b2c634ed6b0117da1d7209304dc932ba7bfcf31fda4371",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "tokenizers",
+      "version": "0.22.1",
+      "cached": true,
+      "filename": "tokenizers-0.22.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "source": "https://files.pythonhosted.org/packages/d0/c6/dc3a0db5a6766416c32c034286d7c2d406da1f498e4de04ab1b8959edd00/tokenizers-0.22.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "bytes": 3250221,
+      "sha256": "e2ef6063d7a84994129732b47e7915e8710f27f99f3a3260b8a38fc7ccd083f4",
+      "hash_basis": "prior verified cached wheel ledger"
+    },
+    {
+      "name": "torch",
+      "version": "2.8.0+cpu",
+      "cached": true,
+      "filename": "torch-2.8.0+cpu-cp311-cp311-manylinux_2_28_x86_64.whl",
+      "source": "https://download.pytorch.org/whl/cpu/torch-2.8.0%2Bcpu-cp311-cp311-manylinux_2_28_x86_64.whl",
+      "bytes": 26766963,
+      "sha256": "c26a2f83e572c1e42849f9f27ac3ded747bf6c3621eacb214b10a084b070fe69",
+      "hash_basis": "prior verified cached wheel ledger"
+    },
+    {
+      "name": "tqdm",
+      "version": "4.67.1",
+      "cached": true,
+      "filename": "tqdm-4.67.1-py3-none-any.whl",
+      "source": "https://files.pythonhosted.org/packages/d0/30/dc54f88dd4a2b5dc8a0279bdd7270e735851848b762aeb1c1184ed1f6b14/tqdm-4.67.1-py3-none-any.whl",
+      "bytes": 78540,
+      "sha256": "26445eca388f82e72884e0d580d5464cd801a3ea01e63e5601bdff9ba6a48de2",
+      "hash_basis": "prior verified cached wheel ledger"
+    },
+    {
+      "name": "transformers",
+      "version": "4.57.1",
+      "cached": true,
+      "filename": "transformers-4.57.1-py3-none-any.whl",
+      "source": "https://files.pythonhosted.org/packages/71/d3/c16c3b3cf7655a67db1144da94b021c200ac1303f82428f2beef6c2e72bb/transformers-4.57.1-py3-none-any.whl",
+      "bytes": 11990925,
+      "sha256": "b10d05da8fa67dc41644dbbf9bc45a44cb86ae33da6f9295f5fbf5b7890bd267",
+      "hash_basis": "prior verified cached wheel ledger"
+    },
+    {
+      "name": "typer",
+      "version": "0.27.3",
+      "cached": false,
+      "filename": "typer-0.27.3-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/07/ea/2e31b67051e91a133189e9c000c222502ddc6969856416de0d095de4c0b0/typer-0.27.3-py3-none-any.whl",
+      "bytes": 123312,
+      "sha256": "e50022f28b82a86313e54501317a1db64bf8f8d036ff8cfe5ca7e47675454aff",
+      "license": "MIT",
+      "classifiers": [],
+      "installed_metadata_sha256": "fc2cbb86c4fd175326b63427e9a3fa13e79364d7333a945414d9c6ac80c0f0e4",
+      "installed_record_sha256": "2a06b789bb6020d4788f486a283789d538135b284ca8c4c5b3311c4410971126",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "typing-extensions",
+      "version": "4.16.0",
+      "cached": false,
+      "filename": "typing_extensions-4.16.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+      "bytes": 45571,
+      "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+      "license": "PSF-2.0",
+      "classifiers": [],
+      "installed_metadata_sha256": "b05084ca1d50879865178d9fff9fabeab61bdfb1f361bfbde95421ffc8f9be46",
+      "installed_record_sha256": "469012ecebb9eebbcd26c7e578c053ad4e360213e65cc72516f4f0b10350d1c6",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.4",
+      "cached": true,
+      "hash_basis": "installed distribution metadata/RECORD; exact original wheel URL not retained in this release inventory"
+    },
+    {
+      "name": "uritemplate",
+      "version": "4.2.0",
+      "cached": false,
+      "filename": "uritemplate-4.2.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/a9/99/3ae339466c9183ea5b8ae87b34c0b897eda475d2aec2307cae60e5cd4f29/uritemplate-4.2.0-py3-none-any.whl",
+      "bytes": 11488,
+      "sha256": "962201ba1c4edcab02e60f9a0d3821e82dfc5d2d6662a21abd533879bdb8a686",
+      "license": "BSD 3-Clause OR Apache-2.0",
+      "classifiers": [],
+      "installed_metadata_sha256": "352afd43b6f1ab8f94ca31af2a1ad4f0d1a94dbd712c1b6d9e44e35d4bb3a962",
+      "installed_record_sha256": "feaf5cac4bf9144b046d86f4bcff88c6af6ba5523fed61b201d69006f141347b",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "urllib3",
+      "version": "2.5.0",
+      "cached": true,
+      "filename": "urllib3-2.5.0-py3-none-any.whl",
+      "source": "https://files.pythonhosted.org/packages/a7/c2/fe1e52489ae3122415c51f387e221dd0773709bad6c6cdaa599e8a2c5185/urllib3-2.5.0-py3-none-any.whl",
+      "bytes": 129795,
+      "sha256": "e6b01673c0fa6a13e374b50871808eb3bf7046c4b125b216f6bf1cc604cff0dc",
+      "hash_basis": "prior verified cached wheel ledger"
+    },
+    {
+      "name": "wasabi",
+      "version": "1.1.3",
+      "cached": false,
+      "filename": "wasabi-1.1.3-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/06/7c/34330a89da55610daa5f245ddce5aab81244321101614751e7537f125133/wasabi-1.1.3-py3-none-any.whl",
+      "bytes": 27880,
+      "sha256": "f76e16e8f7e79f8c4c8be49b4024ac725713ab10cd7f19350ad18a8e3f71728c",
+      "license": "MIT",
+      "classifiers": [],
+      "installed_metadata_sha256": "428dba3283ea8a4059eff38495ac22d58f9c29b7c9ff12df3e796c209a96d069",
+      "installed_record_sha256": "e41674f9766695c8013401a29469e975e02fa9e0e0c9823109f71ba143a6fb3f",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "weasel",
+      "version": "1.0.0",
+      "cached": false,
+      "filename": "weasel-1.0.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/0a/07/57ebf7a6798b016c064bd0ca81b4c6a99daa4dc377b898bc7b41eb6b5af0/weasel-1.0.0-py3-none-any.whl",
+      "bytes": 50713,
+      "sha256": "89518acee027f49d743126c3502d35e6dd14f5768be5c37c9af47c171b6005cc",
+      "license": "MIT",
+      "classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "installed_metadata_sha256": "a16824512ee2fec38c83720e7c7f0fcbaabff69e047820953418088bf4adc6b0",
+      "installed_record_sha256": "2f36c424ac73a496f400e2568bf632bded99d197d3f09259514ffb0e5e4e83bc",
+      "hash_basis": "prior verified provisioning input"
+    },
+    {
+      "name": "wrapt",
+      "version": "1.17.3",
+      "cached": false,
+      "filename": "wrapt-1.17.3-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/5d/8f/a32a99fc03e4b37e31b57cb9cefc65050ea08147a8ce12f288616b05ef54/wrapt-1.17.3-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl",
+      "bytes": 82376,
+      "sha256": "b32888aad8b6e68f83a8fdccbf3165f5469702a7544472bdf41f582970ed3311",
+      "license": "BSD",
+      "classifiers": [
+        "License :: OSI Approved :: BSD License"
+      ],
+      "installed_metadata_sha256": "40db244fa00f49f0f1ab8f0c66ccdac11db164c7ba4d7c468299f0dff575f4f4",
+      "installed_record_sha256": "43f5e00684b71078ea63f161f5ec6527f7d340e95e85daf66be69e68b1c0847d",
+      "hash_basis": "prior verified provisioning input"
+    }
+  ]
+}

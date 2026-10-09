@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "demo_responses": {
+    "supported": {
+      "kind": "memory",
+      "reply_text": "Huling naitala: blue keys \u2014 Desk drawer (2026-10-09T13:14:42.166260+00:00). Hindi kumpirmado ang kasalukuyang lokasyon.",
+      "stored_location": "Desk drawer",
+      "live_location_verified": false,
+      "persisted_turn_input": false,
+      "speech_status": "not_provisioned"
+    },
+    "unknown": {
+      "kind": "unknown",
+      "reason": "no_confirmed_match"
+    },
+    "unsupported_visual_question": {
+      "kind": "unsupported"
+    }
+  },
+  "checks": [
+    "real typed/frame turn retains exact saved evidence; no input files or DB writes",
+    "confirmation bypass/unsupported visual question/pre-start cancellation rejected",
+    "three concurrent typed turns preserve memory",
+    "bounded POI import namespaces retained; malformed update preserves prior cache",
+    "restart preserves confirmed item/photo and cache; nearest cached straight-line ordering",
+    "delete-all removes POI and personal evidence; no dataset label residue in active DB"
+  ],
+  "inference_calls": 0,
+  "python_backend_network_attempts": 0,
+  "servers_stopped": true,
+  "scope": "loopback HTTP; Python audit guard, not OS-wide isolation"
+}

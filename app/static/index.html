@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,interactive-widget=resizes-content">
+<meta name="theme-color" content="#f4f3e8"><meta name="description" content="A little help remembering where you left things. Save a memory, then ask Nook."><title>Nook · A little less searching</title>
+<link rel="stylesheet" href="/assets/styles.css"><script type="module" src="/assets/app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<section id="onboarding" class="onboarding reference-intro" aria-labelledby="onboard-title" hidden>
+<h1 id="onboard-title" class="sr-only" tabindex="-1">Nook. A little less searching.</h1>
+<p class="sr-only">Save an item and its place, then ask for its last recorded location. Nothing is saved until you review it.</p>
+<div class="intro-canvas" aria-hidden="true">
+<svg id="intro-star" class="intro-star" viewBox="0 0 390 550" preserveAspectRatio="none"><path fill="#f6d88f" d="M95 0C116 188 152 254 365 275C155 297 114 365 95 550C75 365 32 297-175 275C32 254 75 188 95 0Z"/><path d="M95 0V550" fill="none" stroke="#d0a971" stroke-width=".65"/></svg>
+<div class="intro-words"><span>Goal-setting</span><span>Dedication</span><span>Workflow</span><span>Efficiency</span><span>Concentration</span><span>Discipline</span><span>Balance</span><span>Productivity</span><span>Time-management</span><span>Performance</span><span>Nook.</span></div></div>
+<button id="onboard-next" class="intro-cta" type="button"><span>Get Started</span><!--
+tags: [chevron, arrow, right, next, forward, more, caret-right, arrow-right, direction, navigation, angle]
+category: Arrows
+version: "1.0"
+unicode: "ea61"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M9 6l6 6l-6 6" />
+</svg>
+</button>
+</section>
+<div id="app-shell" class="app-shell">
+ <header class="masthead"><a class="wordmark" href="#talk" aria-label="Nook chat">nook<span class="brand-dot">.</span></a><button id="open-settings" class="icon-button" type="button" aria-label="Settings and connection"><!--
+tags: [settings, sliders, equalizer, controls, filter, options, tune, preferences, mixer, configure, adjustments, horizontal]
+category: System
+version: "1.11"
+unicode: "ec38"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 6a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+  <path d="M4 6l8 0" />
+  <path d="M16 6l4 0" />
+  <path d="M6 12a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+  <path d="M4 12l2 0" />
+  <path d="M10 12l10 0" />
+  <path d="M15 18a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+  <path d="M4 18l11 0" />
+  <path d="M19 18l1 0" />
+</svg>
+</button></header>
+ <main id="main" tabindex="-1">
+  <div id="notice" class="notice" role="status" aria-live="polite"></div>
+  <section id="talk" aria-labelledby="talk-title">
+   <div id="conversation" class="conversation">
+    <div id="chat-welcome" class="chat-welcome"><div class="welcome-character"><span class="welcome-star"></span><svg class="mascot" viewBox="0 0 240 230" aria-hidden="true"><defs><linearGradient id="rello-chat" x1="0.7" y1="0" x2="0.25" y2="1"><stop stop-color="#c5ff5d"/><stop offset=".48" stop-color="#00ef87"/><stop offset="1" stop-color="#00b8be"/></linearGradient></defs><path fill="url(#rello-chat)" d="M15 121C15 58 59 15 119 15c60 0 108 46 108 103 0 24-8 43-19 60l17 34c4 9-2 15-11 12L76 177l-45 32c-9 6-16 1-16-9z"/><g class="mascot-eyes"><ellipse fill="#fffef8" cx="104" cy="104" rx="21" ry="34"/><ellipse fill="#fffef8" cx="151" cy="104" rx="21" ry="34"/><g class="mascot-pupils"><circle fill="#141815" cx="113" cy="103" r="9"/><circle fill="#141815" cx="160" cy="103" r="9"/></g></g></svg></div><p class="hello-label">YOUR EVERYDAY MEMORY BUDDY</p><h1 id="talk-title">Hey, I'm Nook.<br>What are we finding?</h1><p class="welcome-copy">A name, a place, a little reminder.<br>Let's pick up where you left it.</p><div class="suggestions"><button type="button" data-question="Where are my keys?">Where are my keys? <!--
+tags: [direction, east, next, forward, continue, proceed, go, pointer, arrow, right]
+category: Arrows
+version: "1.0"
+unicode: "ea1f"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M13 18l6 -6" />
+  <path d="M13 6l6 6" />
+</svg>
+</button><a href="#capture">Remember something <!--
+tags: [add, new, create, insert, more, plus-sign, increase, positive, math, cross, plus]
+category: Math
+version: "1.0"
+unicode: "eb0b"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 5l0 14" />
+  <path d="M5 12l14 0" />
+</svg>
+</a></div></div>
+    <p id="user-question" class="user-bubble" hidden></p><div id="answer" aria-live="polite"></div>
+   </div>
+   <div class="composer-wrap"><form id="talk-form" class="composer"><label for="utterance" class="sr-only">Your question or reviewed transcript</label><textarea id="utterance" rows="1" maxlength="2000" required placeholder="Ask about something you saved…"></textarea><div class="composer-tools"><a class="icon-button" href="#capture" aria-label="Add a photo or memory"><!--
+tags: [add, new, create, insert, more, plus-sign, increase, positive, math, cross, plus]
+category: Math
+version: "1.0"
+unicode: "eb0b"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 5l0 14" />
+  <path d="M5 12l14 0" />
+</svg>
+</a><span class="composer-hint">Just between you &amp; your memories</span><button id="record" type="button" class="icon-button" aria-label="Start recording" title="Local speech is off" disabled><!--
+tags: [mic, record, voice, audio, sound, speak, podcast, recording, dictation, input, microphone]
+category: Media
+version: "1.0"
+unicode: "eaf0"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M9 5a3 3 0 0 1 3 -3a3 3 0 0 1 3 3v5a3 3 0 0 1 -3 3a3 3 0 0 1 -3 -3l0 -5" />
+  <path d="M5 10a7 7 0 0 0 14 0" />
+  <path d="M8 21l8 0" />
+  <path d="M12 17l0 4" />
+</svg>
+</button><button id="stop-record" type="button" hidden>Stop &amp; review</button><button id="cancel-talk" type="button" class="icon-button" aria-label="Stop request" hidden><!--
+category: System
+tags: [close, cancel, remove, delete, dismiss, exit, clear, cross, times, multiply, x]
+version: "1.0"
+unicode: "eb55"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M18 6l-12 12" />
+  <path d="M6 6l12 12" />
+</svg>
+</button><button id="ask" class="send-button" type="submit" aria-label="Send question"><!--
+tags: [direction, north, upward, top, upload, ascend, sort, pointer, arrow]
+category: Arrows
+version: "1.0"
+unicode: "ea25"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 5l0 14" />
+  <path d="M18 11l-6 -6" />
+  <path d="M6 11l6 -6" />
+</svg>
+</button></div></form><p class="composer-caption">Only what you save becomes a memory.</p></div>
+  </section>
+  <section id="capture" class="page" hidden aria-labelledby="capture-title">
+   <div class="page-heading"><p class="page-label">A clue for later</p><h1 id="capture-title">Remember this.</h1><p>Little things deserve a place.</p></div>
+   <ol class="capture-progress" aria-label="Save progress"><li data-stage="choose" aria-current="step">Choose</li><li data-stage="details">Details</li><li data-stage="review">Review</li></ol>
+   <div id="capture-start"><div class="photo-start"><div class="photo-symbol"><!--
+tags: [camera, photo, photography, picture, video, lens, image, snapshot]
+category: Media
+version: "1.0"
+unicode: "ea54"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" />
+  <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+</svg>
+</div><h2>A photo is a good start.</h2><p>Name it. Give it a place.<br>We'll keep the details together.</p><label class="primary file-button" for="photo-file">Choose a photo <!--
+tags: [add, new, create, insert, more, plus-sign, increase, positive, math, cross, plus]
+category: Math
+version: "1.0"
+unicode: "eb0b"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 5l0 14" />
+  <path d="M5 12l14 0" />
+</svg>
+</label><input id="photo-file" type="file" accept="image/jpeg,image/png,image/webp"><button id="camera-start" type="button" class="secondary">Take a photo</button><span class="file-hint">JPEG, PNG or WebP · up to 10 MB</span></div><button id="manual-start" type="button" class="text-button">Or save without a photo <!--
+tags: [direction, east, next, forward, continue, proceed, go, pointer, arrow, right]
+category: Arrows
+version: "1.0"
+unicode: "ea1f"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M13 18l6 -6" />
+  <path d="M13 6l6 6" />
+</svg>
+</button></div>
+   <div id="camera-area" hidden><video id="camera" playsinline muted aria-label="Camera preview"></video><div class="actions"><button id="take-photo" type="button" class="primary">Use this frame</button><button id="camera-stop" type="button">Close camera</button></div></div>
+   <div id="draft" hidden><span class="draft-label">Not saved yet</span><figure id="draft-figure"><img id="draft-photo" alt="Photo selected for review"><figcaption id="draft-source"></figcaption></figure><form id="capture-form"><h2>Give it a little context.</h2><div id="identity-field"><label for="identity">Save to</label><select id="identity"><option value="new">A new item</option></select></div><label for="item-name">What is it?</label><input id="item-name" maxlength="80" required placeholder="My blue house keys" autocomplete="off"><label for="item-location">Where did you leave it?</label><input id="item-location" maxlength="240" required placeholder="Hall cabinet, top drawer" autocomplete="off"><div id="current-option"><label class="check"><input id="make-current" type="checkbox" checked> Use as the last recorded place</label><p class="hint">For an older photo, turn this off to keep it as history.</p></div><div class="actions"><button id="review-memory" type="submit" class="primary">Review memory <!--
+tags: [direction, east, next, forward, continue, proceed, go, pointer, arrow, right]
+category: Arrows
+version: "1.0"
+unicode: "ea1f"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M13 18l6 -6" />
+  <path d="M13 6l6 6" />
+</svg>
+</button><button id="discard" type="button" class="text-button">Discard</button></div></form></div>
+   <div id="review" hidden><span class="draft-label">Not saved yet</span><h2 id="review-title" tabindex="-1">One last look.</h2><div id="review-summary" class="review-summary"></div><label class="check review-confirm"><input id="confirm-save" type="checkbox"> I checked the item and its place.</label><div class="actions"><button id="save-memory" type="button" class="primary" disabled>Save memory <!--
+tags: [check, checkmark, tick, done, yes, ok, confirm, success, approve, correct, complete]
+category: System
+version: "1.0"
+unicode: "ea5e"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l5 5l10 -10" />
+</svg>
+</button><button id="back-to-details" type="button" class="text-button">Edit details</button></div><p id="save-error" class="inline-error" role="alert"></p><p class="hint">You can update or delete this from Saved at any time.</p></div>
+  </section>
+  <section id="saved" class="page" hidden aria-labelledby="saved-title"><div class="page-heading"><p class="page-label">Your little collection</p><h1 id="saved-title">Everything, remembered.</h1><p id="saved-count">The things you chose to keep.</p></div><form id="search-form" class="search"><label for="search" class="sr-only">Find a saved item</label><!--
+category: System
+tags: [find, magnifier, magnifying-glass, lookup, zoom, explore, query, browse, search]
+version: "1.0"
+unicode: "eb1c"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+  <path d="M21 21l-6 -6" />
+</svg>
+<input id="search" type="search" maxlength="2000" placeholder="Find a memory…"><button type="submit" class="icon-button" aria-label="Search saved items"><!--
+tags: [direction, east, next, forward, continue, proceed, go, pointer, arrow, right]
+category: Arrows
+version: "1.0"
+unicode: "ea1f"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M13 18l6 -6" />
+  <path d="M13 6l6 6" />
+</svg>
+</button></form><div id="saved-list" class="cards"></div><button id="load-more" hidden type="button" class="secondary">Load more</button></section>
+ </main>
+ <nav class="bottom-nav" aria-label="Main navigation"><a href="#talk" data-page="talk"><!--
+tags: [chat, comment, speech-bubble, round, conversation, sms, reply, communication, dm, messaging, bubble, whatsapp, message, circle]
+category: Communication
+version: "1.0"
+unicode: "eaed"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" />
+</svg>
+<span>Chat</span></a><a href="#capture" data-page="capture"><!--
+tags: [camera, photo, photography, picture, video, lens, image, snapshot]
+category: Media
+version: "1.0"
+unicode: "ea54"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" />
+  <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+</svg>
+<span>Remember</span></a><a href="#saved" data-page="saved"><!--
+tags: [save, saved, favorite, read-later, tag, marker, bookmarks, ribbon, bookmark]
+category: Document
+version: "1.0"
+unicode: "ea3a"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4" />
+</svg>
+<span>Saved</span></a></nav>
+</div>
+<dialog id="detail" aria-labelledby="detail-title"><div class="sheet-handle"></div><div class="dialog-head"><span>Your saved memory</span><button id="close-detail" class="icon-button" type="button" aria-label="Close memory"><!--
+category: System
+tags: [close, cancel, remove, delete, dismiss, exit, clear, cross, times, multiply, x]
+version: "1.0"
+unicode: "eb55"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M18 6l-12 12" />
+  <path d="M6 6l12 12" />
+</svg>
+</button></div><div id="detail-content"></div></dialog>
+<dialog id="settings" aria-labelledby="settings-title"><div class="sheet-handle"></div><div class="dialog-head"><h2 id="settings-title">Make yourself at home.</h2><button id="close-settings" class="icon-button" aria-label="Close settings"><!--
+category: System
+tags: [close, cancel, remove, delete, dismiss, exit, clear, cross, times, multiply, x]
+version: "1.0"
+unicode: "eb55"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M18 6l-12 12" />
+  <path d="M6 6l12 12" />
+</svg>
+</button></div><div class="settings-content"><section><h3>Your memories stay here.</h3><p>Saved on this computer. Chat questions aren't kept. Nook shows the last place you recorded, not a live location.</p><p id="connection-state" class="connection-state">Connecting to your local service…</p></section><section><h3>A voice, when you need it.</h3><p id="speech-state">Checking local speech…</p><label class="check"><input id="speak-reply" type="checkbox" disabled> Include a spoken reply (English)</label><p class="hint">Record up to 10 seconds, review the words, then send. Audio replies only play when you choose.</p></section><section><label for="appearance">Appearance</label><select id="appearance"><option value="system">Match device</option><option value="light">Light</option><option value="dark">Dark</option></select><label class="check"><input id="reduce-motion" type="checkbox"> Reduce motion</label></section><button id="replay-onboarding" type="button" class="secondary">Meet Nook again <!--
+tags: [direction, east, next, forward, continue, proceed, go, pointer, arrow, right]
+category: Arrows
+version: "1.0"
+unicode: "ea1f"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12l14 0" />
+  <path d="M13 18l6 -6" />
+  <path d="M13 6l6 6" />
+</svg>
+</button></div></dialog>
+<dialog id="confirmation" aria-labelledby="confirmation-title"><div class="sheet-handle"></div><h2 id="confirmation-title"></h2><p id="confirmation-copy"></p><div class="actions"><button id="confirm-action" type="button" class="danger"></button><button id="decline-action" type="button">Keep memory</button></div></dialog>
+<noscript><p class="notice">Enable JavaScript to connect to your local memories.</p></noscript>
+</body></html>
