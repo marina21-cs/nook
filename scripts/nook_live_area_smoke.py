@@ -13,7 +13,10 @@ import tempfile
 from datetime import UTC, datetime
 from pathlib import Path
 from types import SimpleNamespace
+from unittest.mock import patch
 from uuid import uuid4
+
+from starlette.requests import Request
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from app.config import Settings
@@ -48,8 +51,13 @@ try:
             repo = ItemRepository(settings, store)
             poi = POICache(repo.db)
             poi.initialize()
-            request = SimpleNamespace(
-                app=SimpleNamespace(state=SimpleNamespace(poi=poi, requests=RequestRegistry()))
+            request = Request(
+                {
+                    "type": "http",
+                    "app": SimpleNamespace(
+                        state=SimpleNamespace(poi=poi, requests=RequestRegistry())
+                    ),
+                }
             )
             body = AreaDownload.model_validate(
                 {
@@ -69,17 +77,16 @@ try:
             assert 0 < download["cache"]["record_count"] <= 250
         finally:
             store.close()
+
         # Deny Python outbound connections for the persistence/query phase only.
         # This is not OS-wide isolation and does not alter firewall/security state.
-        original_connect = socket.socket.connect
-        original_connect_ex = socket.socket.connect_ex
-
         def deny(*args, **kwargs):
             raise OSError("Offline verification: outbound socket denied")
 
-        socket.socket.connect = deny
-        socket.socket.connect_ex = deny
-        try:
+        with (
+            patch.object(socket.socket, "connect", deny),
+            patch.object(socket.socket, "connect_ex", deny),
+        ):
             store = EvidenceStore(settings)
             try:
                 repo = ItemRepository(settings, store)
@@ -115,9 +122,6 @@ try:
                 )
             finally:
                 store.close()
-        finally:
-            socket.socket.connect = original_connect
-            socket.socket.connect_ex = original_connect_ex
 except Exception as exc:
     result["error_type"] = type(exc).__name__
     result["error"] = str(exc)

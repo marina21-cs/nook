@@ -188,7 +188,10 @@ def main():
                     start = time.monotonic()
                     rejections = []
                     for confirmation in [False, None]:
-                        payload = {"request_id": str(uuid4()), "utterance": reviewed}
+                        payload: dict[str, object] = {
+                            "request_id": str(uuid4()),
+                            "utterance": reviewed,
+                        }
                         if confirmation is not None:
                             payload["transcript_confirmed"] = confirmation
                         rejected = client.post("/api/speech/turns", json=payload)
@@ -280,8 +283,8 @@ def main():
                     process.wait(timeout=5)
                 result["servers_stopped"] = True
                 worker = result.get("worker_after_stt")
-                result["worker_stopped"] = (
-                    worker is None or not Path(f"/proc/{worker['pid']}").exists()
+                result["worker_stopped"] = worker is None or (
+                    isinstance(worker, dict) and not Path(f"/proc/{worker['pid']}").exists()
                 )
     except Exception as exc:
         result["error"] = str(exc)

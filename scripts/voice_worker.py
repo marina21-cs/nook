@@ -52,7 +52,7 @@ def validate_artifacts(root):
 
 def resource_gate():
     # Existing unprivileged experimental limits. No sensor/fan/governor changes.
-    temps = {}
+    temps: dict[str, list[float]] = {}
     for sensor in Path("/sys/class/hwmon").glob("hwmon*"):
         name = (sensor / "name").read_text().strip()
         if name in {"k10temp", "spd5118"}:
@@ -99,6 +99,8 @@ def run(root):
                         whisper = WhisperForConditionalGeneration.from_pretrained(
                             str(root / "whisper"), local_files_only=True
                         ).eval()
+                    if processor is None or whisper is None:
+                        raise RuntimeError("Local transcription initialization incomplete")
                     data = base64.b64decode(body["audio_base64"], validate=True)
                     with wave.open(io.BytesIO(data), "rb") as wav:
                         if (wav.getnchannels(), wav.getsampwidth(), wav.getframerate()) != (
@@ -154,6 +156,8 @@ def run(root):
                         pipeline = KPipeline(
                             lang_code="a", model=model, device="cpu", repo_id="hexgrad/Kokoro-82M"
                         )
+                    if pipeline is None:
+                        raise RuntimeError("Local speech initialization incomplete")
                     chunks = []
                     count = 0
                     for chunk in pipeline(text, voice=str(root / "kokoro/af_heart.pt"), speed=1):

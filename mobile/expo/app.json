@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "Nook",
+    "slug": "nook-local",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "nook-local",
+    "platforms": ["android", "web"],
+    "web": { "bundler": "metro" },
+    "updates": { "enabled": false },
+    "android": {
+      "package": "dev.nook.local",
+      "allowBackup": false,
+      "permissions": [],
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.CAMERA",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.SYSTEM_ALERT_WINDOW"
+      ]
+    },
+    "plugins": ["expo-sqlite", "./plugins/withLocalOnlyAndroid.cjs"]
+  }
+}

@@ -72,10 +72,10 @@ def sample(prev=None, pids=()):
                 for line in Path(f"/proc/{pid}/status").read_text().splitlines()
                 if ":" in line
             )
-            r = int(st.get("VmRSS", "0").split()[0]) * 1024
+            process_rss = int(st.get("VmRSS", "0").split()[0]) * 1024
             h = int(st.get("VmHWM", "0").split()[0]) * 1024
             ticks += int(fields[11]) + int(fields[12])
-            rss += r
+            rss += process_rss
             hwm += h
             # Socket enumeration is supplementary evidence, not a resource gate.
             # /proc can deny fd access during process exit even while stat/status
@@ -91,7 +91,9 @@ def sample(prev=None, pids=()):
                         pass
             except PermissionError:
                 socket_observation_errors.append(dict(pid=pid, reason="fd_access_denied"))
-            processes.append(dict(pid=pid, rss_bytes=r, hwm_bytes=h, threads=int(st["Threads"])))
+            processes.append(
+                dict(pid=pid, rss_bytes=process_rss, hwm_bytes=h, threads=int(st["Threads"]))
+            )
         except (FileNotFoundError, ProcessLookupError):
             pass
     r = dict(

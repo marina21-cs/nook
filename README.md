@@ -1,5 +1,8 @@
 # Nook
 
+> **Current development source snapshot — 11 October 2026.** This repository now also preserves the current Expo conversation prototype, maintained native-build configuration, and laptop conversation adapter. Start with [the Expo guide](mobile/expo/README.md) and [implementation status](docs/implementation/IMPLEMENTATION_STATUS.md). Android APK and device-install work remain paused. This source-preservation update adds no new runtime acceptance claim; the proof and test counts below retain their documented version and scope. Private recovery checkpoints, diagnostic stores, downloaded models, runtimes, caches, and local video-editing assets are preserved separately and are not uploaded here.
+
+
 Your everyday memory buddy. Save a reviewed memory and find its last-recorded place, time and photo.
 
 [Quick start](#quick-start) · [Screenshots](#screenshots) · [Why local AI?](#why-does-this-product-benefit-from-running-ai-locally) · [Tests](#run-the-checks) · [Disclosures](#the-disclosures)
@@ -208,3 +211,4 @@ Speech file URLs, pinned revisions, sizes and SHA256 hashes are in the [artifact
 **AI development tools:** Codex assisted code, tests, design, documentation and publication preparation. Complete contributor, pre-hackathon code and additional AI-tool history still needs team confirmation; exact development-model versions and actual Devin use are not inferred from filenames or sponsor tags.
 
 **Application license:** pending the owner's decision; no blanket code license has been selected. Third-party notices remain applicable. Team details, an X/LinkedIn video URL and disclosure completeness remain open submission fields.
+

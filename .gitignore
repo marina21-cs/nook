@@ -18,32 +18,17 @@ voice/artifacts/
 
 .mobile-ui-data/
 
-# Public source exclusions
-.env
-.env.*
-*.pem
-*.key
-*.log
-*.safetensors
-*.pth
-*.pt
-*.db
-*.sqlite*
-node_modules/
-# Retain metadata while excluding model binaries.
-!voice/artifacts/
-voice/artifacts/*
-!voice/artifacts/manifest.json
-!voice/artifacts/whisper/
-voice/artifacts/whisper/*
-!voice/artifacts/whisper/README.md
-
-# Expanded candidate local stores and optional provisioning inputs
-.expanded-demo-data/
-.judge-data/
 voice/packages/
-*.part
+voice/.setup.lock
 
-# Optional local chat private runtime inputs
-.nook-chat-models/
-.chat-demo-data/
+# Local recovery checkpoints; never stage private snapshots.
+.nook-checkpoints/
+mobile/expo/node_modules/
+mobile/expo/.expo/
+mobile/expo/dist/
+mobile/expo/android/
+mobile/expo/ios/
+mobile/expo/android/.gradle/
+mobile/expo/android/.cxx/
+mobile/expo/android/**/build/
+mobile/expo/ios/Pods/

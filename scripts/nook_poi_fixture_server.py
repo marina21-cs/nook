@@ -6,6 +6,7 @@ import socket
 import sys
 from contextlib import asynccontextmanager
 from pathlib import Path
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import uvicorn
@@ -18,8 +19,10 @@ def deny(*args, **kwargs):
     raise OSError("Fixture server denies outbound network")
 
 
-socket.socket.connect = deny
-socket.socket.connect_ex = deny
+connect_guard = patch.object(socket.socket, "connect", deny)
+connect_ex_guard = patch.object(socket.socket, "connect_ex", deny)
+connect_guard.start()
+connect_ex_guard.start()
 settings = Settings.from_env()
 app = create_app(settings)
 original = app.router.lifespan_context

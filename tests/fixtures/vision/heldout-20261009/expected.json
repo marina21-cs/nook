@@ -1,0 +1,364 @@
+{
+  "frozen_at_utc": "2026-10-09T10:50:33.374153+00:00",
+  "inference_has_run_on_these_photos": false,
+  "model_sha256": "4b82da9944b88577175ee23a459dce2e26e6e4be573def65b1055dc2d9720186",
+  "score_threshold": 0.35,
+  "nms_iou": 0.6,
+  "repetitions": 3,
+  "target_match_iou": 0.5,
+  "method": "Manual approximate target boxes before inference, oriented source photos. Category+IoU>=0.5 greedy one-to-one target matching; extra overlapping same-class boxes are duplicates; unmatched context classes excluded and reported separately. Remaining boxes are false positives or localization failures. Small challenge sample, no benchmark or population accuracy claim. Degraded supported targets still count as misses; no-candidate is acceptable safe manual path. No post-result exclusions or threshold tuning.",
+  "cases": [
+    {
+      "name": "plastic-cup",
+      "file": "plastic-cup.jpg",
+      "targets": [
+        {
+          "category": "cup",
+          "box": [
+            0.28,
+            0.275,
+            0.77,
+            0.86
+          ]
+        }
+      ],
+      "context_categories": [
+        "person",
+        "laptop",
+        "chair",
+        "dining table"
+      ],
+      "unknown_acceptable": false,
+      "original_sha256": "de2b16c42ccaa500b9493300de0e667c1c5ed389084f0c817f0015fb1dfa7f2d"
+    },
+    {
+      "name": "v8-bottle",
+      "file": "v8-bottle.jpg",
+      "targets": [
+        {
+          "category": "bottle",
+          "box": [
+            0.28,
+            0.015,
+            0.73,
+            0.975
+          ]
+        }
+      ],
+      "context_categories": [
+        "bottle",
+        "dining table"
+      ],
+      "unknown_acceptable": false,
+      "original_sha256": "a84c340edf517bfb0fd8c484d323f761dc78a6175604952c74d6e8605d34062f"
+    },
+    {
+      "name": "wooden-spoon-fork",
+      "file": "wooden-spoon-fork.jpg",
+      "targets": [
+        {
+          "category": "spoon",
+          "box": [
+            0.1,
+            0.365,
+            0.825,
+            0.85
+          ]
+        },
+        {
+          "category": "fork",
+          "box": [
+            0.2,
+            0.175,
+            0.92,
+            0.69
+          ]
+        }
+      ],
+      "context_categories": [],
+      "unknown_acceptable": false,
+      "original_sha256": "aa1fd48eefb60eda21f3a7965a477aa389e3d1f56c9cc3f1f7f39baf30ca3d1f"
+    },
+    {
+      "name": "scissors-01",
+      "file": "scissors-01.jpg",
+      "targets": [
+        {
+          "category": "scissors",
+          "box": [
+            0.02,
+            0.245,
+            0.99,
+            0.78
+          ]
+        }
+      ],
+      "context_categories": [],
+      "unknown_acceptable": false,
+      "sample_correlation": "same author/session as old scissors-04; different photo, not fully independent",
+      "original_sha256": "34cf26f2b6cec2352927425f7eca318ddaffca5551875fec6f8a652e71a2c426"
+    },
+    {
+      "name": "museum-eyeglasses",
+      "file": "museum-eyeglasses.jpg",
+      "targets": [],
+      "unsupported_targets": [
+        "eyeglasses",
+        "eyeglasses case"
+      ],
+      "context_categories": [],
+      "unknown_acceptable": true,
+      "original_sha256": "44f8e93e57f51b7a2ee618fd702c3c3f66b43dff0dc922675f8734cd5357b93c"
+    },
+    {
+      "name": "museum-wallet",
+      "file": "museum-wallet.jpg",
+      "targets": [],
+      "unsupported_targets": [
+        "wallet"
+      ],
+      "context_categories": [],
+      "unknown_acceptable": true,
+      "original_sha256": "e27bed43dd41b5de121f6dbd2fc2b87e14cf347e1fbbd9b8afb46628ad31ba98"
+    },
+    {
+      "name": "cup-blur8",
+      "file": "plastic-cup.jpg",
+      "targets": [
+        {
+          "category": "cup",
+          "box": [
+            0.28,
+            0.275,
+            0.77,
+            0.86
+          ]
+        }
+      ],
+      "context_categories": [
+        "person",
+        "laptop",
+        "chair",
+        "dining table"
+      ],
+      "unknown_acceptable": true,
+      "variant_of": "plastic-cup",
+      "transform": {
+        "blur": 8
+      },
+      "original_sha256": "de2b16c42ccaa500b9493300de0e667c1c5ed389084f0c817f0015fb1dfa7f2d"
+    },
+    {
+      "name": "cup-dark25",
+      "file": "plastic-cup.jpg",
+      "targets": [
+        {
+          "category": "cup",
+          "box": [
+            0.28,
+            0.275,
+            0.77,
+            0.86
+          ]
+        }
+      ],
+      "context_categories": [
+        "person",
+        "laptop",
+        "chair",
+        "dining table"
+      ],
+      "unknown_acceptable": true,
+      "variant_of": "plastic-cup",
+      "transform": {
+        "brightness": 0.25
+      },
+      "original_sha256": "de2b16c42ccaa500b9493300de0e667c1c5ed389084f0c817f0015fb1dfa7f2d"
+    },
+    {
+      "name": "cup-bright170",
+      "file": "plastic-cup.jpg",
+      "targets": [
+        {
+          "category": "cup",
+          "box": [
+            0.28,
+            0.275,
+            0.77,
+            0.86
+          ]
+        }
+      ],
+      "context_categories": [
+        "person",
+        "laptop",
+        "chair",
+        "dining table"
+      ],
+      "unknown_acceptable": true,
+      "variant_of": "plastic-cup",
+      "transform": {
+        "brightness": 1.7
+      },
+      "original_sha256": "de2b16c42ccaa500b9493300de0e667c1c5ed389084f0c817f0015fb1dfa7f2d"
+    },
+    {
+      "name": "cup-crop",
+      "file": "plastic-cup.jpg",
+      "targets": [
+        {
+          "category": "cup",
+          "box": [
+            0.12307692307692311,
+            0.03846153846153849,
+            0.8769230769230771,
+            0.9384615384615385
+          ]
+        }
+      ],
+      "context_categories": [
+        "person",
+        "laptop",
+        "chair",
+        "dining table"
+      ],
+      "unknown_acceptable": true,
+      "variant_of": "plastic-cup",
+      "transform": {
+        "crop": [
+          0.2,
+          0.25,
+          0.85,
+          0.9
+        ]
+      },
+      "original_sha256": "de2b16c42ccaa500b9493300de0e667c1c5ed389084f0c817f0015fb1dfa7f2d"
+    },
+    {
+      "name": "bottle-blur16",
+      "file": "v8-bottle.jpg",
+      "targets": [
+        {
+          "category": "bottle",
+          "box": [
+            0.28,
+            0.015,
+            0.73,
+            0.975
+          ]
+        }
+      ],
+      "context_categories": [
+        "bottle",
+        "dining table"
+      ],
+      "unknown_acceptable": true,
+      "variant_of": "v8-bottle",
+      "transform": {
+        "blur": 16
+      },
+      "original_sha256": "a84c340edf517bfb0fd8c484d323f761dc78a6175604952c74d6e8605d34062f"
+    },
+    {
+      "name": "bottle-dark20",
+      "file": "v8-bottle.jpg",
+      "targets": [
+        {
+          "category": "bottle",
+          "box": [
+            0.28,
+            0.015,
+            0.73,
+            0.975
+          ]
+        }
+      ],
+      "context_categories": [
+        "bottle",
+        "dining table"
+      ],
+      "unknown_acceptable": true,
+      "variant_of": "v8-bottle",
+      "transform": {
+        "brightness": 0.2
+      },
+      "original_sha256": "a84c340edf517bfb0fd8c484d323f761dc78a6175604952c74d6e8605d34062f"
+    },
+    {
+      "name": "scissors-partial",
+      "file": "scissors-01.jpg",
+      "targets": [
+        {
+          "category": "scissors",
+          "box": [
+            0.030769230769230767,
+            0.245,
+            1,
+            0.78
+          ]
+        }
+      ],
+      "context_categories": [],
+      "unknown_acceptable": true,
+      "sample_correlation": "same author/session as old scissors-04; different photo, not fully independent",
+      "variant_of": "scissors-01",
+      "transform": {
+        "crop": [
+          0,
+          0,
+          0.65,
+          1
+        ]
+      },
+      "original_sha256": "34cf26f2b6cec2352927425f7eca318ddaffca5551875fec6f8a652e71a2c426"
+    },
+    {
+      "name": "scissors-low-resolution",
+      "file": "scissors-01.jpg",
+      "targets": [
+        {
+          "category": "scissors",
+          "box": [
+            0.02,
+            0.245,
+            0.99,
+            0.78
+          ]
+        }
+      ],
+      "context_categories": [],
+      "unknown_acceptable": true,
+      "sample_correlation": "same author/session as old scissors-04; different photo, not fully independent",
+      "variant_of": "scissors-01",
+      "transform": {
+        "resize": [
+          48,
+          36
+        ]
+      },
+      "original_sha256": "34cf26f2b6cec2352927425f7eca318ddaffca5551875fec6f8a652e71a2c426"
+    },
+    {
+      "name": "empty-gray",
+      "synthetic_color": [
+        128,
+        128,
+        128
+      ],
+      "targets": [],
+      "context_categories": [],
+      "unknown_acceptable": true
+    },
+    {
+      "name": "empty-black",
+      "synthetic_color": [
+        0,
+        0,
+        0
+      ],
+      "targets": [],
+      "context_categories": [],
+      "unknown_acceptable": true
+    }
+  ]
+}

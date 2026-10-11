@@ -91,9 +91,16 @@ def test_redirect_never_drains_unbounded_response_body():
     handler = setup.SourceRedirects()
     expected = object()
     handler.parent = SimpleNamespace(open=lambda *args, **kwargs: expected)
-    assert handler.http_error_302(
-        request, response, 302, "Found", {"location": "https://files.pythonhosted.org/other.whl"}
-    ) is expected
+    assert (
+        handler.http_error_302(
+            request,
+            response,
+            302,
+            "Found",
+            {"location": "https://files.pythonhosted.org/other.whl"},
+        )
+        is expected
+    )
     assert stream.closed
 
 

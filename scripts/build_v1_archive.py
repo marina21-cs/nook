@@ -111,18 +111,17 @@ def payload():
                 raise ValueError(f"Personal absolute path remains: {relative}")
         result[relative] = raw
     result["README.md"] = result["V1_REPRODUCE.md"]
+    file_manifest = [
+        {"path": name, "bytes": len(raw), "sha256": hashlib.sha256(raw).hexdigest()}
+        for name, raw in sorted(result.items())
+    ]
     manifest = {
         "release": "hackathon-v1-20261009",
         "sanitized_text_paths": sanitized,
-        "files": [
-            {"path": name, "bytes": len(raw), "sha256": hashlib.sha256(raw).hexdigest()}
-            for name, raw in sorted(result.items())
-        ],
+        "files": file_manifest,
     }
     result["SOURCE_MANIFEST.json"] = (json.dumps(manifest, indent=2) + "\n").encode()
-    result["SHA256SUMS"] = "".join(
-        f"{f['sha256']}  {f['path']}\n" for f in manifest["files"]
-    ).encode()
+    result["SHA256SUMS"] = "".join(f"{f['sha256']}  {f['path']}\n" for f in file_manifest).encode()
     return result, manifest
 
 

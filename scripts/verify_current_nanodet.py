@@ -122,7 +122,7 @@ def run():
 
         def monitor():
             nonlocal previous
-            counters = {}
+            counters: dict[str, int] = {}
             started = time.monotonic()
             try:
                 while not done.is_set():

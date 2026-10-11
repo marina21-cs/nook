@@ -1,0 +1,42 @@
+{
+  "name": "nook-mobile",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start --go",
+    "start:dev-client": "expo start --dev-client",
+    "web": "expo start --web",
+    "export:web": "expo export --platform web --max-workers 1 --output-dir dist/chat-web",
+    "check:source": "node tools/checkSource.mjs",
+    "preview:web": "node tools/serveWebPreview.mjs",
+    "test:browser": "node tests/browserFlows.mjs",
+    "android": "expo run:android",
+    "android:release": "expo run:android --variant release",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --test-concurrency=1 tests/*.test.mjs",
+    "export:android": "expo export --platform android --max-workers 1",
+    "prebuild:android": "expo prebuild --platform android --no-install --no-clean",
+    "check:dependencies": "expo install --check"
+  },
+  "engines": {
+    "node": ">=24.0.0 <26"
+  },
+  "dependencies": {
+    "expo": "57.0.27",
+    "expo-crypto": "57.0.3",
+    "expo-dev-client": "57.0.19",
+    "expo-sqlite": "57.0.4",
+    "expo-status-bar": "57.0.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-web": "0.21.0",
+    "react-native-safe-area-context": "5.7.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.18",
+    "typescript": "5.9.3"
+  },
+  "type": "module"
+}
